@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import FontAwesome_swift
 
 class SecondViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
   
@@ -44,6 +45,8 @@ class SecondViewController: UIViewController,UITableViewDelegate,UITableViewData
     
     
     read()
+    
+    reloadInputViews()
     
   }
   
@@ -100,19 +103,33 @@ override func didReceiveMemoryWarning() {
   
   //表示するセルの数
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 2 //contenttitle.count
+    if contentTitle.count == 0{
+    return 0
+    }else{
+      return contentTitle.count
+    }
+    
   }
   
   //cellに表示させる　値を決める
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
     let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")! as UITableViewCell
-
     
 //    let sectionData = contentTitle[indexPath.row]
 //    let cellData = sectionData
-//    
+    if contentTitle == nil {
       cell.textLabel?.text = ""
+    }else{
+        cell.textLabel?.text = contentTitle[indexPath.row]
+    }
+    
+      //cell.textLabel?.text = contentTitle[memoNo]
+    
+    //入力したときのデータを入れたい！
+      //cell.detailTextLabel?.text = data_in_code_entry
+      cell.accessoryType = .disclosureIndicator
+    
 //    
     
     //contentTitle[1] = memoNo
@@ -131,6 +148,34 @@ override func didReceiveMemoryWarning() {
     performSegue(withIdentifier: "next3", sender: nil)
   }
   
+  
+  
+  //ユーザー記録の上にある書き込みマーク
+  @IBAction func newPage(_ sender: UIBarButtonItem) {
+ 
+      performSegue(withIdentifier: "next3", sender: nil)
+    }
+  
+  
+  //エディットボタン！
+  @IBAction func editBtn(_ sender: UIBarButtonItem) {
+  }
+  
+  
+  //スワイプ処理！
+  //なぜこれで表示されるのか？？＝＝delegateで委譲している為！
+  // UITableViewDelegate
+  func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+    let action = UITableViewRowAction(style: .default, title: "Detail"){ action, indexPath in
+      //
+    }
+    
+    return [action]
+  }
+  
+  
+
+  
   //受け渡しメソッド
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     
@@ -140,6 +185,9 @@ override func didReceiveMemoryWarning() {
       print(memoNo)
     }
   }
+  
+  
+
   
   
   @IBAction func back (_ segue:UIStoryboardSegue){}

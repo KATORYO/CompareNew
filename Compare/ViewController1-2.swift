@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FontAwesome_swift
 
 class ViewController1_2: UIViewController,UICollectionViewDelegate, UICollectionViewDataSource {
   
@@ -42,24 +43,58 @@ class ViewController1_2: UIViewController,UICollectionViewDelegate, UICollection
     var arrayNext:[String] = ["scSelectedIndex"]
   
   
-    var SelectedIndex3 = -1
+      var SelectedIndex3 = -1
   
-    var placeList1:[String] = []
+      var placeList1:[String] = []
   
-    var Image:UIImage = UIImage()
+      var Image:UIImage = UIImage()
   
-    @IBOutlet weak var myCollectionView1_2: UICollectionView!
+      @IBOutlet weak var myCollectionView1_2: UICollectionView!
   
   
+        //お気に入りボタンフォントオーサム
+      @IBOutlet weak var FavoriteBtn: UIButton!
+        //お気に入りボタンaction
+      @IBAction func FavoriteBtn(_ sender: UIButton) {
+      var katoryo:String = "katoryo"
+    
+      let alert = UIAlertController(title: "お気に入り追加", message: "お気に入り画面に追加されます", preferredStyle: .alert)
+    
+      //handlerはokボタンが押されたときに行いたい処理を指定する場所(オッケーが押されたときに発動する)
+      alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+    
+      alert.addAction(UIAlertAction(title: "キャンセル", style: .cancel))
+    
+      //アラート表示
+      present(alert,animated: true,completion: nil)
+    
+    
+      //関数に関数を入れる方法！！ask
+      func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+      
+      //移動先の画面に渡したい情報をセットできる
+      //移動先画面のオブジェクトを取得！
+      let abc:ThirdViewController3_1 = segue.destination as! ThirdViewController3_1
+      
+      abc.katoryoDesu = katoryo
+    }
+
+  }//favボタンの閉じたぐ
   
-  //ページの読み込み時
-    override func viewDidLoad() {
+  
+      //ページの読み込み時
+      override func viewDidLoad() {
         super.viewDidLoad()
+      
+      
+      //fontawsome適用！
+      FavoriteBtn.titleLabel?.font = UIFont.fontAwesome(ofSize: 35)
+      FavoriteBtn.setTitle(String.fontAwesomeIcon(name: .star), for: .normal)
 
       print(scSelectedIndex)
       
-    myCollectionView1_2.delegate = self
-    myCollectionView1_2.dataSource = self
+      myCollectionView1_2.delegate = self
+      myCollectionView1_2.dataSource = self
       
       
     //プロパティリスト読み込み
@@ -79,7 +114,7 @@ class ViewController1_2: UIViewController,UICollectionViewDelegate, UICollection
       let filePathDwelling = Bundle.main.path(forResource: "Dwelling", ofType: "plist")
       
     //ファイルの内容を読み込んでarray型に格納
-      switch scSelectedIndex {
+      switch scSelectedIndex{
       case 0:
         array = NSArray(contentsOfFile: (filePathFastfood)!)!
         print("０番です")
@@ -100,11 +135,10 @@ class ViewController1_2: UIViewController,UICollectionViewDelegate, UICollection
       case 7:
         array = NSArray(contentsOfFile: filePathConstruction!)!
       default: break
-      }
+  }
       
       for data in array{
         let dic = data as! NSDictionary
-        
         
         //apendが何か？ Key配列の追加！
         placeListFood.append(dic["description"] as! String)
@@ -123,8 +157,6 @@ class ViewController1_2: UIViewController,UICollectionViewDelegate, UICollection
         placeListConstruction.append(dic["description"] as! String)
         
       }
-
-      
   }
   
   
@@ -168,7 +200,7 @@ class ViewController1_2: UIViewController,UICollectionViewDelegate, UICollection
     /*
      Cellが押された時
     */
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath){
       
       //ここが３番目の画面を左右する！
       scSelectedIndex1 = indexPath.row

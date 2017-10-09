@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import FontAwesome_swift
+//import FontAwesome_swift
 
 class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSource {
 

@@ -33,7 +33,64 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    rateBtn.setTitle("\(Int(amountJPY))円", for: .normal)
+    rateBtn.setTitle("現在のペソを確認\(Int(amountJPY))", for: .normal)
+//    // URLを指定してオブジェクトを作成
+//    let stringUrl = "http://api.aoikujira.com/kawase/json/jpy"
+//    let url = URL(string: stringUrl)
+//    let request = URLRequest(url: url!)
+//    
+//    // コンフィグを指定してHTTPセッションを生成
+//    let session = URLSession(configuration: URLSessionConfiguration.default, delegate: nil, delegateQueue: OperationQueue.main)
+    
+//    // HTTP通信を実行する
+//    // ※dataにJSONデータが入る
+//    let task:URLSessionDataTask = session.dataTask(with: request, completionHandler: {data, responce, error in
+//      // エラーがあったら出力
+//      if error != nil {
+//        print(error!)
+//        return
+//      }
+//      
+//      DispatchQueue.main.async {
+//        // データ取得後の処理
+//        
+//        // JSONデータを食わせる
+//        let json = JSON(data: data!)
+//        
+//        // ペソ
+//        if let ratePHP = json["PHP"].string {
+//          // StringからDouble型に変換
+//          let rate = Double(ratePHP)!
+//          // ペソに変換(小数第4位まで)
+//          let amountPHP = round(self.amountJPY * rate * 10000) / 10000
+//          // ラベルに表示
+//          self.rateBtn.setTitle("\(amountPHP)ペソ", for: .normal) //= "\(amountUSD)ドル"
+//          print(amountPHP)
+//          
+//          //amountPHP*cellの３番目のラベルを掛け算するやり方で実装を試みる
+//          //cell.textJPYlabal.amounPHP*JPY
+//          //問題はString型であること　はじめにInt型にするかを相談！
+//          
+//        } else {
+//          // キー値不正などで値が取得できなかった場合の処理
+//        }
+//      }
+//      
+//      
+//    })
+//    
+//    // HTTP通信を実行
+//    task.resume()
+    
+    
+  }
+  
+  
+  
+  @IBAction func rateBtn(_ sender: UIButton) {
+    
+    
+    
     // URLを指定してオブジェクトを作成
     let stringUrl = "http://api.aoikujira.com/kawase/json/jpy"
     let url = URL(string: stringUrl)
@@ -41,7 +98,6 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
     
     // コンフィグを指定してHTTPセッションを生成
     let session = URLSession(configuration: URLSessionConfiguration.default, delegate: nil, delegateQueue: OperationQueue.main)
-    
     // HTTP通信を実行する
     // ※dataにJSONデータが入る
     let task:URLSessionDataTask = session.dataTask(with: request, completionHandler: {data, responce, error in
@@ -65,6 +121,12 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
           let amountPHP = round(self.amountJPY * rate * 10000) / 10000
           // ラベルに表示
           self.rateBtn.setTitle("\(amountPHP)ペソ", for: .normal) //= "\(amountUSD)ドル"
+          print(amountPHP)
+          
+          //amountPHP*cellの３番目のラベルを掛け算するやり方で実装を試みる
+          //cell.textJPYlabal.amounPHP*JPY
+          //問題はString型であること　はじめにInt型にするかを相談！
+          
         } else {
           // キー値不正などで値が取得できなかった場合の処理
         }
@@ -75,12 +137,9 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
     
     // HTTP通信を実行
     task.resume()
+
     
-  }
-  
-  
-  
-  @IBAction func rateBtn(_ sender: UIButton) {
+    
   }
   
   

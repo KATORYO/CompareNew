@@ -45,6 +45,7 @@
 		E3E442EA1F7F535C008CE769 /* Construction.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3E442E91F7F535C008CE769 /* Construction.plist */; };
 		E3E442EC1F7F55F6008CE769 /* Dwelling.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3E442EB1F7F55F6008CE769 /* Dwelling.plist */; };
 		E3E442EE1F7F792A008CE769 /* McPrice.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3E442ED1F7F792A008CE769 /* McPrice.plist */; };
+		E3E77FCD1F8B48980051EDAB /* ThirdViewController3_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E77FCC1F8B48980051EDAB /* ThirdViewController3_1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +117,7 @@
 		E3E442E91F7F535C008CE769 /* Construction.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Construction.plist; sourceTree = "<group>"; };
 		E3E442EB1F7F55F6008CE769 /* Dwelling.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Dwelling.plist; sourceTree = "<group>"; };
 		E3E442ED1F7F792A008CE769 /* McPrice.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = McPrice.plist; sourceTree = "<group>"; };
+		E3E77FCC1F8B48980051EDAB /* ThirdViewController3_1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController3_1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +191,7 @@
 		E3AB05C31F6E004C00B20261 /* Compare */ = {
 			isa = PBXGroup;
 			children = (
+				E3E77FCC1F8B48980051EDAB /* ThirdViewController3_1.swift */,
 				E3B52C5C1F86018D007B6BC9 /* Compare.entitlements */,
 				E3AB05C41F6E004C00B20261 /* AppDelegate.swift */,
 				E3AB05CD1F6E004C00B20261 /* Assets.xcassets */,
@@ -577,6 +580,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3E77FCD1F8B48980051EDAB /* ThirdViewController3_1.swift in Sources */,
 				E3AB05C91F6E004C00B20261 /* SecondViewController.swift in Sources */,
 				E3BF59571F6E9E5300038E59 /* ViewController1-2.swift in Sources */,
 				E3BF59591F6EA02D00038E59 /* ViewController1_3.swift in Sources */,

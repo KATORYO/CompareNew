@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import FontAwesome_swift
 
 class SecondViewController2_2: UIViewController {
   
@@ -30,6 +31,8 @@ class SecondViewController2_2: UIViewController {
   
   var fetchedArray: [NSManagedObject] = []
   
+  
+ 
   
   
   override func viewWillAppear(_ animated: Bool) {
@@ -54,93 +57,50 @@ class SecondViewController2_2: UIViewController {
   
   
   
-  //保存
+  //保存   //（機能していない）
   @IBAction func saveButton(sender: AnyObject) {
-    
     //AppDelegateを使う用意をしておく
     let appD:AppDelegate = UIApplication.shared.delegate as! AppDelegate
-    
     //エンティティを操作するためのオブジェクトを作成
     let viewContext = appD.persistentContainer.viewContext
-    
     //ToDoエンティティオブジェクトを作成
     let Memo = NSEntityDescription.entity(forEntityName: "Memo", in: viewContext)
-    
     //ToDoエンティティにレコード（行）を挿入するためのオブジェクトを作成
     let newRecord = NSManagedObject(entity: Memo!, insertInto: viewContext)
-    
     //値のセット(アトリビュート毎に指定) forKeyはモデルで指定したアトリビュート名
     newRecord.setValue(myTitle.text, forKey: "memo")
-   
-    
     //レコード（行）の即時保存
     do{
       try viewContext.save()
     }catch{
-      
-      
     }
-    
     //配列再取得
     //配列を空っぽにして、readで再び読み込み。
     //reloadDataでリアルタイム表示を可能にさせる
     //contentTitle = []
     fetchedArray = []
     read()
-    
     myTitle.reloadInputViews()
-    
-    //Memo.reloadData()
-    //なぜか？
-    //myTitle.text = fetchedArray[]
-    
-    //myTitle.text(forkey: "memo")
-  
     //myTitle.reloadData()
-    
-    
   }//保存ボタンの閉じたぐ
   
   
-  //一つ前に戻る処理+保存処理！
+  
+  //一つ前に戻る処理+保存処理！（機能していない）
   @IBAction func backBtn(_ sender: UIBarButtonItem) {
-    
-    //AppDelegateを使う用意をしておく
     let appD:AppDelegate = UIApplication.shared.delegate as! AppDelegate
-    
-    //エンティティを操作するためのオブジェクトを作成
     let viewContext = appD.persistentContainer.viewContext
-    
-    //ToDoエンティティオブジェクトを作成
     let Memo = NSEntityDescription.entity(forEntityName: "Memo", in: viewContext)
-    
-    //ToDoエンティティにレコード（行）を挿入するためのオブジェクトを作成
     let newRecord = NSManagedObject(entity: Memo!, insertInto: viewContext)
-    
-    //値のセット(アトリビュート毎に指定) forKeyはモデルで指定したアトリビュート名
     newRecord.setValue(myTitle.text, forKey: "memo")
-    
-    
-    //レコード（行）の即時保存
     do{
       try viewContext.save()
     }catch{
-      
-      
     }
-    
-    //配列再取得
-    //配列を空っぽにして、readで再び読み込み。
     fetchedArray = []
     read()
-    
     myTitle.reloadInputViews()
-    
-    
     //performSegue(withIdentifier: "next4", sender: nil)
-  
-    
-    
   }
 
   
@@ -153,20 +113,32 @@ class SecondViewController2_2: UIViewController {
   }
   
   
+  
+  //戻るボタン　フォントオーサムで弄る為の
+  @IBOutlet weak var BackBtn: UIBarButtonItem!
+  
+  
   //viedDidLoad
   override func viewDidLoad() {
         super.viewDidLoad()
     
+    let attributes = [NSFontAttributeName: UIFont.fontAwesome(ofSize: 20)] as [String: Any]
+    BackBtn.setTitleTextAttributes(attributes, for: .normal)
+    BackBtn.title = String.fontAwesomeIcon(name: .stepBackward)
+    
     //CoreDataからデータを読み込む処理
     read()
     
+    myTitle.text? = ""
     
-    //myTitle.reloadInputViews()
-    //userdefault
-//    saves.register(defaults: ["myText": "default"])
-//    
-//    myTitle.text = saves.string(forKey: "myText"+memoNo)
-
+      //ここが一つ前の新規ボタンを押しても表示されない鍵
+//    if contentTitle == nil{
+//      myTitle.text? = ""
+//    }else{
+//      myTitle.text? = contentTitle[MemoNo]
+//
+//    }
+      myTitle.text? = contentTitle[MemoNo]
   }
 
   //CoreDataに保存されているデータの読み込み処理（READ）
@@ -230,8 +202,7 @@ class SecondViewController2_2: UIViewController {
   }
   
   
-  //全削除ボタンが押された時(DELETEに当たる処理)
-  
+  //削除ボタンが押された時(DELETEに当たる処理)
   @IBAction func tapDeleate(_ sender: UIBarButtonItem) {
     
     //AppDelegateを使う用意をしておく
@@ -258,18 +229,59 @@ class SecondViewController2_2: UIViewController {
       
     }catch{
       
-    }
-    
-    
+  }
     contentTitle = []
     read()
-    
     myTitle.reloadInputViews()
+}
+
+  
+  
+  
+  //新規作成ボタン（compose）
+  @IBAction func newPageBtn(_ sender: UIBarButtonItem) {
+    
+    performSegue(withIdentifier: "", sender: nil)
     
   }
 
   
+  
+  
+  //画面から非表示になる直前に呼ばれる！
+  //画面が戻るときに！
+  override func viewWillDisappear(_ animated: Bool) {
+    super.viewWillDisappear(animated)
+    
+    let appD:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+    
+    //エンティティを操作するためのオブジェクトを作成
+    let viewContext = appD.persistentContainer.viewContext
+    
+    //ToDoエンティティオブジェクトを作成
+    let Memo = NSEntityDescription.entity(forEntityName: "Memo", in: viewContext)
+    
+    //ToDoエンティティにレコード（行）を挿入するためのオブジェクトを作成
+    let newRecord = NSManagedObject(entity: Memo!, insertInto: viewContext)
+    
+    //値のセット(アトリビュート毎に指定) forKeyはモデルで指定したアトリビュート名
+    newRecord.setValue(myTitle.text, forKey: "memo")
+    
+    //nilのときの制御文を書くけど、どれがどれかが解決できてない！
+    //レコード（行）の即時保存
+    do{
+      try viewContext.save()
+    }catch{
+      
+    }
 
+    fetchedArray = []
+    read()
+    
+    myTitle.reloadInputViews()
+    
+    print("viewWillDisappear")
+  }
 
   
 
