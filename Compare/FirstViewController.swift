@@ -14,12 +14,26 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
   @IBOutlet weak var rateBtn: UIButton!
 
   
+  
+  var testText:Int = 0
+  
+  // UserDefaults のインスタンス
+  let userDefaults = UserDefaults.standard
+  
+  
   //日本円で50.0円のもの
   var amountJPY = 1.0
-
-  let list:[String] = ["飲食店","コンビニ","雑貨","生活費","大きな買い物","電化製品","住宅","工事費"]
   
-  let imageDesu:[String] = ["CoffeeSrarbucks","Convenience7","Image-11","LivingOfCosts","Image-10","Image-2","Image-3","Image-12"]
+  
+  var phpRate:Int = 0
+  
+  
+  var section:[String] = ["チェーン店","カフェ"]
+  
+
+  let list:[String] = ["飲食店","コンビニ","雑貨","生活費","大きな買い物","電化製品","住宅","工事費","スーパー","Yoshinoya","服","文房具"]
+  
+  let imageDesu:[String] = ["CoffeeSrarbucks","Convenience7","Image-11","LivingOfCosts","Image-10","Image-2","Image-3","Image-12","Image-10","Image-10","Image-10","Image10"]
   
 
   //ここに保存されて、次の画面に送る！
@@ -32,6 +46,11 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
 
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+    
+    // デフォルト値 //userdefault
+    userDefaults.register(defaults: ["DataStore": "default"])
+    
     
     rateBtn.setTitle("現在のペソを確認\(Int(amountJPY))", for: .normal)
 //    // URLを指定してオブジェクトを作成
@@ -80,16 +99,15 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
 //    })
 //    
 //    // HTTP通信を実行
-//    task.resume()
+//      task.resume()
     
     
   }
   
+
   
   
   @IBAction func rateBtn(_ sender: UIButton) {
-    
-    
     
     // URLを指定してオブジェクトを作成
     let stringUrl = "http://api.aoikujira.com/kawase/json/jpy"
@@ -123,25 +141,39 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
           self.rateBtn.setTitle("\(amountPHP)ペソ", for: .normal) //= "\(amountUSD)ドル"
           print(amountPHP)
           
+          
+          //ペソの計算！
+          print(amountPHP * 40)
+          
+          
+          var Rate:Int = 0
+          
+          if self.userDefaults.object(forKey: "DataStore") != nil{
+            Rate = self.userDefaults.object(forKey: "DataStore") as! Int
+          }
+          self.userDefaults.set(Rate, forKey: "favArr")
+          self.userDefaults.synchronize()
+          
+          
           //amountPHP*cellの３番目のラベルを掛け算するやり方で実装を試みる
           //cell.textJPYlabal.amounPHP*JPY
           //問題はString型であること　はじめにInt型にするかを相談！
           
         } else {
           // キー値不正などで値が取得できなかった場合の処理
+          //アラート設定！
+          
         }
       }
-      
       
     })
     
     // HTTP通信を実行
     task.resume()
-
-    
-    
   }
   
+  
+
   
   /*
    Cellが押された時
@@ -196,13 +228,24 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
     cell.imgSample?.image = UIImage(named: imageDesu[indexPath.row])
     return cell
   }
+  
+  
+  //セクションの値
+  func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
     
-  // セクションの数（今回は1つ）
-  func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-    return 1
+    let Section = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "Section", for: indexPath) as! CollectionReusableView
+    Section.sectionLabel.text? = section[indexPath.section]
+    
+    return Section
   }
   
-   
+  
+  // セクションの数（今回は1つ）
+  func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+   return 2 //section.count
+  }
+  
+  
   
   //override(上書き)だが、prepareはviewcontroller画面に組み込まれているため、上書きする必要がある！
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -211,11 +254,14 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
     //移動先の画面に渡したい情報をセットできる
     //dv　今から移動する画面のオブジェクト(インスタンス)
     //移動先画面のオブジェクトを取得！
-    let dv: ViewController1_2 = segue.destination as! ViewController1_2
+    let dv: ViewController1_3 = segue.destination as! ViewController1_3
     
     //dv.scSelectedName = selectedName
     
     dv.scSelectedIndex = selectedIndex
+    
+    
+    dv.ratePhp = phpRate
     
   }
 

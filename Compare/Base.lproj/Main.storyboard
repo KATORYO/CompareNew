@@ -23,19 +23,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPx-xA-Txg">
+                                <rect key="frame" x="0.0" y="64" width="320" height="39"/>
+                                <color key="backgroundColor" red="0.99633635210000004" green="1" blue="0.92872035580000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="tVv-Qt-Okh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="13"/>
+                                <state key="normal" title="最新のレートを取得"/>
+                                <connections>
+                                    <action selector="rateBtn:" destination="9pv-A4-QxB" eventType="touchUpInside" id="iRt-kf-fyr"/>
+                                </connections>
+                            </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6b8-09-zNB">
                                 <rect key="frame" x="0.0" y="103" width="320" height="416"/>
                                 <color key="backgroundColor" red="0.99633635214444916" green="1" blue="0.92872035583747015" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <edgeInsets key="layoutMargins" top="16" left="8" bottom="16" right="8"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="38" minimumInteritemSpacing="15" id="URe-1V-8Je">
                                     <size key="itemSize" width="142" height="167"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="headerReferenceSize" width="50" height="50"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="23" minY="0.0" maxX="23" maxY="32"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="y11-Zw-r4v" customClass="CustomCell" customModule="Compare" customModuleProvider="target">
-                                        <rect key="frame" x="89" y="0.0" width="142" height="167"/>
+                                        <rect key="frame" x="89" y="50" width="142" height="167"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="142" height="167"/>
@@ -45,7 +58,7 @@
                                                     <rect key="frame" x="0.0" y="137" width="142" height="30"/>
                                                     <color key="backgroundColor" red="0.99633635210000004" green="1" blue="0.92872035580000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="30" id="UFi-Qf-EfM"/>
+                                                        <constraint firstAttribute="height" constant="30" id="ZXO-e0-bOW"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="16"/>
                                                     <nil key="textColor"/>
@@ -59,13 +72,13 @@
                                             </subviews>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="SFj-td-I7T" firstAttribute="top" secondItem="CAP-UY-59r" secondAttribute="bottom" id="RNF-k7-P0b"/>
-                                            <constraint firstAttribute="bottom" secondItem="SFj-td-I7T" secondAttribute="bottom" id="Sgo-dR-jF4"/>
-                                            <constraint firstItem="CAP-UY-59r" firstAttribute="trailing" secondItem="SFj-td-I7T" secondAttribute="trailing" id="aYd-ex-C6L"/>
-                                            <constraint firstAttribute="trailing" secondItem="CAP-UY-59r" secondAttribute="trailing" id="o2O-eh-VNC"/>
-                                            <constraint firstItem="CAP-UY-59r" firstAttribute="leading" secondItem="SFj-td-I7T" secondAttribute="leading" id="tip-GX-wcq"/>
-                                            <constraint firstItem="CAP-UY-59r" firstAttribute="leading" secondItem="y11-Zw-r4v" secondAttribute="leading" id="tjn-Gr-ZAH"/>
-                                            <constraint firstItem="CAP-UY-59r" firstAttribute="top" secondItem="y11-Zw-r4v" secondAttribute="top" id="xLT-pN-xQr"/>
+                                            <constraint firstItem="CAP-UY-59r" firstAttribute="leading" secondItem="y11-Zw-r4v" secondAttribute="leading" id="I3D-Wf-XJL"/>
+                                            <constraint firstItem="CAP-UY-59r" firstAttribute="top" secondItem="y11-Zw-r4v" secondAttribute="top" id="U2z-gm-CfH"/>
+                                            <constraint firstAttribute="trailing" secondItem="CAP-UY-59r" secondAttribute="trailing" id="X25-Lf-bw7"/>
+                                            <constraint firstItem="CAP-UY-59r" firstAttribute="trailing" secondItem="SFj-td-I7T" secondAttribute="trailing" id="af8-vx-0Ts"/>
+                                            <constraint firstItem="CAP-UY-59r" firstAttribute="leading" secondItem="SFj-td-I7T" secondAttribute="leading" id="l77-gK-OF4"/>
+                                            <constraint firstAttribute="bottom" secondItem="SFj-td-I7T" secondAttribute="bottom" id="uAh-j3-oZS"/>
+                                            <constraint firstItem="SFj-td-I7T" firstAttribute="top" secondItem="CAP-UY-59r" secondAttribute="bottom" id="vyR-Em-a9f"/>
                                         </constraints>
                                         <size key="customSize" width="142" height="167"/>
                                         <connections>
@@ -74,40 +87,49 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Section" id="nvW-CZ-aka" customClass="CollectionReusableView" customModule="Compare">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="セクション設定" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GEg-JC-Gmc">
+                                            <rect key="frame" x="0.0" y="8" width="320" height="35"/>
+                                            <fontDescription key="fontDescription" type="italicSystem" pointSize="19"/>
+                                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="GEg-JC-Gmc" firstAttribute="centerY" secondItem="nvW-CZ-aka" secondAttribute="centerY" id="WFX-m0-eGC"/>
+                                        <constraint firstItem="GEg-JC-Gmc" firstAttribute="leading" secondItem="nvW-CZ-aka" secondAttribute="leading" id="ZLb-Ac-FZY"/>
+                                        <constraint firstItem="GEg-JC-Gmc" firstAttribute="top" secondItem="nvW-CZ-aka" secondAttribute="topMargin" id="bmt-oc-Pn9"/>
+                                        <constraint firstAttribute="trailing" secondItem="GEg-JC-Gmc" secondAttribute="trailing" id="tSc-8q-bMZ"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="sectionLabel" destination="GEg-JC-Gmc" id="GHq-wA-JWd"/>
+                                    </connections>
+                                </collectionReusableView>
                                 <connections>
                                     <outlet property="dataSource" destination="9pv-A4-QxB" id="W6S-jv-8n4"/>
                                     <outlet property="delegate" destination="9pv-A4-QxB" id="Z0d-3P-PDG"/>
                                 </connections>
                             </collectionView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPx-xA-Txg">
-                                <rect key="frame" x="0.0" y="64" width="320" height="39"/>
-                                <color key="backgroundColor" red="0.99633635210000004" green="1" blue="0.92872035580000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="39" id="avu-Cg-SUR"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="13"/>
-                                <state key="normal" title="最新のレートを取得"/>
-                                <connections>
-                                    <action selector="rateBtn:" destination="9pv-A4-QxB" eventType="touchUpInside" id="iRt-kf-fyr"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="6b8-09-zNB" firstAttribute="bottom" secondItem="4ug-Mw-9AY" secondAttribute="top" id="33u-YS-517"/>
-                            <constraint firstItem="dPx-xA-Txg" firstAttribute="leading" secondItem="6b8-09-zNB" secondAttribute="leading" id="4GS-LJ-jrg"/>
-                            <constraint firstAttribute="trailing" secondItem="dPx-xA-Txg" secondAttribute="trailing" id="7xs-mt-Dnq"/>
-                            <constraint firstItem="dPx-xA-Txg" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="LDS-rw-6oe"/>
-                            <constraint firstItem="dPx-xA-Txg" firstAttribute="trailing" secondItem="6b8-09-zNB" secondAttribute="trailing" id="j5y-wZ-Jsr"/>
-                            <constraint firstItem="dPx-xA-Txg" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" id="sOg-I4-tra"/>
-                            <constraint firstItem="6b8-09-zNB" firstAttribute="top" secondItem="dPx-xA-Txg" secondAttribute="bottom" id="wfw-21-C9J"/>
+                            <constraint firstItem="6b8-09-zNB" firstAttribute="top" secondItem="dPx-xA-Txg" secondAttribute="bottom" id="4E7-cw-6O9"/>
+                            <constraint firstItem="dPx-xA-Txg" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" id="DvA-KM-zQT"/>
+                            <constraint firstItem="6b8-09-zNB" firstAttribute="bottom" secondItem="4ug-Mw-9AY" secondAttribute="top" id="Tj3-NP-sVE"/>
+                            <constraint firstAttribute="trailing" secondItem="dPx-xA-Txg" secondAttribute="trailing" id="aXH-EH-ibn"/>
+                            <constraint firstItem="dPx-xA-Txg" firstAttribute="leading" secondItem="6b8-09-zNB" secondAttribute="leading" id="cOF-iC-2FX"/>
+                            <constraint firstItem="dPx-xA-Txg" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="jeg-0T-sTa"/>
+                            <constraint firstItem="dPx-xA-Txg" firstAttribute="trailing" secondItem="6b8-09-zNB" secondAttribute="trailing" id="xYg-cC-xDw"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="料金を比較する！" id="jAz-bk-7Hq"/>
                     <connections>
                         <outlet property="myCollectionView" destination="6b8-09-zNB" id="xHE-U0-2b1"/>
                         <outlet property="rateBtn" destination="dPx-xA-Txg" id="Vub-23-1Va"/>
-                        <segue destination="WOQ-rx-kyT" kind="show" identifier="next" id="RNV-UW-yzC"/>
+                        <segue destination="knd-Nl-F6D" kind="show" identifier="next" id="eHJ-wm-1uF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
@@ -129,16 +151,12 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qi0-fS-Hkq">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <color key="backgroundColor" red="0.92588486405835546" green="0.90375005393763375" blue="0.70456779967358518" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </navigationBar>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Apu-SN-jOg">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="料金を比較する" id="AOd-qo-KbW">
-                                        <barButtonItem key="rightBarButtonItem" image="Image-17" style="plain" id="lq3-Tr-BiQ">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xMj-iq-uSo">
-                                                <rect key="frame" x="233" y="7" width="71" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Button"/>
-                                            </button>
-                                        </barButtonItem>
-                                    </navigationItem>
+                                    <navigationItem title="Title" id="4SE-DL-Wdz"/>
                                 </items>
                             </navigationBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="guI-aQ-BJu">
@@ -219,6 +237,8 @@
                             <constraint firstItem="6Nk-pK-7f3" firstAttribute="trailing" secondItem="guI-aQ-BJu" secondAttribute="trailing" id="ztj-11-JxL"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="myNavigation1_3" destination="qi0-fS-Hkq" id="5ez-EZ-Cyq"/>
                         <outlet property="myTableView1_3" destination="guI-aQ-BJu" id="Lbv-1t-5WE"/>
@@ -226,7 +246,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dUA-Gs-QWZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4644" y="-807"/>
+            <point key="canvasLocation" x="2992.5" y="-735.21126760563379"/>
         </scene>
         <!--ユーザー記録-->
         <scene sceneID="wg7-f3-ORb">
@@ -305,7 +325,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="40" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VVE-NM-zkJ">
-                                <rect key="frame" x="0.0" y="64" width="320" height="460"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -445,7 +465,7 @@
             </objects>
             <point key="canvasLocation" x="819" y="0.0"/>
         </scene>
-        <!--View Controller12-->
+        <!--料金を比較する-->
         <scene sceneID="VUx-cN-8TC">
             <objects>
                 <viewController id="WOQ-rx-kyT" customClass="ViewController1_2" customModule="Compare" customModuleProvider="target" sceneMemberID="viewController">
@@ -457,8 +477,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Y2A-0N-p68">
-                                <rect key="frame" x="0.0" y="99" width="320" height="425"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Y2A-0N-p68">
+                                <rect key="frame" x="0.0" y="55" width="320" height="469"/>
                                 <color key="backgroundColor" red="0.99897532153886393" green="1" blue="0.92790240270423174" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="30" minimumInteritemSpacing="5" id="q4r-Qj-vNa">
                                     <size key="itemSize" width="304" height="180"/>
@@ -466,6 +486,10 @@
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
+                                <imageView key="backgroundView" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="WFh-hU-YgF">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="469"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell1_2" id="WeR-Uq-eJM" customClass="CustomCell" customModule="Compare" customModuleProvider="target">
                                         <rect key="frame" x="32" y="0.0" width="256" height="145"/>
@@ -474,7 +498,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="256" height="145"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wfd-jw-RcU">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wfd-jw-RcU">
                                                     <rect key="frame" x="0.0" y="114" width="256" height="31"/>
                                                     <color key="backgroundColor" red="0.98659777328202825" green="1" blue="0.80232120365242399" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
@@ -484,20 +508,11 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WFh-hU-YgF">
-                                                    <rect key="frame" x="0.0" y="0.0" width="256" height="114"/>
-                                                </imageView>
                                             </subviews>
                                         </view>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstItem="WFh-hU-YgF" firstAttribute="trailing" secondItem="wfd-jw-RcU" secondAttribute="trailing" id="O06-4i-FLy"/>
-                                            <constraint firstItem="WFh-hU-YgF" firstAttribute="top" secondItem="WeR-Uq-eJM" secondAttribute="top" id="Ovd-QV-Qzv"/>
-                                            <constraint firstItem="wfd-jw-RcU" firstAttribute="top" secondItem="WFh-hU-YgF" secondAttribute="bottom" id="bCu-ve-sNY"/>
                                             <constraint firstAttribute="bottom" secondItem="wfd-jw-RcU" secondAttribute="bottom" id="bGw-Pe-Thg"/>
-                                            <constraint firstItem="WFh-hU-YgF" firstAttribute="leading" secondItem="wfd-jw-RcU" secondAttribute="leading" id="hzu-lk-wFk"/>
-                                            <constraint firstItem="WFh-hU-YgF" firstAttribute="leading" secondItem="WeR-Uq-eJM" secondAttribute="leading" id="nYP-DJ-qa8"/>
-                                            <constraint firstAttribute="trailing" secondItem="WFh-hU-YgF" secondAttribute="trailing" id="q3w-HM-6oy"/>
                                         </constraints>
                                         <edgeInsets key="layoutMargins" top="30" left="8" bottom="10" right="8"/>
                                         <size key="customSize" width="256" height="145"/>
@@ -512,8 +527,20 @@
                                     <outlet property="delegate" destination="WOQ-rx-kyT" id="XTz-if-aDc"/>
                                 </connections>
                             </collectionView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pjV-dm-R8V">
-                                <rect key="frame" x="260" y="64" width="60" height="36"/>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Y2A-0N-p68" firstAttribute="leading" secondItem="dta-pO-tdm" secondAttribute="leading" id="Z4t-r1-wsE"/>
+                            <constraint firstItem="Y2A-0N-p68" firstAttribute="bottom" secondItem="PpS-wG-pnO" secondAttribute="top" id="hig-nb-UL7"/>
+                            <constraint firstItem="Y2A-0N-p68" firstAttribute="top" secondItem="7y7-yG-4lt" secondAttribute="bottom" constant="35" id="i4c-2p-Tbi"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="料金を比較する" id="AOd-qo-KbW">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="eLj-Au-Jsp">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pjV-dm-R8V">
+                                <rect key="frame" x="244" y="-18" width="60" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="Z0L-5N-EdM"/>
                                 </constraints>
@@ -522,30 +549,17 @@
                                     <action selector="FavoriteBtn:" destination="WOQ-rx-kyT" eventType="touchUpInside" id="Dr1-Du-Hbs"/>
                                 </connections>
                             </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="PpS-wG-pnO" firstAttribute="top" secondItem="pjV-dm-R8V" secondAttribute="bottom" constant="424" id="985-ef-RxH"/>
-                            <constraint firstAttribute="trailing" secondItem="pjV-dm-R8V" secondAttribute="trailing" id="9XO-XA-QmX"/>
-                            <constraint firstItem="pjV-dm-R8V" firstAttribute="trailing" secondItem="Y2A-0N-p68" secondAttribute="trailing" id="XVj-1E-Owh"/>
-                            <constraint firstItem="Y2A-0N-p68" firstAttribute="leading" secondItem="dta-pO-tdm" secondAttribute="leading" id="Z4t-r1-wsE"/>
-                            <constraint firstItem="pjV-dm-R8V" firstAttribute="top" secondItem="7y7-yG-4lt" secondAttribute="bottom" id="f1B-bA-jEH"/>
-                            <constraint firstItem="Y2A-0N-p68" firstAttribute="bottom" secondItem="PpS-wG-pnO" secondAttribute="top" id="hig-nb-UL7"/>
-                            <constraint firstItem="Y2A-0N-p68" firstAttribute="top" secondItem="7y7-yG-4lt" secondAttribute="bottom" constant="35" id="i4c-2p-Tbi"/>
-                        </constraints>
-                    </view>
-                    <toolbarItems/>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="FavoriteBtn" destination="pjV-dm-R8V" id="8EI-we-z5J"/>
                         <outlet property="myCollectionView1_2" destination="Y2A-0N-p68" id="Jtz-TL-gCQ"/>
-                        <segue destination="knd-Nl-F6D" kind="show" identifier="next2" id="fcF-xD-6yu"/>
-                        <segue destination="jVb-Sw-9a7" kind="show" customClass="UIStoryboardPopoverSegue" customModule="Compare" id="Ibd-SV-TeX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xTC-gG-TQc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3307.5" y="-807.04225352112678"/>
+            <point key="canvasLocation" x="2918" y="-1468"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -587,11 +601,7 @@
             <point key="canvasLocation" x="819.375" y="-807.04225352112678"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Image-17" width="33" height="34"/>
-    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="pW5-h5-QiF"/>
-        <segue reference="Ibd-SV-TeX"/>
     </inferredMetricsTieBreakers>
 </document>

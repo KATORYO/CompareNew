@@ -34,6 +34,7 @@
 		E3AB05E71F6E004D00B20261 /* CompareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AB05E61F6E004D00B20261 /* CompareUITests.swift */; };
 		E3AB05F71F6E187900B20261 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AB05F61F6E187900B20261 /* CustomCell.swift */; };
 		E3ACE8791F84AD3C004EDE46 /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3ACE8781F84AD3C004EDE46 /* Property List.plist */; };
+		E3B111F71F8BC15A009E889B /* CollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B111F61F8BC15A009E889B /* CollectionReusableView.swift */; };
 		E3BF59571F6E9E5300038E59 /* ViewController1-2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BF59561F6E9E5300038E59 /* ViewController1-2.swift */; };
 		E3BF59591F6EA02D00038E59 /* ViewController1_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BF59581F6EA02D00038E59 /* ViewController1_3.swift */; };
 		E3BF595B1F6ED1CB00038E59 /* Detail.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3BF595A1F6ED1CB00038E59 /* Detail.plist */; };
@@ -105,6 +106,7 @@
 		E3AB05E81F6E004D00B20261 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3AB05F61F6E187900B20261 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		E3ACE8781F84AD3C004EDE46 /* Property List.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
+		E3B111F61F8BC15A009E889B /* CollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionReusableView.swift; path = "../../../Downloads/myProject-master/myProject/CollectionReusableView.swift"; sourceTree = "<group>"; };
 		E3B52C5C1F86018D007B6BC9 /* Compare.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Compare.entitlements; sourceTree = "<group>"; };
 		E3BF59561F6E9E5300038E59 /* ViewController1-2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController1-2.swift"; sourceTree = "<group>"; };
 		E3BF59581F6EA02D00038E59 /* ViewController1_3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController1_3.swift; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 				E3B52C5C1F86018D007B6BC9 /* Compare.entitlements */,
 				E3AB05C41F6E004C00B20261 /* AppDelegate.swift */,
 				E3AB05CD1F6E004C00B20261 /* Assets.xcassets */,
+				E3B111F61F8BC15A009E889B /* CollectionReusableView.swift */,
 				E3AB05CA1F6E004C00B20261 /* Main.storyboard */,
 				E3AB05C61F6E004C00B20261 /* FirstViewController.swift */,
 				E3BF59561F6E9E5300038E59 /* ViewController1-2.swift */,
@@ -580,6 +583,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3B111F71F8BC15A009E889B /* CollectionReusableView.swift in Sources */,
 				E3E77FCD1F8B48980051EDAB /* ThirdViewController3_1.swift in Sources */,
 				E3AB05C91F6E004C00B20261 /* SecondViewController.swift in Sources */,
 				E3BF59571F6E9E5300038E59 /* ViewController1-2.swift in Sources */,

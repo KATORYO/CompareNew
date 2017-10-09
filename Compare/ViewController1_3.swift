@@ -19,11 +19,18 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
   var placeList:[String] = []
   var array:NSArray = []
 
-  var scSelectedIndex4 = -1
-  var scSelectedIndex5 = -1
+  
+  //firstViewからの値
+  var scSelectedIndex = -1
   
   
+  var amountPHP = 0
   
+  var ratePhp:Int = 0
+  
+  
+  //let userDefaults = UserDefaults.standard
+
   
   //@IBAction func myBack1_3(_ sender: UIBarButtonItem) {}
   // Sectionで使用する配列を定義する.
@@ -40,7 +47,13 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
         super.viewDidLoad()
       
       
-      print(scSelectedIndex4)
+      // Keyを指定して読み込み
+      UserDefaults.standard.integer(forKey: "DataStore")
+      
+      print(value(forKey: "DataStore"))
+
+      
+      print(scSelectedIndex)
   
       //tableViewを使えるようにする！
       self.myTableView1_3.register(UINib(nibName: "CustomTableViewCell", bundle: nil), forCellReuseIdentifier: "Cell")
@@ -56,27 +69,20 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
       
       let filePathMarukame = Bundle.main.path(forResource: "Marukame", ofType: "plist")
       
-      if 0 == scSelectedIndex4{
+      if 0 == scSelectedIndex{
         array = NSArray(contentsOfFile: (filePathMc)!)!
-      }else if scSelectedIndex4 == 1{
+      }else if scSelectedIndex == 1{
         array = NSArray(contentsOfFile:filePathStb!)!
-      }else if scSelectedIndex4 == 2{
+      }else if scSelectedIndex == 2{
         array = NSArray(contentsOfFile: filePath7!)!
-      }else if scSelectedIndex4 == 3{
+      }else if scSelectedIndex == 3{
         array = NSArray(contentsOfFile: filePathYoshinoya!)!
-      }else if scSelectedIndex4 == 4{
+      }else if scSelectedIndex == 4{
         array = NSArray(contentsOfFile: filePathMarukame!)!
       }
       
       
       //ファイルパスの読み込み
-      
-      
-      if 0 == scSelectedIndex5{
-        print("成功です")
-      }
-      
-      
 
       //array = NSArray(contentsOfFile: (filePathMc)!)!
 

@@ -273,7 +273,7 @@ class ViewController1_2: UIViewController,UICollectionViewDelegate, UICollection
     //移動先画面のオブジェクトを取得！
     let abc: ViewController1_3 = segue.destination as! ViewController1_3
     
-    abc.scSelectedIndex4 = SelectedIndex3
+    //abc.scSelectedIndex4 = SelectedIndex3
     
   }
   

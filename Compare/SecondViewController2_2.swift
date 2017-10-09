@@ -10,7 +10,7 @@ import UIKit
 import CoreData
 import FontAwesome_swift
 
-class SecondViewController2_2: UIViewController {
+class SecondViewController2_2: UIViewController,UITextViewDelegate {
   
   
   
@@ -33,6 +33,7 @@ class SecondViewController2_2: UIViewController {
   
   
  
+  
   
   
   override func viewWillAppear(_ animated: Bool) {
@@ -118,9 +119,15 @@ class SecondViewController2_2: UIViewController {
   @IBOutlet weak var BackBtn: UIBarButtonItem!
   
   
+  
   //viedDidLoad
   override func viewDidLoad() {
         super.viewDidLoad()
+    
+    
+    // キーボードの上部にビューをセットする
+    //myTitle.inputAccessoryView = UILabel()
+    
     
     let attributes = [NSFontAttributeName: UIFont.fontAwesome(ofSize: 20)] as [String: Any]
     BackBtn.setTitleTextAttributes(attributes, for: .normal)
@@ -132,14 +139,82 @@ class SecondViewController2_2: UIViewController {
     myTitle.text? = ""
     
       //ここが一つ前の新規ボタンを押しても表示されない鍵
-//    if contentTitle == nil{
-//      myTitle.text? = ""
-//    }else{
-//      myTitle.text? = contentTitle[MemoNo]
-//
-//    }
+    if contentTitle == nil{
+      myTitle.text? = ""
+    }else{
       myTitle.text? = contentTitle[MemoNo]
+
+    }
+      //myTitle.text? = contentTitle[MemoNo]
+    
+    
+    
+    
+    //ペーストなどの処理をはる！
+    // MenuController生成.
+    let myMenuController: UIMenuController = UIMenuController.shared
+    
+    // MenuControllerを表示.
+    myMenuController.isMenuVisible = true
+    
+    // 矢印の向きを下に設定.
+    myMenuController.arrowDirection = UIMenuControllerArrowDirection.down
+    
+    // rect、viewを設定.
+    myMenuController.setTargetRect(CGRect.zero, in: self.view)
+    
+    // MenuItem生成.
+    let myMenuItem_1: UIMenuItem = UIMenuItem(title: "Menu1", action: #selector(SecondViewController2_2.onMenu1(sender:)))
+    let myMenuItem_2: UIMenuItem = UIMenuItem(title: "Menu2", action: #selector(SecondViewController2_2.onMenu2(sender:)))
+    let myMenuItem_3: UIMenuItem = UIMenuItem(title: "Menu3", action: #selector(SecondViewController2_2.onMenu3(sender:)))
+    
+    // MenuItemを配列に格納.
+    let myMenuItems: NSArray = [myMenuItem_1, myMenuItem_2, myMenuItem_3]
+    
+    // MenuControllerにMenuItemを追加.
+    myMenuController.menuItems = myMenuItems as? [UIMenuItem]
   }
+  
+  
+  //textviewに編集する
+   //UITextFieldが編集開始された直後に呼ばれる.
+  func textViewDidBeginEditing(_ textField: UITextField) {
+    print("textFieldDidBeginEditing:" + textField.text!)
+  }
+  
+  //テキストビューに編集する
+   //UITextFieldが編集終了する直前に呼ばれる.
+  func textViewShouldEndEditing(_ textField: UITextField) -> Bool {
+    print("textFieldShouldEndEditing:" + textField.text!)
+    return true
+  }
+  
+  
+   //作成したMenuItemが表示されるようにする.
+  override func canPerformAction(_ action: Selector, withSender sender: Any!) -> Bool {
+    if action == #selector(SecondViewController2_2.onMenu1(sender:)) || action == #selector(SecondViewController2_2.onMenu2(sender:)) || action == #selector(SecondViewController2_2.onMenu3(sender:))  {
+      return true
+    }
+    return false
+  }
+  
+  
+  //MenuItemが押されたとき！！
+  internal func onMenu1(sender: UIMenuItem) {
+    print("onMenu1")
+  }
+  
+  internal func onMenu2(sender: UIMenuItem) {
+    print("onMenu2")
+  }
+  
+  internal func onMenu3(sender: UIMenuItem) {
+    print("onMenu3")
+  }
+  
+  
+  
+  
 
   //CoreDataに保存されているデータの読み込み処理（READ）
   func read(){
@@ -165,8 +240,8 @@ class SecondViewController2_2: UIViewController {
         
         
            print("memo:\(memo!)")
-        contentTitle.append(memo as! String)
 
+        contentTitle.append(memo as! String)
         
         //print("memo:\(contentTitle[1])")
         
@@ -241,7 +316,7 @@ class SecondViewController2_2: UIViewController {
   //新規作成ボタン（compose）
   @IBAction func newPageBtn(_ sender: UIBarButtonItem) {
     
-    performSegue(withIdentifier: "", sender: nil)
+    performSegue(withIdentifier: "nextAgain", sender: nil)
     
   }
 
@@ -253,6 +328,11 @@ class SecondViewController2_2: UIViewController {
   override func viewWillDisappear(_ animated: Bool) {
     super.viewWillDisappear(animated)
     
+    
+//    if myTitle.text == nil{
+//      print()
+//    }else{
+//    
     let appD:AppDelegate = UIApplication.shared.delegate as! AppDelegate
     
     //エンティティを操作するためのオブジェクトを作成
@@ -265,25 +345,25 @@ class SecondViewController2_2: UIViewController {
     let newRecord = NSManagedObject(entity: Memo!, insertInto: viewContext)
     
     //値のセット(アトリビュート毎に指定) forKeyはモデルで指定したアトリビュート名
+    
+
     newRecord.setValue(myTitle.text, forKey: "memo")
     
     //nilのときの制御文を書くけど、どれがどれかが解決できてない！
     //レコード（行）の即時保存
     do{
       try viewContext.save()
-    }catch{
+    }catch {
       
     }
 
-    fetchedArray = []
+    //fetchedArray = []
     read()
     
     myTitle.reloadInputViews()
     
     print("viewWillDisappear")
   }
-
-  
 
 
   override func didReceiveMemoryWarning() {

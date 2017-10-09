@@ -25,8 +25,6 @@ class SecondViewController: UIViewController,UITableViewDelegate,UITableViewData
   var delegate: AppDelegate = UIApplication.shared.delegate as! AppDelegate
   
   
-  let defaults = UserDefaults.standard
-  
   //メモNo
   var memoNo:Int = 0
   
@@ -41,18 +39,28 @@ class SecondViewController: UIViewController,UITableViewDelegate,UITableViewData
     
     myTableViewMemo.reloadData()
     
-    print("かかか\(defaults)")
     
+    
+//    read()
+//    
+//    reloadInputViews()
+    
+  }
+  
+  override func viewWillAppear(_ animated: Bool) {
     
     read()
     
     reloadInputViews()
+    myTableViewMemo.reloadData()
     
   }
   
   
   //CoreDataに保存されているデータの読み込み処理（READ）
   func read(){
+    
+    contentTitle = []
     
     //AppDelegateを使う用意をしておく
     let appD:AppDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -103,6 +111,8 @@ override func didReceiveMemoryWarning() {
   
   //表示するセルの数
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    
+    //必要な処理か？
     if contentTitle.count == 0{
     return 0
     }else{
@@ -110,6 +120,7 @@ override func didReceiveMemoryWarning() {
     }
     
   }
+  
   
   //cellに表示させる　値を決める
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -166,8 +177,8 @@ override func didReceiveMemoryWarning() {
   //なぜこれで表示されるのか？？＝＝delegateで委譲している為！
   // UITableViewDelegate
   func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
-    let action = UITableViewRowAction(style: .default, title: "Detail"){ action, indexPath in
-      //
+    let action = UITableViewRowAction(style: .default, title: "Deleate"){ action, indexPath in
+      //ここでアクションを起こす！
     }
     
     return [action]
