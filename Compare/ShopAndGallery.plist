@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>description</key>
+		<string>キッチン用品</string>
+		<key>image</key>
+		<string>Convenience7</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>服</string>
+		<key>image</key>
+		<string>Convenience7</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>靴・スリッパ</string>
+		<key>image</key>
+		<string>Convenience7</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>寝具</string>
+		<key>image</key>
+		<string>Convenience7</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>文具・ステーショナリー</string>
+		<key>image</key>
+		<string>Convenience7</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>化粧品</string>
+		<key>image</key>
+		<string>Convenience7</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>防災用品</string>
+		<key>image</key>
+		<string>Convenience7</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>アウトドア用品</string>
+		<key>image</key>
+		<string>Convenience7</string>
+	</dict>
+</array>
+</plist>

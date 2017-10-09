@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TopImage" translatesAutoresizingMaskIntoConstraints="NO" id="C6Q-ka-yEN">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFC-iW-xIO">
+                                <rect key="frame" x="224" y="34" width="141" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="141" id="L3j-KA-Z1i"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Compare">
+                                        <attributes>
+                                            <color key="NSColor" red="0.97752611074270557" green="0.15049112223690828" blue="0.071414566575359273" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="34"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ab1-rf-MhS">
+                                <rect key="frame" x="224" y="95" width="150" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="qkZ-k4-OIo"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Philipine">
+                                        <attributes>
+                                            <color key="NSColor" red="0.97752611074270557" green="0.15049112223690828" blue="0.071414566575359273" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="34"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Rd-DU-aeG">
+                                <rect key="frame" x="224" y="161" width="141" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="141" id="W1h-yf-aHG"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="With">
+                                        <attributes>
+                                            <color key="NSColor" red="0.97752611074270557" green="0.15049112223690828" blue="0.071414566575359273" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="34"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" red="0.0013987897877983935" green="0.0013873811501652102" blue="0.0011615673430263227" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2mW-S3-aBQ">
+                                <rect key="frame" x="224" y="237" width="134" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="134" id="MK5-gi-UG0"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Japan">
+                                        <attributes>
+                                            <color key="NSColor" red="0.97752611074270557" green="0.15049112223690828" blue="0.071414566575359273" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="34"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2mW-S3-aBQ" firstAttribute="top" secondItem="3Rd-DU-aeG" secondAttribute="bottom" constant="36" id="LWB-L5-Y87"/>
+                            <constraint firstItem="hFC-iW-xIO" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="14" id="LXj-c2-c6D"/>
+                            <constraint firstAttribute="trailing" secondItem="Ab1-rf-MhS" secondAttribute="trailing" constant="1" id="cUp-kC-KlF"/>
+                            <constraint firstItem="3Rd-DU-aeG" firstAttribute="top" secondItem="Ab1-rf-MhS" secondAttribute="bottom" constant="26" id="eCm-oE-VVh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2mW-S3-aBQ" secondAttribute="trailing" constant="1" id="kBh-MX-UeX"/>
+                            <constraint firstAttribute="trailing" secondItem="hFC-iW-xIO" secondAttribute="trailing" constant="10" id="n8v-k8-AWr"/>
+                            <constraint firstAttribute="trailing" secondItem="3Rd-DU-aeG" secondAttribute="trailing" constant="10" id="nez-Nm-3bK"/>
+                            <constraint firstItem="Ab1-rf-MhS" firstAttribute="top" secondItem="hFC-iW-xIO" secondAttribute="bottom" constant="21" id="twh-c4-fQ2"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="TopImage" width="500" height="600"/>
+    </resources>
+</document>

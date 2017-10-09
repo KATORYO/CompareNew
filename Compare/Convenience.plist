@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>description</key>
+		<string>セブンイレブン</string>
+		<key>image</key>
+		<string>Convenience7</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>ミニストップ</string>
+		<key>image</key>
+		<string>Kfc.Image</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>ファミリーマート</string>
+		<key>image</key>
+		<string>Kfc.Image</string>
+	</dict>
+</array>
+</plist>

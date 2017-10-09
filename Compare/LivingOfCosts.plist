@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>description</key>
+		<string>公共機関交通料金</string>
+		<key>image</key>
+		<string>FastFoodMc</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>水道・光熱費</string>
+		<key>image</key>
+		<string>FastFoodMc</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>通信費</string>
+		<key>image</key>
+		<string>FastFoodMc</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>燃料費</string>
+		<key>image</key>
+		<string>FastFoodMc</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>家賃</string>
+		<key>image</key>
+		<string>FastFoodMc</string>
+	</dict>
+</array>
+</plist>
