@@ -13,11 +13,19 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
   var window: UIWindow?
-  var userDafaults:UserDefaults = UserDefaults()
+  
+  //userDefault処理
+  let userDefaults = UserDefaults.standard
 
-
+  
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-    // Override point for customization after application launch.
+   
+    //string
+    let favorite = ["fav": String()]
+    
+    // デフォルト値登録
+    // ※すでに値が更新されていた場合は、更新後の値のままになる
+    userDefaults.register(defaults: favorite)
   
     return true
   }

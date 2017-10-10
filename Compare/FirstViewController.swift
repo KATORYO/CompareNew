@@ -236,27 +236,7 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
   func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
     
     selectedIndex = indexPath.row
-    
-//    if selectedIndex == 0 {
-//      var selectedIndex20 = indexPath.row
-//      var selectedName = placeListFood
-//    }else if selectedIndex == 1 {
-//      var selectedIndex = indexPath.row
-//      var selectedName = placeListConvenience
-//    }else if selectedIndex == 2{
-//      var selectedIndex = indexPath.row
-//      var selectedName:[String] = placeListShopAndGallery
-//    }else if selectedIndex == 3 {
-//      var selectedName:[String] = placeListLivingOfCosts
-//    }else if selectedIndex == 4{
-//      var selectedName:[String] = placeListBigShopping
-//    }else if selectedIndex == 5{
-//      var selectedName:[String] = placeListElectricAppliances
-//    }else if selectedIndex == 6{
-//      var selectedName:[String] = placeListDwelling
-//    }else if selectedIndex == 7{
-//      var selectedName:[String] = placeListConstruction
-//    }
+  
     //セグエを指定して、画面遷移 アイデンティファイヤーの通路！
     performSegue(withIdentifier: "next", sender: nil)
     

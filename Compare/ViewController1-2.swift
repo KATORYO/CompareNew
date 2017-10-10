@@ -76,7 +76,7 @@ class ViewController1_2: UIViewController,UICollectionViewDelegate, UICollection
       //移動先画面のオブジェクトを取得！
       let abc:ThirdViewController3_1 = segue.destination as! ThirdViewController3_1
       
-      abc.katoryoDesu = katoryo
+      //abc.katoryoDesu = katoryo
     }
 
   }//favボタンの閉じたぐ

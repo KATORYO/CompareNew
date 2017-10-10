@@ -177,7 +177,7 @@ override func didReceiveMemoryWarning() {
   //なぜこれで表示されるのか？？＝＝delegateで委譲している為！
   // UITableViewDelegate
   func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
-    let action = UITableViewRowAction(style: .default, title: "Deleate"){ action, indexPath in
+    let action = UITableViewRowAction(style: .default, title: "削除"){ action, indexPath in
       //ここでアクションを起こす！
     }
     

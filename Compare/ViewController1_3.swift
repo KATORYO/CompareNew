@@ -17,6 +17,7 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
   var dicB:NSDictionary = [:]
   
   var placeList:[String] = []
+  
   var array:NSArray = []
 
   
@@ -28,8 +29,9 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
   
   var ratePhp:Int = 0
   
+  let userDefaults = UserDefaults.standard
   
-  //let userDefaults = UserDefaults.standard
+  var arrayDesu:[String] = []
 
   
   //@IBAction func myBack1_3(_ sender: UIBarButtonItem) {}
@@ -47,6 +49,10 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
   // ボタンを用意
   private var addBtn: UIBarButtonItem!
   let attributes = [NSFontAttributeName: UIFont.fontAwesome(ofSize: 30)] as [String: Any]
+  
+  
+  
+  
   
   
     override func viewDidLoad() {
@@ -158,30 +164,47 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
   func onClick() {
     let alert = UIAlertController(title: "お気に入り追加", message: "お気に入り画面に追加されます", preferredStyle: .alert)
     //handlerはokボタンが押されたときに行いたい処理を指定する場所(オッケーが押されたときに発動する)
-    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+    alert.addAction(UIAlertAction(title: "OK", style: .default, handler:{
+      (actiton: UIAlertAction)->Void in
+      //ここでアラートがオッケーだった場合の処理を記述
+      print("aa")
+      
+      UserDefaults.standard.set(self.scSelectedIndex, forKey: "fav")
+      
+      //userDefault存在の確認！
+      if UserDefaults.standard.object(forKey: "fav") != nil {print("aaaaaaa")}
+      self.arrayDesu.append("fav")
+      
+      //配列の確認
+      print(self.arrayDesu.count)
+      
+      
+    }))
     
-    alert.addAction(UIAlertAction(title: "キャンセル", style: .cancel))
+    
+    //アラートがキャンセルの場合
+      alert.addAction(UIAlertAction(title: "キャンセル", style: .cancel))
     
     //アラート表示
     present(alert,animated: true,completion: nil)
     
-  }
+  }//addBtn(お気に入り)ボタンを押した時の閉じタグ
   
-
   
   
   
   //セクションの数
   func numberOfSections(in tableView: UITableView) -> Int {
     
-    return array.count
-    //return mySections.count
+    return 1
+   
   }
   
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return array.count
   }
+  
   
   //ここで画面を表示 cellに値を設定！
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
