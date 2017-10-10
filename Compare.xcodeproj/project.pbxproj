@@ -33,7 +33,6 @@
 		E3AB05DC1F6E004D00B20261 /* CompareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AB05DB1F6E004D00B20261 /* CompareTests.swift */; };
 		E3AB05E71F6E004D00B20261 /* CompareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AB05E61F6E004D00B20261 /* CompareUITests.swift */; };
 		E3AB05F71F6E187900B20261 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AB05F61F6E187900B20261 /* CustomCell.swift */; };
-		E3ACE8791F84AD3C004EDE46 /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3ACE8781F84AD3C004EDE46 /* Property List.plist */; };
 		E3B111F71F8BC15A009E889B /* CollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B111F61F8BC15A009E889B /* CollectionReusableView.swift */; };
 		E3BF59571F6E9E5300038E59 /* ViewController1-2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BF59561F6E9E5300038E59 /* ViewController1-2.swift */; };
 		E3BF59591F6EA02D00038E59 /* ViewController1_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BF59581F6EA02D00038E59 /* ViewController1_3.swift */; };
@@ -105,7 +104,6 @@
 		E3AB05E61F6E004D00B20261 /* CompareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareUITests.swift; sourceTree = "<group>"; };
 		E3AB05E81F6E004D00B20261 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3AB05F61F6E187900B20261 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
-		E3ACE8781F84AD3C004EDE46 /* Property List.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
 		E3B111F61F8BC15A009E889B /* CollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionReusableView.swift; path = "../../../Downloads/myProject-master/myProject/CollectionReusableView.swift"; sourceTree = "<group>"; };
 		E3B52C5C1F86018D007B6BC9 /* Compare.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Compare.entitlements; sourceTree = "<group>"; };
 		E3BF59561F6E9E5300038E59 /* ViewController1-2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController1-2.swift"; sourceTree = "<group>"; };
@@ -213,7 +211,6 @@
 				E3BF595A1F6ED1CB00038E59 /* Detail.plist */,
 				E3E442A21F7CC20D008CE769 /* Fastfood.plist */,
 				E3E442A41F7CD0CE008CE769 /* Convenience.plist */,
-				E3ACE8781F84AD3C004EDE46 /* Property List.plist */,
 				E3E442A61F7E1015008CE769 /* ShopAndGallery.plist */,
 				E3E442E51F7F4D32008CE769 /* LivingOfCosts.plist */,
 				E349CD041F7FBC0F00ABC485 /* ElectricAppliances.plist */,
@@ -340,7 +337,7 @@
 				TargetAttributes = {
 					E3AB05C01F6E004C00B20261 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = K78A55347D;
+						DevelopmentTeam = L833ELDWTK;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
@@ -398,7 +395,6 @@
 				E3E442EC1F7F55F6008CE769 /* Dwelling.plist in Resources */,
 				E3E442E61F7F4D32008CE769 /* LivingOfCosts.plist in Resources */,
 				E367FBFC1F827823003C015F /* Marukame.plist in Resources */,
-				E3ACE8791F84AD3C004EDE46 /* Property List.plist in Resources */,
 				E3E442A31F7CC20D008CE769 /* Fastfood.plist in Resources */,
 				E3E442A71F7E1015008CE769 /* ShopAndGallery.plist in Resources */,
 				E3E442A51F7CD0CE008CE769 /* Convenience.plist in Resources */,
@@ -753,7 +749,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Compare/Compare.entitlements;
-				DEVELOPMENT_TEAM = K78A55347D;
+				DEVELOPMENT_TEAM = L833ELDWTK;
 				INFOPLIST_FILE = Compare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.ne.ezweb-5829sphykatoryo.Compares";
@@ -768,7 +764,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Compare/Compare.entitlements;
-				DEVELOPMENT_TEAM = K78A55347D;
+				DEVELOPMENT_TEAM = L833ELDWTK;
 				INFOPLIST_FILE = Compare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.ne.ezweb-5829sphykatoryo.Compares";

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-//import FontAwesome_swift
+import FontAwesome_swift
 
 class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
@@ -43,20 +43,43 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
   
 
   @IBOutlet weak var myTableView1_3: UITableView!
+  
+  // ボタンを用意
+  private var addBtn: UIBarButtonItem!
+  let attributes = [NSFontAttributeName: UIFont.fontAwesome(ofSize: 30)] as [String: Any]
+  
+  
     override func viewDidLoad() {
         super.viewDidLoad()
       
+      //addBtnの作成　plainが文字だけのもの、titleは""
+      addBtn = UIBarButtonItem(title: "", style: .plain, target: self, action: "onClick")
+      
+      
+      
+      //fontawsome適用！
+      self.addBtn.setTitleTextAttributes(attributes, for: .normal)
+      self.addBtn.title = String.fontAwesomeIcon(name: .star)
+      
+      
+      //viewに表示！
+      self.navigationItem.rightBarButtonItem = addBtn
       
       // Keyを指定して読み込み
-      UserDefaults.standard.integer(forKey: "DataStore")
-      
-      print(value(forKey: "DataStore"))
-
-      
-      print(scSelectedIndex)
+//      UserDefaults.standard.integer(forKey: "DataStore")
+//      
+//      print(value(forKey: "DataStore"))
+//
+//      
+//      print(scSelectedIndex)
   
       //tableViewを使えるようにする！
       self.myTableView1_3.register(UINib(nibName: "CustomTableViewCell", bundle: nil), forCellReuseIdentifier: "Cell")
+      
+//      for n in 20{
+//        let filePath = Bundle.main.path(forResource: "something", ofType: "plist")
+//      }
+      
       
       //プロパティリストの読み込み
       let filePathMc = Bundle.main.path(forResource: "McPrice", ofType: "plist")
@@ -69,19 +92,51 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
       
       let filePathMarukame = Bundle.main.path(forResource: "Marukame", ofType: "plist")
       
-      if 0 == scSelectedIndex{
+      
+      
+      switch scSelectedIndex{
+      case 0:
         array = NSArray(contentsOfFile: (filePathMc)!)!
-      }else if scSelectedIndex == 1{
+      case 1:
         array = NSArray(contentsOfFile:filePathStb!)!
-      }else if scSelectedIndex == 2{
+      case 2:
         array = NSArray(contentsOfFile: filePath7!)!
-      }else if scSelectedIndex == 3{
+      case 3:
         array = NSArray(contentsOfFile: filePathYoshinoya!)!
-      }else if scSelectedIndex == 4{
+      case 4:
         array = NSArray(contentsOfFile: filePathMarukame!)!
-      }
-      
-      
+      case 5:
+        array = NSArray(contentsOfFile: (filePathMc)!)!
+      case 6:
+        array = NSArray(contentsOfFile:filePathStb!)!
+      case 7:
+        array = NSArray(contentsOfFile: filePath7!)!
+      case 8:
+        array = NSArray(contentsOfFile: filePathYoshinoya!)!
+      case 9:
+        array = NSArray(contentsOfFile: filePathMarukame!)!
+      case 10:
+        array = NSArray(contentsOfFile: (filePathMc)!)!
+      case 11:
+        array = NSArray(contentsOfFile:filePathStb!)!
+      case 12:
+        array = NSArray(contentsOfFile: filePath7!)!
+      case 13:
+        array = NSArray(contentsOfFile: filePathYoshinoya!)!
+      case 14:
+        array = NSArray(contentsOfFile: filePathMarukame!)!
+      case 15:
+        array = NSArray(contentsOfFile: (filePathMc)!)!
+      case 16:
+        array = NSArray(contentsOfFile:filePathStb!)!
+      case 17:
+        array = NSArray(contentsOfFile: filePath7!)!
+      case 18:
+        array = NSArray(contentsOfFile: filePathYoshinoya!)!
+      case 19:
+        array = NSArray(contentsOfFile: filePathMarukame!)!
+      default:
+        break
       //ファイルパスの読み込み
 
       //array = NSArray(contentsOfFile: (filePathMc)!)!
@@ -95,9 +150,24 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
         placeList.append(dic["pricePeso"] as! String)
         placeList.append(dic["priceYen"] as! String)
       }
-      
-      
     }
+  }
+  
+  
+  // addBtnをタップしたときのアクション
+  func onClick() {
+    let alert = UIAlertController(title: "お気に入り追加", message: "お気に入り画面に追加されます", preferredStyle: .alert)
+    //handlerはokボタンが押されたときに行いたい処理を指定する場所(オッケーが押されたときに発動する)
+    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+    
+    alert.addAction(UIAlertAction(title: "キャンセル", style: .cancel))
+    
+    //アラート表示
+    present(alert,animated: true,completion: nil)
+    
+  }
+  
+
   
   
   

@@ -14,6 +14,8 @@ class CustomTableViewCell: UITableViewCell {
   @IBOutlet weak var nameLabel: UILabel!
   @IBOutlet weak var PesoLabel: UILabel!
   @IBOutlet weak var YenLabel: UILabel!
+  
+  
 
 
     override func awakeFromNib() {
