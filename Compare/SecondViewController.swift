@@ -79,7 +79,7 @@ class SecondViewController: UIViewController,UITableViewDelegate,UITableViewData
       //一件ずつ表示
       for result:AnyObject in fetchResults{
         let memo:String? = result.value(forKey:"memo") as? String
-        
+       
         
         print("memo:\(memo!)")
         contentTitle.append(memo as! String)
@@ -164,7 +164,7 @@ override func didReceiveMemoryWarning() {
   //ユーザー記録の上にある書き込みマーク
   @IBAction func newPage(_ sender: UIBarButtonItem) {
  
-      performSegue(withIdentifier: "next3", sender: nil)
+      performSegue(withIdentifier: "next4", sender: nil)
     }
   
   
@@ -178,11 +178,34 @@ override func didReceiveMemoryWarning() {
   // UITableViewDelegate
   func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
     let action = UITableViewRowAction(style: .default, title: "削除"){ action, indexPath in
-      //ここでアクションを起こす！
+      //アクション
+      
+//      self.deleteData()
     }
     
     return [action]
   }
+  
+//  
+//  func deleteData(){
+//    let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+//    let context:NSManagedObjectContext = appDelegate.managedObjectContext
+//    let fetchRequest:NSFetchRequest<Memo> = Memo.fetchRequest()
+//    let predicate = NSPredicate(format:"%K = %@","name","相田あい")
+//    fetchRequest.predicate = predicate
+//    let fetchData = try! context.fetch(fetchRequest)
+//    if(!fetchData.isEmpty){
+//      for i in 0..<fetchData.count{
+//        let deleteObject = fetchData[i] as Memo
+//        context.delete(deleteObject)
+//      }
+//      do{
+//        try context.save()
+//      }catch{
+//        print(error)
+//      }
+//    }  
+//  }
   
   
 
@@ -195,6 +218,9 @@ override func didReceiveMemoryWarning() {
       subVC.MemoNo = self.memoNo
       print(memoNo)
     }
+    
+    
+    
   }
   
   

@@ -50,10 +50,7 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
   private var addBtn: UIBarButtonItem!
   let attributes = [NSFontAttributeName: UIFont.fontAwesome(ofSize: 30)] as [String: Any]
   
-  
-  
-  
-  
+
   
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -99,7 +96,7 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
       let filePathMarukame = Bundle.main.path(forResource: "Marukame", ofType: "plist")
       
       
-      
+      //簡単に書く
       switch scSelectedIndex{
       case 0:
         array = NSArray(contentsOfFile: (filePathMc)!)!
@@ -160,11 +157,12 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
   }
   
   
+  
   // addBtnをタップしたときのアクション
   func onClick() {
     let alert = UIAlertController(title: "お気に入り追加", message: "お気に入り画面に追加されます", preferredStyle: .alert)
     //handlerはokボタンが押されたときに行いたい処理を指定する場所(オッケーが押されたときに発動する)
-    alert.addAction(UIAlertAction(title: "OK", style: .default, handler:{
+      alert.addAction(UIAlertAction(title: "OK", style: .default, handler:{
       (actiton: UIAlertAction)->Void in
       //ここでアラートがオッケーだった場合の処理を記述
       print("aa")

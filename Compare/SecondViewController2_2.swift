@@ -32,8 +32,6 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate {
   var fetchedArray: [NSManagedObject] = []
   
   
- 
-  
   
   
   override func viewWillAppear(_ animated: Bool) {
@@ -124,7 +122,7 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate {
   override func viewDidLoad() {
         super.viewDidLoad()
     
-    
+  
     // キーボードの上部にビューをセットする
     //myTitle.inputAccessoryView = UILabel()
     
@@ -139,13 +137,13 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate {
     myTitle.text? = ""
     
       //ここが一つ前の新規ボタンを押しても表示されない鍵
-    if contentTitle == nil{
+    if MemoNo == -1 {
       myTitle.text? = ""
     }else{
       myTitle.text? = contentTitle[MemoNo]
 
     }
-      //myTitle.text? = contentTitle[MemoNo]
+      //myTitle.text? = contentTitle[]
     
     
     
@@ -329,10 +327,19 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate {
     super.viewWillDisappear(animated)
     
     
-//    if myTitle.text == nil{
-//      print()
-//    }else{
-//    
+    var nakamiComfirm = ""
+    
+    nakamiComfirm = myTitle.text
+    
+    if myTitle.text == myTitle.text{
+      print("これは同じなのでセーブしません")
+    }else{
+      print("セーブします")
+    }
+    
+    if nakamiComfirm == ""{
+      print("保存しない")
+    }else{
     let appD:AppDelegate = UIApplication.shared.delegate as! AppDelegate
     
     //エンティティを操作するためのオブジェクトを作成
@@ -346,24 +353,23 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate {
     
     //値のセット(アトリビュート毎に指定) forKeyはモデルで指定したアトリビュート名
     
-
+    
     newRecord.setValue(myTitle.text, forKey: "memo")
     
-    //nilのときの制御文を書くけど、どれがどれかが解決できてない！
     //レコード（行）の即時保存
-    do{
-      try viewContext.save()
-    }catch {
-      
-    }
-
-    //fetchedArray = []
+      do{
+        try viewContext.save()
+      }catch {
+        
+      }
+    
     read()
     
     myTitle.reloadInputViews()
     
     print("viewWillDisappear")
-  }
+    }
+}
 
 
   override func didReceiveMemoryWarning() {

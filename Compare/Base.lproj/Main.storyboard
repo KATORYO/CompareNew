@@ -274,6 +274,7 @@
                     <connections>
                         <outlet property="myTableViewMemo" destination="pAk-Ym-fZJ" id="RoM-zp-L0p"/>
                         <segue destination="twQ-tm-J1w" kind="show" identifier="next3" action="showDetailViewController:sender:" id="pW5-h5-QiF"/>
+                        <segue destination="twQ-tm-J1w" kind="show" identifier="next4" id="XeF-k7-oik"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
@@ -587,6 +588,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="pW5-h5-QiF"/>
+        <segue reference="XeF-k7-oik"/>
     </inferredMetricsTieBreakers>
 </document>
