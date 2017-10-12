@@ -14,11 +14,10 @@ class SecondViewController: UIViewController,UITableViewDelegate,UITableViewData
   
   var myText:String!
   
-  
-  
   var contentTitle:[String] = []
   
   
+  var contentDate:[Date] = []
   
   
   //appdelegateに書いた値を共有できるようにする
@@ -27,6 +26,9 @@ class SecondViewController: UIViewController,UITableViewDelegate,UITableViewData
   
   //メモNo
   var memoNo:Int = 0
+  
+  
+  var noDesu:Int = -1
   
   
   @IBOutlet weak var myTableViewMemo: UITableView!
@@ -40,6 +42,12 @@ class SecondViewController: UIViewController,UITableViewDelegate,UITableViewData
     myTableViewMemo.reloadData()
     
     
+    // 罫線を青色に設定.
+    myTableViewMemo.separatorColor = UIColor.blue
+    
+    
+    // 編集中のセル選択を許可.
+    myTableViewMemo.allowsSelectionDuringEditing = true
     
 //    read()
 //    
@@ -57,10 +65,17 @@ class SecondViewController: UIViewController,UITableViewDelegate,UITableViewData
   }
   
   
+  
+  
+ 
+  
+  
+  
   //CoreDataに保存されているデータの読み込み処理（READ）
   func read(){
     
     contentTitle = []
+    contentDate = []
     
     //AppDelegateを使う用意をしておく
     let appD:AppDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -79,18 +94,26 @@ class SecondViewController: UIViewController,UITableViewDelegate,UITableViewData
       //一件ずつ表示
       for result:AnyObject in fetchResults{
         let memo:String? = result.value(forKey:"memo") as? String
+        let saveData:Date = result.value(forKey: "saveData") as! Date
        
+        //print("memo:\(memo!)")
         
-        print("memo:\(memo!)")
+        //print("saveData:\(saveData)")
+
+//        if memo == nil{
+//          print("0です")
+//        }else{
         contentTitle.append(memo as! String)
         
-        
+        //付け加え
+        contentDate.append(saveData)
+
         
         //  print(contentTitle[])
-        
-        
+//        }
       }
     }catch{
+      
     }
   }
   
@@ -154,8 +177,9 @@ override func didReceiveMemoryWarning() {
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     
      self.memoNo = indexPath.row
-    //selectedIndex = indexPath.row
-    
+
+
+  
     performSegue(withIdentifier: "next3", sender: nil)
   }
   
@@ -170,7 +194,42 @@ override func didReceiveMemoryWarning() {
   
   //エディットボタン！
   @IBAction func editBtn(_ sender: UIBarButtonItem) {
+    setEditing(isEditing, animated: true)
   }
+  
+  
+  
+  /*
+   編集ボタンが押された際に呼び出される
+   */
+  override func setEditing(_ editing: Bool, animated: Bool) {
+    super.setEditing(editing, animated: animated)
+    
+    // TableViewを編集可能にする
+    myTableViewMemo.setEditing(editing, animated: true)
+    
+    // 編集中のときのみaddButtonをナビゲーションバーの左に表示する
+    if editing {
+      print("編集中")
+      let addButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.add, target: self, action: #selector(SecondViewController.addCell(sender:)))
+      self.navigationItem.setLeftBarButton(addButton, animated: true)
+    } else {
+      print("通常モード")
+      self.navigationItem.setLeftBarButton(nil, animated: true)
+    }
+  }
+  /*
+   addButtonが押された際呼び出される
+   */
+  func addCell(sender: AnyObject) {
+    print("追加")
+
+    
+    // TableViewを再読み込み.
+    myTableViewMemo.reloadData()
+  }
+  
+  
   
   
   //スワイプ処理！
@@ -178,9 +237,47 @@ override func didReceiveMemoryWarning() {
   // UITableViewDelegate
   func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
     let action = UITableViewRowAction(style: .default, title: "削除"){ action, indexPath in
+      
       //アクション
       
-//      self.deleteData()
+      
+      self.noDesu = indexPath.row
+  
+      //AppDelegateを使う用意をしておく
+      let appD:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+      
+      //エンティティを操作するためのオブジェクトを使用
+      let viewContext = appD.persistentContainer.viewContext
+      
+      //どのエンティティからデータを取得してくるか設定
+      let query:NSFetchRequest<Memo> = Memo.fetchRequest()
+      
+      //更新するデータの取得！ここで絞り込み
+      let namePredicte = NSPredicate(format: "saveData = %@", self.contentDate[self.noDesu] as CVarArg)
+      //絞り込み検索（更新したいデータを取得する）
+      query.predicate = namePredicte
+      
+      
+      do{
+        let fetchRequests = try viewContext.fetch(query)
+        for result:AnyObject in fetchRequests{
+          //取得したデータを指定し、削除
+          let record = result as! NSManagedObject
+          
+          viewContext.delete(record)
+        }
+        //削除した状態を保存
+        try viewContext.save()
+        
+      }catch{
+        print("削除失敗")
+      }
+      
+      //self.contentTitle.append("memo")
+      //self.contentTitle = []
+      self.read()
+      self.myTableViewMemo.reloadData()
+      
     }
     
     return [action]

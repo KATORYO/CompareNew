@@ -29,6 +29,9 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate {
   
   var contentTitle:[String] = []
   
+  var contentDate:[Date] = []
+  
+  
   var fetchedArray: [NSManagedObject] = []
   
   
@@ -56,51 +59,6 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate {
   
   
   
-  //保存   //（機能していない）
-  @IBAction func saveButton(sender: AnyObject) {
-    //AppDelegateを使う用意をしておく
-    let appD:AppDelegate = UIApplication.shared.delegate as! AppDelegate
-    //エンティティを操作するためのオブジェクトを作成
-    let viewContext = appD.persistentContainer.viewContext
-    //ToDoエンティティオブジェクトを作成
-    let Memo = NSEntityDescription.entity(forEntityName: "Memo", in: viewContext)
-    //ToDoエンティティにレコード（行）を挿入するためのオブジェクトを作成
-    let newRecord = NSManagedObject(entity: Memo!, insertInto: viewContext)
-    //値のセット(アトリビュート毎に指定) forKeyはモデルで指定したアトリビュート名
-    newRecord.setValue(myTitle.text, forKey: "memo")
-    //レコード（行）の即時保存
-    do{
-      try viewContext.save()
-    }catch{
-    }
-    //配列再取得
-    //配列を空っぽにして、readで再び読み込み。
-    //reloadDataでリアルタイム表示を可能にさせる
-    //contentTitle = []
-    fetchedArray = []
-    read()
-    myTitle.reloadInputViews()
-    //myTitle.reloadData()
-  }//保存ボタンの閉じたぐ
-  
-  
-  
-  //一つ前に戻る処理+保存処理！（機能していない）
-  @IBAction func backBtn(_ sender: UIBarButtonItem) {
-    let appD:AppDelegate = UIApplication.shared.delegate as! AppDelegate
-    let viewContext = appD.persistentContainer.viewContext
-    let Memo = NSEntityDescription.entity(forEntityName: "Memo", in: viewContext)
-    let newRecord = NSManagedObject(entity: Memo!, insertInto: viewContext)
-    newRecord.setValue(myTitle.text, forKey: "memo")
-    do{
-      try viewContext.save()
-    }catch{
-    }
-    fetchedArray = []
-    read()
-    myTitle.reloadInputViews()
-    //performSegue(withIdentifier: "next4", sender: nil)
-  }
 
   
   
@@ -145,6 +103,9 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate {
     }
       //myTitle.text? = contentTitle[]
     
+    
+    
+
     
     
     
@@ -225,7 +186,10 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate {
     
     //どのエンティティからデータを取得してくるかc設定
     let query:NSFetchRequest<Memo> = Memo.fetchRequest()
-    
+//    
+//    let namePredicte = NSPredicate(format: "saveData = %@"
+//    query.predicate = namePredicte
+//    
     //データ一括取得
     do{
       //保存されてるデータをすべて取得
@@ -234,14 +198,22 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate {
       //一件ずつ表示
       for result:AnyObject in fetchResults{
         let memo:String? = result.value(forKey:"memo") as? String
+        let saveData:Date = result.value(forKey: "saveData") as! Date
+        
+        //let saveData:Date = (result.value(forKey: "saveData") as? Date)!
         
         
+        if memo == nil {
+          print("0です")
+        }else{
+        contentTitle.append(memo!)
+        contentDate.append(saveData)
+        }
         
-           print("memo:\(memo!)")
+        //contentDate.append(saveData)
 
-        contentTitle.append(memo as! String)
         
-        //print("memo:\(contentTitle[1])")
+       // print("memo:\(contentTitle[1])")
         
 
         
@@ -251,24 +223,6 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate {
     
     //画面表示
     //print(contentTitle[0]+memoNo)
-    //応急処置
-    //var iiii = contentTitle[0]
-    
-    //print(contentTitle[MemoNo])
-    
-//    if contentTitle == nil{
-//      var contentTitle:[String] = ["MemoNo"]
-//    }else{
-//      var contentTitle:0 = [""]
-//    }
-//  
-//    if contentTitle == nil{
-//      myTitle.text = ""
-//    }else{
-//      myTitle.text? = contentTitle[]
-//    }
-//    
-    //myTitle.text = contentTitle[MemoNo]
     
    
     myTitle.reloadInputViews()
@@ -321,55 +275,109 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate {
   
   
   
+  
   //画面から非表示になる直前に呼ばれる！
   //画面が戻るときに！
   override func viewWillDisappear(_ animated: Bool) {
     super.viewWillDisappear(animated)
     
-    
     var nakamiComfirm = ""
     
     nakamiComfirm = myTitle.text
     
-    if myTitle.text == myTitle.text{
-      print("これは同じなのでセーブしません")
-    }else{
-      print("セーブします")
-    }
+    var mymyText = myTitle.text
     
-    if nakamiComfirm == ""{
-      print("保存しない")
-    }else{
+    
     let appD:AppDelegate = UIApplication.shared.delegate as! AppDelegate
     
     //エンティティを操作するためのオブジェクトを作成
     let viewContext = appD.persistentContainer.viewContext
+
     
-    //ToDoエンティティオブジェクトを作成
-    let Memo = NSEntityDescription.entity(forEntityName: "Memo", in: viewContext)
-    
-    //ToDoエンティティにレコード（行）を挿入するためのオブジェクトを作成
-    let newRecord = NSManagedObject(entity: Memo!, insertInto: viewContext)
-    
-    //値のセット(アトリビュート毎に指定) forKeyはモデルで指定したアトリビュート名
-    
-    
-    newRecord.setValue(myTitle.text, forKey: "memo")
-    
-    //レコード（行）の即時保存
-      do{
-        try viewContext.save()
-      }catch {
+    if nakamiComfirm == ""{
+      print("保存しない")
+    }else{
+      if MemoNo == -1{
+        print("新規追加")
+        let appD:AppDelegate = UIApplication.shared.delegate as! AppDelegate
         
+        //エンティティを操作するためのオブジェクトを作成
+        let viewContext = appD.persistentContainer.viewContext
+        
+        //ToDoエンティティオブジェクトを作成
+        let Memo = NSEntityDescription.entity(forEntityName: "Memo", in: viewContext)
+        
+        //ToDoエンティティにレコード（行）を挿入するためのオブジェクトを作成
+        let newRecord = NSManagedObject(entity: Memo!, insertInto: viewContext)
+        
+        //値のセット(アトリビュート毎に指定) forKeyはモデルで指定したアトリビュート名
+        newRecord.setValue(myTitle.text, forKey: "memo")
+        newRecord.setValue(Date(), forKey: "saveData")
+        
+        
+        
+        //レコード（行）の即時保存
+        do{
+          try viewContext.save()
+        }catch {
+          
+        }
+        
+        read()
+        
+        contentTitle.append("memo")
+        //contentDate.append("saveData")
+        
+        myTitle.reloadInputViews()
+        
+        print("viewWillDisappear")
+        
+      }else{
+        print("編集保存")
+        let query:NSFetchRequest<Memo> = Memo.fetchRequest()
+        
+        //更新するデータの取得！ここで絞り込み
+        let namePredicte = NSPredicate(format: "saveData = %@", contentDate[MemoNo] as CVarArg)
+        //絞り込み検索（更新したいデータを取得する）
+        query.predicate = namePredicte
+        
+        
+        
+        
+        do{
+          
+          let appD:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+          
+          //エンティティを操作するためのオブジェクトを作成
+          let viewContext = appD.persistentContainer.viewContext
+          
+          
+          //絞り込み検索している
+          let fetchResults = try! viewContext.fetch(query)
+          
+          
+          //全部有る分フェッチを回す（一つだけ）
+          for result:AnyObject in fetchResults {
+            
+            // 編集可能にする
+            let record = result as! NSManagedObject
+            
+            //編集された分はここに保存
+            //record setvalueが編集キー
+            record.setValue(myTitle.text, forKey: "memo")
+          
+            do{
+              //レコードの即時保存
+              //ここで確定！
+              try viewContext.save()
+            }catch{
+            }
+          }
+        }
       }
-    
-    read()
-    
-    myTitle.reloadInputViews()
-    
-    print("viewWillDisappear")
     }
-}
+  }
+
 
 
   override func didReceiveMemoryWarning() {
@@ -389,3 +397,50 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate {
     */
 
 }
+
+
+//  //保存   //（機能していない）
+//  @IBAction func saveButton(sender: AnyObject) {
+//    //AppDelegateを使う用意をしておく
+//    let appD:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+//    //エンティティを操作するためのオブジェクトを作成
+//    let viewContext = appD.persistentContainer.viewContext
+//    //ToDoエンティティオブジェクトを作成
+//    let Memo = NSEntityDescription.entity(forEntityName: "Memo", in: viewContext)
+//    //ToDoエンティティにレコード（行）を挿入するためのオブジェクトを作成
+//    let newRecord = NSManagedObject(entity: Memo!, insertInto: viewContext)
+//    //値のセット(アトリビュート毎に指定) forKeyはモデルで指定したアトリビュート名
+//    newRecord.setValue(myTitle.text, forKey: "memo")
+//    //レコード（行）の即時保存
+//    do{
+//      try viewContext.save()
+//    }catch{
+//    }
+//    //配列再取得
+//    //配列を空っぽにして、readで再び読み込み。
+//    //reloadDataでリアルタイム表示を可能にさせる
+//    //contentTitle = []
+//    fetchedArray = []
+//    read()
+//    myTitle.reloadInputViews()
+//    //myTitle.reloadData()
+//  }//保存ボタンの閉じたぐ
+//
+//
+//
+//  //一つ前に戻る処理+保存処理！（機能していない）
+//  @IBAction func backBtn(_ sender: UIBarButtonItem) {
+//    let appD:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+//    let viewContext = appD.persistentContainer.viewContext
+//    let Memo = NSEntityDescription.entity(forEntityName: "Memo", in: viewContext)
+//    let newRecord = NSManagedObject(entity: Memo!, insertInto: viewContext)
+//    newRecord.setValue(myTitle.text, forKey: "memo")
+//    do{
+//      try viewContext.save()
+//    }catch{
+//    }
+//    fetchedArray = []
+//    read()
+//    myTitle.reloadInputViews()
+//    //performSegue(withIdentifier: "next4", sender: nil)
+//  }

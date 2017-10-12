@@ -135,6 +135,7 @@
                     <navigationItem key="navigationItem" title="料金を比較する！" id="6N8-Ne-c12"/>
                     <connections>
                         <outlet property="myCollectionView" destination="6b8-09-zNB" id="xHE-U0-2b1"/>
+                        <outlet property="mySectionLabel" destination="nvW-CZ-aka" id="1aa-jr-Ji5"/>
                         <outlet property="rateBtn" destination="dPx-xA-Txg" id="Vub-23-1Va"/>
                         <segue destination="knd-Nl-F6D" kind="show" identifier="next" id="eHJ-wm-1uF"/>
                     </connections>
@@ -273,8 +274,8 @@
                     </navigationItem>
                     <connections>
                         <outlet property="myTableViewMemo" destination="pAk-Ym-fZJ" id="RoM-zp-L0p"/>
-                        <segue destination="twQ-tm-J1w" kind="show" identifier="next3" action="showDetailViewController:sender:" id="pW5-h5-QiF"/>
-                        <segue destination="twQ-tm-J1w" kind="show" identifier="next4" id="XeF-k7-oik"/>
+                        <segue destination="twQ-tm-J1w" kind="presentation" identifier="next4" id="XeF-k7-oik"/>
+                        <segue destination="twQ-tm-J1w" kind="presentation" identifier="next3" id="YwE-qv-3jq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
@@ -422,7 +423,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HPy-Jj-hZq" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Rz9-c7-Uva" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2419" y="0.0"/>
+            <point key="canvasLocation" x="2561" y="138"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5AL-9F-Wkp">

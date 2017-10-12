@@ -44,7 +44,10 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
   
   var selectedIndex = -1 //選択された行番号！
 		
+  @IBOutlet weak var mySectionLabel: CollectionReusableView!
 
+  
+  
   @IBOutlet weak var myCollectionView: UICollectionView!
 
   
