@@ -20,6 +20,11 @@ class CustomCell: UICollectionViewCell {
   @IBOutlet weak var myImage1_2: UIImageView!
   
   
+  @IBOutlet weak var sectionLabel: UILabel!
+  
+  
+  
+  
   override init(frame: CGRect){
     super.init(frame: frame)
   }

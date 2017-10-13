@@ -22,6 +22,7 @@
 		E367FBFA1F827622003C015F /* YoshinoyaPrice.plist in Resources */ = {isa = PBXBuildFile; fileRef = E367FBF91F827622003C015F /* YoshinoyaPrice.plist */; };
 		E367FBFC1F827823003C015F /* Marukame.plist in Resources */ = {isa = PBXBuildFile; fileRef = E367FBFB1F827823003C015F /* Marukame.plist */; };
 		E373D75B1F8352DD008D96BA /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E373D7591F83527F008D96BA /* SwiftyJSON.framework */; };
+		E375A4B41F90E6E60088EE82 /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E375A4B31F90E6E60088EE82 /* CircleImageView.swift */; };
 		E3974B001F74F71B00CDD953 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3974AFE1F74F71B00CDD953 /* CustomTableViewCell.swift */; };
 		E3974B011F74F71B00CDD953 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3974AFF1F74F71B00CDD953 /* CustomTableViewCell.xib */; };
 		E3AB05C51F6E004C00B20261 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AB05C41F6E004C00B20261 /* AppDelegate.swift */; };
@@ -87,6 +88,7 @@
 		E367FBF91F827622003C015F /* YoshinoyaPrice.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = YoshinoyaPrice.plist; sourceTree = "<group>"; };
 		E367FBFB1F827823003C015F /* Marukame.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Marukame.plist; sourceTree = "<group>"; };
 		E373D7591F83527F008D96BA /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../Library/Developer/Xcode/DerivedData/Compare-euiaddjhbqqrmzgrkqdmyglpgsiz/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		E375A4B31F90E6E60088EE82 /* CircleImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
 		E3974AFE1F74F71B00CDD953 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		E3974AFF1F74F71B00CDD953 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 		E3AB05C11F6E004C00B20261 /* Compare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Compare.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -207,6 +209,7 @@
 				E3974AFE1F74F71B00CDD953 /* CustomTableViewCell.swift */,
 				E3974AFF1F74F71B00CDD953 /* CustomTableViewCell.xib */,
 				E3AB05CF1F6E004C00B20261 /* LaunchScreen.storyboard */,
+				E375A4B31F90E6E60088EE82 /* CircleImageView.swift */,
 				E3AB05D21F6E004D00B20261 /* Info.plist */,
 				E3BF595A1F6ED1CB00038E59 /* Detail.plist */,
 				E3E442A21F7CC20D008CE769 /* Fastfood.plist */,
@@ -581,6 +584,7 @@
 			files = (
 				E3B111F71F8BC15A009E889B /* CollectionReusableView.swift in Sources */,
 				E3E77FCD1F8B48980051EDAB /* ThirdViewController3_1.swift in Sources */,
+				E375A4B41F90E6E60088EE82 /* CircleImageView.swift in Sources */,
 				E3AB05C91F6E004C00B20261 /* SecondViewController.swift in Sources */,
 				E3BF59571F6E9E5300038E59 /* ViewController1-2.swift in Sources */,
 				E3BF59591F6EA02D00038E59 /* ViewController1_3.swift in Sources */,

@@ -10,7 +10,7 @@ import UIKit
 import CoreData
 import FontAwesome_swift
 
-class SecondViewController2_2: UIViewController,UITextViewDelegate {
+class SecondViewController2_2: UIViewController,UITextViewDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
   
   
   
@@ -85,6 +85,8 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate {
     //myTitle.inputAccessoryView = UILabel()
     
     
+    
+    
     let attributes = [NSFontAttributeName: UIFont.fontAwesome(ofSize: 20)] as [String: Any]
     BackBtn.setTitleTextAttributes(attributes, for: .normal)
     BackBtn.title = String.fontAwesomeIcon(name: .stepBackward)
@@ -103,9 +105,6 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate {
     }
       //myTitle.text? = contentTitle[]
     
-    
-    
-
     
     
     
@@ -132,19 +131,114 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate {
     
     // MenuControllerにMenuItemを追加.
     myMenuController.menuItems = myMenuItems as? [UIMenuItem]
+    
+    
+    keyboardToolbar(textView:  myTitle)
+    
+  }//viewdidloadの閉じタグ
+  
+  
+  
+  //キーボード押した時に上に現れる
+  func keyboardToolbar(textView: UITextView) {
+    
+    let toolbar: UIToolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: 1, height: 1))
+    toolbar.barStyle = UIBarStyle.default
+    toolbar.bounds.size.height = 28
+    
+    let flexSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
+    
+    
+    let done: UIBarButtonItem = UIBarButtonItem(title: "done", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.doneButtonActionn))
+    done.tintColor = UIColor.blue
+    
+    let pic: UIBarButtonItem = UIBarButtonItem(title: "Pic", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.doneButtonAction))
+    pic.tintColor = UIColor.blue
+    
+    
+    let writeWithPenAndInk: UIBarButtonItem = UIBarButtonItem(title: "pen", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.writeWithPenAndInkAction))
+    writeWithPenAndInk.tintColor = UIColor.blue
+    
+    
+    var items = [UIBarButtonItem]()
+    
+    items.append(pic)
+    items.append(flexSpace)
+    items.append(writeWithPenAndInk)
+    
+    
+    items.append(done)
+    
+    toolbar.items = items
+    toolbar.sizeToFit()
+    
+    textView.inputAccessoryView = toolbar
+    
   }
+  
+  
+  func doneButtonAction() {
+    
+    self.myTitle.resignFirstResponder()
+    //self.bottomSpace.constant = 12
+  }
+  
+  
+  //カメラボタン
+  func doneButtonActionn() {
+    
+    
+    self.myTitle.resignFirstResponder()
+    
+  }
+  
+  
+  
+  
+  
+    //カメラボタン
+  func writeWithPenAndInkAction(){
+    
+    
+    //カメラが使えるかどうか判断するための情報を取得する（列挙体p.286） //このデバイスで使えるかどうか
+    let camera = UIImagePickerControllerSourceType.camera
+    
+    //カメラが使える場合 の判断コード 型メソッド（isSourceTypeAvailable）
+    if UIImagePickerController.isSourceTypeAvailable(camera){ //01
+      
+      //ImagePickerControllerオブジェクトを生成
+      let picker = UIImagePickerController()
+      
+      //カメラタイプと設定
+      picker.sourceType = camera
+      
+      //デリゲートの設定(撮影後のメソッドを感知するため)
+      picker.delegate = self
+      
+      //ImagePickerの表示（モーダル）
+      present(picker,animated: true,completion: nil)
+    } //01
+    
+    self.myTitle.resignFirstResponder()
+
+  }
+  
+  
   
   
   //textviewに編集する
    //UITextFieldが編集開始された直後に呼ばれる.
-  func textViewDidBeginEditing(_ textField: UITextField) {
-    print("textFieldDidBeginEditing:" + textField.text!)
+  func textViewShouldBeginEditing(_ textView: UITextView) -> Bool {
+    
+    self.keyboardToolbar(textView: textView)
+    return true
   }
+  
   
   //テキストビューに編集する
    //UITextFieldが編集終了する直前に呼ばれる.
-  func textViewShouldEndEditing(_ textField: UITextField) -> Bool {
-    print("textFieldShouldEndEditing:" + textField.text!)
+  func textViewShouldEndEditing(_ textview: UITextView) -> Bool {
+    print("textFieldShouldEndEditing:" + textview.text!)
     return true
   }
   
@@ -200,22 +294,12 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate {
         let memo:String? = result.value(forKey:"memo") as? String
         let saveData:Date = result.value(forKey: "saveData") as! Date
         
-        //let saveData:Date = (result.value(forKey: "saveData") as? Date)!
-        
-        
         if memo == nil {
           print("0です")
         }else{
         contentTitle.append(memo!)
         contentDate.append(saveData)
         }
-        
-        //contentDate.append(saveData)
-
-        
-       // print("memo:\(contentTitle[1])")
-        
-
         
       }
     }catch{
@@ -294,7 +378,7 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate {
     let viewContext = appD.persistentContainer.viewContext
 
     
-    if nakamiComfirm == ""{
+    if ((nakamiComfirm == "") || (nakamiComfirm == nil)){
       print("保存しない")
     }else{
       if MemoNo == -1{
@@ -325,7 +409,7 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate {
         
         read()
         
-        contentTitle.append("memo")
+        //contentTitle.append("memo")
         //contentDate.append("saveData")
         
         myTitle.reloadInputViews()
@@ -341,8 +425,7 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate {
         //絞り込み検索（更新したいデータを取得する）
         query.predicate = namePredicte
         
-        
-        
+      
         
         do{
           

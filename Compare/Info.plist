@@ -49,5 +49,9 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>写真撮影画面に表示</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>撮影した画像を保存</string>
 </dict>
 </plist>

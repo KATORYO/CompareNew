@@ -77,44 +77,6 @@
             </connections>
             <point key="canvasLocation" x="423" y="61"/>
         </tableViewCell>
-        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="AbL-c2-Yry" customClass="CollectionReusableView" customModule="Compare" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKv-TA-hHg">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <attributedString key="attributedText">
-                        <fragment content="ラベルテキスト">
-                            <attributes>
-                                <font key="NSFont" size="17" name="HiraMinProN-W3"/>
-                                <font key="NSOriginalFont" metaFont="system" size="17"/>
-                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                <integer key="NSUnderline" value="1"/>
-                            </attributes>
-                        </fragment>
-                    </attributedString>
-                    <nil key="highlightedColor"/>
-                </label>
-            </subviews>
-            <connections>
-                <outlet property="sectionLabel" destination="YKv-TA-hHg" id="qMJ-lU-Y5w"/>
-            </connections>
-            <point key="canvasLocation" x="377" y="221"/>
-        </collectionReusableView>
-        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="MSD-dH-ihq">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <point key="canvasLocation" x="377" y="520"/>
-        </imageView>
-        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IZO-9U-SiK">
-            <rect key="frame" x="0.0" y="0.0" width="407" height="4"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-            <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-            <nil key="highlightedColor"/>
-            <point key="canvasLocation" x="381" y="489"/>
-        </label>
     </objects>
     <resources>
         <image name="Image-10" width="129" height="97"/>

@@ -28,7 +28,7 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
   var phpRate:Int = 0
   
   
-  var sectionTitle:[String] = ["チェーン店","カフェ"]
+  var sectionTitle:[String] = ["チェーン店","カフェ","かかかかk"]
   
 
   let list:[String] = ["飲食全般","STARBUCKS","CoffeeBean","ケンタッキーKFC","丸亀正麺","マクドナルド","吉野家","コンビニ","スーパー","寝具","車・バイク系","生活家電","インターネット関連","住宅関連","服","本","文房具","生活費","工事費","修理費","その他"]
@@ -44,12 +44,12 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
   
   var selectedIndex = -1 //選択された行番号！
 		
-  @IBOutlet weak var mySectionLabel: CollectionReusableView!
-
   
   
   @IBOutlet weak var myCollectionView: UICollectionView!
 
+  
+  
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -101,8 +101,6 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
     )
 
 
-
-
     //collectionViewの起動時アニメーション
     UIView.animate(withDuration: 0.4,
                    animations: {
@@ -113,13 +111,13 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
           self.myCollectionView.transform = CGAffineTransform.identity
         }
     })
-
-    
     
     
   }//viewdidloadの閉じたぐ！
   
 
+  
+  
   
   
   @IBAction func rateBtn(_ sender: UIButton) {
@@ -188,6 +186,9 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
   }
   
   
+  
+  
+  
   /*
    ボタンイベント(Down)
    */
@@ -231,21 +232,58 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
   
   
   
-
   
   /*
-   Cellが押された時
+   Sectionの数
    */
-  func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-    
-    selectedIndex = indexPath.row
   
-    //セグエを指定して、画面遷移 アイデンティファイヤーの通路！
-    performSegue(withIdentifier: "next", sender: nil)
-    
-    print("Num: \(indexPath.row)")
-    print("Value:\(collectionView)")
+  internal func numberOfSections(in collectionView: UICollectionView) -> Int {
+    return 3
   }
+  
+
+  /**
+   セクション毎のタイトルをヘッダーに表示
+   */
+  func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    return sectionTitle[section]
+  }
+  
+  /*
+   テーブルに表示する配列の総数を返す.
+   */
+  func collectionView(_ collectionView: UICollectionView, numberOfRowsInSection section: Int) -> Int {
+    
+    // Section毎にCellの総数を変える.
+    switch(section){
+    case 0:
+      return 5
+      
+    case 1:
+      return 6
+      
+    case 2:
+      return 8
+    case 3:
+      return 4
+    default:
+      print("error")
+      return 0
+    }
+  }
+  
+  
+  
+  //セクションの値
+  func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+    
+    let Section = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "Section", for: indexPath) as! CustomCell
+    Section.sectionLabel.text? = sectionTitle[indexPath.section]
+    
+    return Section
+  }
+
+  
   
   
   /*
@@ -262,50 +300,32 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
    
     let cell:CustomCell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CustomCell
     
+    
+    
+    
     cell.lblSample?.text = list[indexPath.row]
     cell.imgSample?.image = UIImage(named: imageDesu[indexPath.row])
+    //cell.backgroundColor = UIColor.black
+    
     return cell
   }
   
-  
-  /**
-   セクション毎のタイトルをヘッダーに表示
-   */
-  func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-    return sectionTitle[section]
-  }
-  
   /*
-   テーブルに表示する配列の総数を返す.
+   Cellが押された時
    */
-  func collectionView(_ collectionView: UICollectionView, numberOfRowsInSection section: Int) -> Int {
-    if section == 0 {
-      return aaaa.count
-    } else if section == 1 {
-      return aaaa.count
-    } else {
-      return 0
-    }
-  }
-
-  
-  
-  
-  
-  //セクションの値
-  func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+  func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
     
-    let Section = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "Section", for: indexPath) as! CollectionReusableView
-    Section.sectionLabel.text? = sectionTitle[indexPath.section]
+    selectedIndex = indexPath.row
     
-    return Section
+    //セグエを指定して、画面遷移 アイデンティファイヤーの通路！
+    performSegue(withIdentifier: "next", sender: nil)
+    
+    print("Num: \(indexPath.row)")
+    print("Value:\(collectionView)")
   }
   
   
-  // セクションの数（今回は1つ）
-  func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-   return 2 //section.count
-  }
+ 
   
   
   

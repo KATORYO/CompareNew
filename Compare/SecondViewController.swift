@@ -96,21 +96,19 @@ class SecondViewController: UIViewController,UITableViewDelegate,UITableViewData
         let memo:String? = result.value(forKey:"memo") as? String
         let saveData:Date = result.value(forKey: "saveData") as! Date
        
-        //print("memo:\(memo!)")
+        print("memo:\( result.value(forKey:"memo"))")
         
-        //print("saveData:\(saveData)")
+        print("saveData:\(result.value(forKey: "saveData"))")
 
-//        if memo == nil{
-//          print("0です")
-//        }else{
+        if memo == nil{
+          print("0です")
+        }else{
         contentTitle.append(memo as! String)
         
         //付け加え
         contentDate.append(saveData)
 
-        
-        //  print(contentTitle[])
-//        }
+        }
       }
     }catch{
       

@@ -7,25 +7,88 @@
 //
 
 import UIKit
+import CoreData
 
 class ThirdViewController3_1: UIViewController,UITableViewDelegate,UITableViewDataSource {
   
   
   @IBOutlet weak var myTableView: UITableView!
   
-
-  var arrayDesu:[String] = []
   
+  var numbFingers = -1
+
+  var contentFavorite:[String] = []
+  
+  var contentFavoriteDate:[Date] = []
+  
+  var noDesu:Int = -1
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
+      
+        myTableView.reloadData()
+      
+        myTableView.reloadData()
+        // 罫線を青色に設定.
+        myTableView.separatorColor = UIColor.blue
+     
+    }
   
-      UserDefaults.standard.integer(forKey: "fav")
-      arrayDesu.append("fav")
+  
+  
+  //appdelegateに書いた値を共有できるようにする
+  var delegate: AppDelegate = UIApplication.shared.delegate as! AppDelegate
+  
+  
+  override func viewWillAppear(_ animated: Bool) {
+    
+    read()
+    
+    reloadInputViews()
+    myTableView.reloadData()
+    
+  }
+  
+  
+  //CoreDataに保存されているデータの読み込み処理（READ）
+  func read(){
+
+    contentFavorite = []
+    contentFavoriteDate = []
+    //AppDelegateを使う用意をしておく
+    let appD:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+    
+    //エンティティを操作するためのオブジェクトを使用
+    let viewContext = appD.persistentContainer.viewContext
+    
+    //どのエンティティからデータを取得してくるか設定
+    let query:NSFetchRequest<Favorite> = Favorite.fetchRequest()
+    
+    //データ一括取得
+    do{
+      //保存されてるデータをすべて取得
+      let fetchResults = try viewContext.fetch(query)
       
-      if UserDefaults.standard.object(forKey: "fav") != nil {print("Yes")}
-      
+      //一件ずつ表示
+      for result:AnyObject in fetchResults{
+        let favorite:String? = result.value(forKey:"favorite") as? String
+        let saveDate:Date = result.value(forKey: "saveDate") as! Date
+        
+        if contentFavorite.count == nil{
+          print("失敗です")
+        }else{
+        contentFavorite.append(favorite as! String)
+        contentFavoriteDate.append(saveDate)
+        }
+  
+      }
+    }catch{
       
     }
+  }
+
+  
+  
   
   
   //セクションの数
@@ -35,8 +98,9 @@ class ThirdViewController3_1: UIViewController,UITableViewDelegate,UITableViewDa
   
   //セルの数
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return arrayDesu.count
+    return contentFavorite.count
   }
+  
   
   
   //ここで画面を表示 cellに値を設定！
@@ -44,17 +108,82 @@ class ThirdViewController3_1: UIViewController,UITableViewDelegate,UITableViewDa
     
     let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")! as UITableViewCell
     
-    cell.textLabel?.text = "aa"
     
+    if contentFavorite == nil {
+      cell.textLabel?.text = ""
+    }else{
+    cell.textLabel?.text = contentFavorite[indexPath.row]
+      
+      
+    }
+    
+    
+    cell.accessoryType = .disclosureIndicator
     return cell
+    
   }
+  
+  
+  
+  
+  //押された時の処理//データ受け渡し画面
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    
+    self.numbFingers = indexPath.row
+    
+    
+    performSegue(withIdentifier: "nextFavorite", sender: nil)
+  }
+
+  
+  
+  
+  
+  
   
   //スワイプ処理！
   //なぜこれで表示されるのか？？＝＝delegateで委譲している為！
   // UITableViewDelegate
   func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
-    let action = UITableViewRowAction(style: .default, title: "削除"){ action, indexPath in
-      //ここでアクションを起こす！
+let action = UITableViewRowAction(style: .default, title: "削除"){ action, indexPath in
+  
+  //アクション
+  
+  self.noDesu = indexPath.row
+  
+  //AppDelegateを使う用意をしておく
+  let appD:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+  
+  //エンティティを操作するためのオブジェクトを使用
+  let viewContext = appD.persistentContainer.viewContext
+  
+  //どのエンティティからデータを取得してくるか設定
+  let query:NSFetchRequest<Favorite> = Favorite.fetchRequest()
+  
+  //更新するデータの取得！ここで絞り込み
+  let namePredicte = NSPredicate(format: "saveDate = %@", self.contentFavoriteDate[self.noDesu] as CVarArg)
+ // 絞り込み検索（更新したいデータを取得する）
+  query.predicate = namePredicte
+  
+  
+  do{
+    let fetchRequests = try viewContext.fetch(query)
+    for result:AnyObject in fetchRequests{
+      //取得したデータを指定し、削除
+      let record = result as! NSManagedObject
+      
+      viewContext.delete(record)
+    }
+    //削除した状態を保存
+    try viewContext.save()
+    
+  }catch{
+    print("削除失敗")
+  }
+
+  self.read()
+  self.myTableView.reloadData()
+  
     }
     
     return [action]

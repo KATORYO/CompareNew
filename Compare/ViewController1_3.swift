@@ -8,6 +8,7 @@
 
 import UIKit
 import FontAwesome_swift
+import CoreData
 
 class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
@@ -29,7 +30,7 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
   
   var ratePhp:Int = 0
   
-  let userDefaults = UserDefaults.standard
+  let userDefault = UserDefaults.standard
   
   var arrayDesu:[String] = []
 
@@ -37,8 +38,36 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
   //@IBAction func myBack1_3(_ sender: UIBarButtonItem) {}
   // Sectionで使用する配列を定義する.
   //private let mySections: NSArray = ["iPhone", "Android"]
+ 
   
-  //var scSelectedIndex3 = -1
+  
+  //coredateここから
+  let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Favorite")
+  
+  var contentFavorite:[String] = []
+  
+  var fetchedArray: [NSManagedObject] = []
+  
+  
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    
+    guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+      return
+    }
+    
+    let managedContext = appDelegate.persistentContainer.viewContext
+    
+    let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Favorite")
+    do {
+      fetchedArray = try managedContext.fetch(fetchRequest)
+    } catch let error as NSError {
+      print("Could not fetch. \(error), \(error.userInfo)")
+    }
+  }
+
+
+  
   
   @IBOutlet weak var myNavigation1_3: UINavigationBar!
   
@@ -158,6 +187,48 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
   
   
   
+  
+  //CoreDataに保存されているデータの読み込み処理（READ）
+  func read(){
+    
+    //AppDelegateを使う用意をしておく
+    let appD:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+    
+    //エンティティを操作するためのオブジェクトを使用
+    let viewContext = appD.persistentContainer.viewContext
+    
+    //どのエンティティからデータを取得してくるかc設定
+    let query:NSFetchRequest<Favorite> = Favorite.fetchRequest()
+
+    do{
+      //保存されてるデータをすべて取得
+      let fetchResults = try viewContext.fetch(query)
+      
+      //一件ずつ表示
+      for result:AnyObject in fetchResults{
+        let favorite:String? = result.value(forKey:"favorite") as? String
+        
+        if favorite == nil {
+          print("0です")
+        }else{
+          contentFavorite.append(favorite!)
+        }
+
+      }
+    }catch{
+    }
+    
+    //画面表示
+    //print(contentTitle[0]+memoNo)
+    
+    
+   // myTitle.reloadInputViews()
+  }
+
+  
+  
+  
+  
   // addBtnをタップしたときのアクション
   func onClick() {
     let alert = UIAlertController(title: "お気に入り追加", message: "お気に入り画面に追加されます", preferredStyle: .alert)
@@ -167,16 +238,33 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
       //ここでアラートがオッケーだった場合の処理を記述
       print("aa")
       
-      UserDefaults.standard.set(self.scSelectedIndex, forKey: "fav")
-      
-      //userDefault存在の確認！
-      if UserDefaults.standard.object(forKey: "fav") != nil {print("aaaaaaa")}
-      self.arrayDesu.append("fav")
-      
-      //配列の確認
-      print(self.arrayDesu.count)
-      
-      
+        let appD:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+        
+        //エンティティを操作するためのオブジェクトを作成
+        let viewContext = appD.persistentContainer.viewContext
+            
+            //ToDoエンティティオブジェクトを作成
+            let favorite = NSEntityDescription.entity(forEntityName: "Favorite", in: viewContext)
+            
+            //ToDoエンティティにレコード（行）を挿入するためのオブジェクトを作成
+            let newRecord = NSManagedObject(entity: favorite!, insertInto: viewContext)
+        
+            //値のセット(アトリビュート毎に指定) forKeyはモデルで指定したアトリビュート名
+         
+            newRecord.setValue(String(), forKey: "favorite")
+            
+            newRecord.setValue(Date(), forKey: "saveDate")
+            
+            //レコード（行）の即時保存
+            do{
+              try viewContext.save()
+            }catch {
+              
+        }
+            self.read()
+            
+            print("viewWillDisappear")
+          
     }))
     
     
@@ -188,6 +276,15 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
     
   }//addBtn(お気に入り)ボタンを押した時の閉じタグ
   
+  
+  //ヘッダー
+  func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+    let headerView:UIView = UIView()
+    headerView.backgroundColor = UIColor.blue
+    let headerLet = UILabel()
+    
+    return headerView
+  }
   
   
   
