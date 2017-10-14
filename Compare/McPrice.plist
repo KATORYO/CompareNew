@@ -8,19 +8,49 @@
 		<key>item</key>
 		<string>ハンバーガー</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>40</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>100</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>チキンバーガー</string>
+		<string>チーズバーガー</string>
 		<key>pricePeso</key>
-		<string>50php</string>
+		<string>50</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>130</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>Burger</string>
+		<key>item</key>
+		<string>チキンスリスプ</string>
+		<key>pricePeso</key>
+		<string>40</string>
+		<key>priceYen</key>
+		<string>100</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>Burger</string>
+		<key>item</key>
+		<string>フィレオフィッシュ</string>
+		<key>pricePeso</key>
+		<string>40</string>
+		<key>priceYen</key>
+		<string>320</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>Burger</string>
+		<key>item</key>
+		<string>チキンフィレオ</string>
+		<key>pricePeso</key>
+		<string>40</string>
+		<key>priceYen</key>
+		<string>350</string>
 	</dict>
 	<dict>
 		<key>camera</key>
@@ -28,19 +58,329 @@
 		<key>item</key>
 		<string>ビッグマック</string>
 		<key>pricePeso</key>
-		<string>60php</string>
+		<string>40</string>
 		<key>priceYen</key>
-		<string>140php</string>
+		<string>380</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>テリヤキバーガー</string>
+		<string>ベーゴンレタスバーガー</string>
+		<key>pricePeso</key>
+		<string>40</string>
+		<key>priceYen</key>
+		<string>350</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>Burger</string>
+		<key>item</key>
+		<string>えびフィレオ</string>
+		<key>pricePeso</key>
+		<string>40</string>
+		<key>priceYen</key>
+		<string>380</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>McDonalds.FriedPoteto</string>
+		<key>item</key>
+		<string>マックフライポテト S</string>
+		<key>pricePeso</key>
+		<string>40</string>
+		<key>priceYen</key>
+		<string>150</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>McDonalds.FriedPoteto</string>
+		<key>item</key>
+		<string>マックフライポテト M</string>
+		<key>pricePeso</key>
+		<string>40</string>
+		<key>priceYen</key>
+		<string>270</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>McDonalds.FriedPoteto</string>
+		<key>item</key>
+		<string>マックフライポテト L</string>
+		<key>pricePeso</key>
+		<string>40</string>
+		<key>priceYen</key>
+		<string>320</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>McDonalds.Nagetto</string>
+		<key>item</key>
+		<string>チキンナゲット 5ピース</string>
+		<key>pricePeso</key>
+		<string>40</string>
+		<key>priceYen</key>
+		<string>200</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>McDonalds.Nagetto</string>
+		<key>item</key>
+		<string>シャカチキ</string>
+		<key>pricePeso</key>
+		<string>40</string>
+		<key>priceYen</key>
+		<string>150</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>McDonalds.Nagetto</string>
+		<key>item</key>
+		<string>スイートコーン</string>
+		<key>pricePeso</key>
+		<string>40</string>
+		<key>priceYen</key>
+		<string>220</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>McDonalds.Nagetto</string>
+		<key>item</key>
+		<string>サイドサラダ</string>
+		<key>pricePeso</key>
+		<string>40</string>
+		<key>priceYen</key>
+		<string>280</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>McDonalds.Nagetto</string>
+		<key>item</key>
+		<string>ソフトツイスト</string>
+		<key>pricePeso</key>
+		<string>40</string>
+		<key>priceYen</key>
+		<string>100</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>McDonalds.Nagetto</string>
+		<key>item</key>
+		<string>サンデー</string>
+		<key>pricePeso</key>
+		<string>40</string>
+		<key>priceYen</key>
+		<string>150</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>McDonalds.Nagetto</string>
+		<key>item</key>
+		<string>アップルパイ</string>
+		<key>pricePeso</key>
+		<string>40</string>
+		<key>priceYen</key>
+		<string>100</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>McDonalds.Nagetto</string>
+		<key>item</key>
+		<string>プチパンケーキ</string>
+		<key>pricePeso</key>
+		<string>40</string>
+		<key>priceYen</key>
+		<string>200</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>McDonalds.Nagetto</string>
+		<key>item</key>
+		<string>サイドサラダ</string>
+		<key>pricePeso</key>
+		<string>40</string>
+		<key>priceYen</key>
+		<string>280</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>McDonalds.Nagetto</string>
+		<key>item</key>
+		<string>ドリンク S</string>
+		<key>pricePeso</key>
+		<string>40</string>
+		<key>priceYen</key>
+		<string>100</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>McDonalds.Nagetto</string>
+		<key>item</key>
+		<string>ドリンク M</string>
+		<key>pricePeso</key>
+		<string>40</string>
+		<key>priceYen</key>
+		<string>220</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>McDonalds.Nagetto</string>
+		<key>item</key>
+		<string>ドリンク L</string>
+		<key>pricePeso</key>
+		<string>40</string>
+		<key>priceYen</key>
+		<string>270</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>McDonalds.Nagetto</string>
+		<key>item</key>
+		<string>アイスコーヒー S</string>
+		<key>pricePeso</key>
+		<string>40</string>
+		<key>priceYen</key>
+		<string>100</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>McDonalds.Nagetto</string>
+		<key>item</key>
+		<string>アイスコーヒー M</string>
+		<key>pricePeso</key>
+		<string>40</string>
+		<key>priceYen</key>
+		<string>150</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>McDonalds.set</string>
+		<key>item</key>
+		<string>アイスコーヒー L</string>
+		<key>pricePeso</key>
+		<string>40</string>
+		<key>priceYen</key>
+		<string>210</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>McDonalds.set</string>
+		<key>item</key>
+		<string>ホットコーヒー S</string>
+		<key>pricePeso</key>
+		<string>40</string>
+		<key>priceYen</key>
+		<string>100</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>McDonalds.set</string>
+		<key>item</key>
+		<string>ホットコーヒー M</string>
+		<key>pricePeso</key>
+		<string>40</string>
+		<key>priceYen</key>
+		<string>150</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>McDonalds.set</string>
+		<key>item</key>
+		<string>フィレオフィッシュセット</string>
+		<key>pricePeso</key>
+		<string>40</string>
+		<key>priceYen</key>
+		<string>620</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>McDonalds.set</string>
+		<key>item</key>
+		<string>チキンフィレオセット</string>
+		<key>pricePeso</key>
+		<string>40</string>
+		<key>priceYen</key>
+		<string>650</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>McDonalds.set</string>
+		<key>item</key>
+		<string>ビックマックセット</string>
+		<key>pricePeso</key>
+		<string>40</string>
+		<key>priceYen</key>
+		<string>680</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>McDonalds.set</string>
+		<key>item</key>
+		<string>テリヤキバーガーセット</string>
+		<key>pricePeso</key>
+		<string>40</string>
+		<key>priceYen</key>
+		<string>620</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>Burger</string>
+		<key>item</key>
+		<string>えびフィレオセット</string>
+		<key>pricePeso</key>
+		<string>１</string>
+		<key>priceYen</key>
+		<string>680</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>McDonalds.set</string>
+		<key>item</key>
+		<string>テリヤキバーガーセット</string>
+		<key>pricePeso</key>
+		<string>40</string>
+		<key>priceYen</key>
+		<string>620</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>McDonalds.set</string>
+		<key>item</key>
+		<string>ハッピーセット チーズバーガー</string>
+		<key>pricePeso</key>
+		<string>40</string>
+		<key>priceYen</key>
+		<string>490</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>McDonalds.set</string>
+		<key>item</key>
+		<string>ハッピーセット チキンマックナゲット</string>
+		<key>pricePeso</key>
+		<string>40</string>
+		<key>priceYen</key>
+		<string>500</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>McDonalds.set</string>
+		<key>item</key>
+		<string>ハッピーセット ハンバーガー</string>
+		<key>pricePeso</key>
+		<string>40</string>
+		<key>priceYen</key>
+		<string>460</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>Burger</string>
+		<key>item</key>
+		<string>ライス</string>
 		<key>pricePeso</key>
 		<string>50php</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>なし</string>
 	</dict>
 </array>
 </plist>

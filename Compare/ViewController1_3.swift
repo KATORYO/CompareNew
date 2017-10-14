@@ -109,22 +109,26 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
   
       //tableViewを使えるようにする！
       self.myTableView1_3.register(UINib(nibName: "CustomTableViewCell", bundle: nil), forCellReuseIdentifier: "Cell")
+    
       
-//      for n in 20{
-//        let filePath = Bundle.main.path(forResource: "something", ofType: "plist")
-//      }
       
       
       //プロパティリストの読み込み
       let filePathMc = Bundle.main.path(forResource: "McPrice", ofType: "plist")
       
-      let filePathStb = Bundle.main.path(forResource: "StarbucksPrice", ofType: "plist")
+      let filePathStb = Bundle.main.path(forResource: "PriceStarbucks", ofType: "plist")
       
       let filePath7 = Bundle.main.path(forResource: "7price", ofType: "plist")
       
-      let filePathYoshinoya = Bundle.main.path(forResource: "YoshinoyaPrice", ofType: "plist")
+      let filePathYoshinoya = Bundle.main.path(forResource: "PriceYoshinoya", ofType: "plist")
       
-      let filePathMarukame = Bundle.main.path(forResource: "Marukame", ofType: "plist")
+      let filePathMarukame = Bundle.main.path(forResource: "PriceMarukame", ofType: "plist")
+      
+      let filePathKfc = Bundle.main.path(forResource: "PriceKfc", ofType: "plist")
+      
+      
+      //出来上がったら配列で記入してみる
+//      let filePathaa:[String] = [Bundle.main.path(forResource: "McPrice", ofType: "plist")!]
       
       
       //簡単に書く
@@ -140,7 +144,7 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
       case 4:
         array = NSArray(contentsOfFile: filePathMarukame!)!
       case 5:
-        array = NSArray(contentsOfFile: (filePathMc)!)!
+        array = NSArray(contentsOfFile: (filePathKfc)!)!
       case 6:
         array = NSArray(contentsOfFile:filePathStb!)!
       case 7:

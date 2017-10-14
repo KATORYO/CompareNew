@@ -10,6 +10,11 @@
 		48944E67403DCFE59645E4F8 /* Pods_CompareUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 143F436D254C9E84908EB02F /* Pods_CompareUITests.framework */; };
 		853DF582209A7A9F2656BBE7 /* Pods_CompareTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79843CD9F3D5DDFCC423723F /* Pods_CompareTests.framework */; };
 		CF026E275FEA1985348D2398 /* Pods_Compare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A250D83141773BC535CD54 /* Pods_Compare.framework */; };
+		E34169781F91E42300DDA77C /* PriceStarbucks.plist in Resources */ = {isa = PBXBuildFile; fileRef = E34169771F91E42300DDA77C /* PriceStarbucks.plist */; };
+		E341697A1F91F54700DDA77C /* PriceYoshinoya.plist in Resources */ = {isa = PBXBuildFile; fileRef = E34169791F91F54700DDA77C /* PriceYoshinoya.plist */; };
+		E341697C1F92050200DDA77C /* PriceMarukame.plist in Resources */ = {isa = PBXBuildFile; fileRef = E341697B1F92050200DDA77C /* PriceMarukame.plist */; };
+		E341697E1F9206D500DDA77C /* PriceKfc.plist in Resources */ = {isa = PBXBuildFile; fileRef = E341697D1F9206D500DDA77C /* PriceKfc.plist */; };
+		E34169801F920FE000DDA77C /* PriceConvenience.plist in Resources */ = {isa = PBXBuildFile; fileRef = E341697F1F920FE000DDA77C /* PriceConvenience.plist */; };
 		E341E2351F8653F700394131 /* Memo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E341E2331F8653F700394131 /* Memo+CoreDataClass.swift */; };
 		E341E2361F8653F700394131 /* Memo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E341E2341F8653F700394131 /* Memo+CoreDataProperties.swift */; };
 		E349CD051F7FBC0F00ABC485 /* ElectricAppliances.plist in Resources */ = {isa = PBXBuildFile; fileRef = E349CD041F7FBC0F00ABC485 /* ElectricAppliances.plist */; };
@@ -17,9 +22,6 @@
 		E35C15A81F83AADA00030C6E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E35C15A71F83AADA00030C6E /* CoreData.framework */; };
 		E35C15AB1F83B9E900030C6E /* corenadata.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E35C15A91F83B9E900030C6E /* corenadata.xcdatamodeld */; };
 		E367FBF41F820592003C015F /* FontAwesome_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E367FBF31F820592003C015F /* FontAwesome_swift.framework */; };
-		E367FBF61F8262D2003C015F /* StarbucksPrice.plist in Resources */ = {isa = PBXBuildFile; fileRef = E367FBF51F8262D2003C015F /* StarbucksPrice.plist */; };
-		E367FBFA1F827622003C015F /* YoshinoyaPrice.plist in Resources */ = {isa = PBXBuildFile; fileRef = E367FBF91F827622003C015F /* YoshinoyaPrice.plist */; };
-		E367FBFC1F827823003C015F /* Marukame.plist in Resources */ = {isa = PBXBuildFile; fileRef = E367FBFB1F827823003C015F /* Marukame.plist */; };
 		E373D75B1F8352DD008D96BA /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E373D7591F83527F008D96BA /* SwiftyJSON.framework */; };
 		E375A4B41F90E6E60088EE82 /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E375A4B31F90E6E60088EE82 /* CircleImageView.swift */; };
 		E3974B001F74F71B00CDD953 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3974AFE1F74F71B00CDD953 /* CustomTableViewCell.swift */; };
@@ -33,7 +35,6 @@
 		E3AB05DC1F6E004D00B20261 /* CompareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AB05DB1F6E004D00B20261 /* CompareTests.swift */; };
 		E3AB05E71F6E004D00B20261 /* CompareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AB05E61F6E004D00B20261 /* CompareUITests.swift */; };
 		E3AB05F71F6E187900B20261 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AB05F61F6E187900B20261 /* CustomCell.swift */; };
-		E3B90B461F91C9CD004205A5 /* 7price.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3B90B451F91C9CD004205A5 /* 7price.plist */; };
 		E3BF59571F6E9E5300038E59 /* ViewController1-2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BF59561F6E9E5300038E59 /* ViewController1-2.swift */; };
 		E3BF59591F6EA02D00038E59 /* ViewController1_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BF59581F6EA02D00038E59 /* ViewController1_3.swift */; };
 		E3BF595B1F6ED1CB00038E59 /* Detail.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3BF595A1F6ED1CB00038E59 /* Detail.plist */; };
@@ -75,6 +76,11 @@
 		7C7D1432A11B124BAB9BD23F /* Pods-CompareTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CompareTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CompareTests/Pods-CompareTests.release.xcconfig"; sourceTree = "<group>"; };
 		99D3DB189CCAA400CDB21B83 /* Pods-CompareUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CompareUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CompareUITests/Pods-CompareUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		ABA31608120C339660EFA48B /* Pods-CompareTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CompareTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CompareTests/Pods-CompareTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E34169771F91E42300DDA77C /* PriceStarbucks.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PriceStarbucks.plist; sourceTree = "<group>"; };
+		E34169791F91F54700DDA77C /* PriceYoshinoya.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PriceYoshinoya.plist; sourceTree = "<group>"; };
+		E341697B1F92050200DDA77C /* PriceMarukame.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PriceMarukame.plist; sourceTree = "<group>"; };
+		E341697D1F9206D500DDA77C /* PriceKfc.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PriceKfc.plist; sourceTree = "<group>"; };
+		E341697F1F920FE000DDA77C /* PriceConvenience.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PriceConvenience.plist; sourceTree = "<group>"; };
 		E341E2331F8653F700394131 /* Memo+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Memo+CoreDataClass.swift"; sourceTree = "<group>"; };
 		E341E2341F8653F700394131 /* Memo+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Memo+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		E349CD041F7FBC0F00ABC485 /* ElectricAppliances.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ElectricAppliances.plist; sourceTree = "<group>"; };
@@ -82,9 +88,6 @@
 		E35C15A71F83AADA00030C6E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		E35C15AA1F83B9E900030C6E /* corenadata.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = corenadata.xcdatamodel; sourceTree = "<group>"; };
 		E367FBF31F820592003C015F /* FontAwesome_swift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FontAwesome_swift.framework; path = "../../Library/Developer/Xcode/DerivedData/Compare-euiaddjhbqqrmzgrkqdmyglpgsiz/Build/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework"; sourceTree = "<group>"; };
-		E367FBF51F8262D2003C015F /* StarbucksPrice.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = StarbucksPrice.plist; sourceTree = "<group>"; };
-		E367FBF91F827622003C015F /* YoshinoyaPrice.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = YoshinoyaPrice.plist; sourceTree = "<group>"; };
-		E367FBFB1F827823003C015F /* Marukame.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Marukame.plist; sourceTree = "<group>"; };
 		E373D7591F83527F008D96BA /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../Library/Developer/Xcode/DerivedData/Compare-euiaddjhbqqrmzgrkqdmyglpgsiz/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		E375A4B31F90E6E60088EE82 /* CircleImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
 		E3974AFE1F74F71B00CDD953 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
@@ -105,7 +108,6 @@
 		E3AB05E81F6E004D00B20261 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3AB05F61F6E187900B20261 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		E3B52C5C1F86018D007B6BC9 /* Compare.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Compare.entitlements; sourceTree = "<group>"; };
-		E3B90B451F91C9CD004205A5 /* 7price.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = 7price.plist; path = "../../../Downloads/CompareNew-master/Compare/7price.plist"; sourceTree = "<group>"; };
 		E3BF59561F6E9E5300038E59 /* ViewController1-2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController1-2.swift"; sourceTree = "<group>"; };
 		E3BF59581F6EA02D00038E59 /* ViewController1_3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController1_3.swift; sourceTree = "<group>"; };
 		E3BF595A1F6ED1CB00038E59 /* Detail.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Detail.plist; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 				E3974AFF1F74F71B00CDD953 /* CustomTableViewCell.xib */,
 				E3AB05CF1F6E004C00B20261 /* LaunchScreen.storyboard */,
 				E375A4B31F90E6E60088EE82 /* CircleImageView.swift */,
+				E3E442ED1F7F792A008CE769 /* McPrice.plist */,
 				E3AB05D21F6E004D00B20261 /* Info.plist */,
 				E3BF595A1F6ED1CB00038E59 /* Detail.plist */,
 				E3E442A21F7CC20D008CE769 /* Fastfood.plist */,
@@ -217,11 +220,11 @@
 				E3E442E71F7F522D008CE769 /* BigShopping.plist */,
 				E3E442E91F7F535C008CE769 /* Construction.plist */,
 				E3E442EB1F7F55F6008CE769 /* Dwelling.plist */,
-				E3E442ED1F7F792A008CE769 /* McPrice.plist */,
-				E3B90B451F91C9CD004205A5 /* 7price.plist */,
-				E367FBF51F8262D2003C015F /* StarbucksPrice.plist */,
-				E367FBF91F827622003C015F /* YoshinoyaPrice.plist */,
-				E367FBFB1F827823003C015F /* Marukame.plist */,
+				E341697F1F920FE000DDA77C /* PriceConvenience.plist */,
+				E341697D1F9206D500DDA77C /* PriceKfc.plist */,
+				E34169771F91E42300DDA77C /* PriceStarbucks.plist */,
+				E341697B1F92050200DDA77C /* PriceMarukame.plist */,
+				E34169791F91F54700DDA77C /* PriceYoshinoya.plist */,
 			);
 			path = Compare;
 			sourceTree = "<group>";
@@ -385,23 +388,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E341697A1F91F54700DDA77C /* PriceYoshinoya.plist in Resources */,
 				E3E442EE1F7F792A008CE769 /* McPrice.plist in Resources */,
 				E3AB05D11F6E004D00B20261 /* LaunchScreen.storyboard in Resources */,
 				E3E442E81F7F522D008CE769 /* BigShopping.plist in Resources */,
+				E34169801F920FE000DDA77C /* PriceConvenience.plist in Resources */,
 				E3E442EA1F7F535C008CE769 /* Construction.plist in Resources */,
 				E3BF595B1F6ED1CB00038E59 /* Detail.plist in Resources */,
 				E349CD051F7FBC0F00ABC485 /* ElectricAppliances.plist in Resources */,
+				E34169781F91E42300DDA77C /* PriceStarbucks.plist in Resources */,
 				E3E442EC1F7F55F6008CE769 /* Dwelling.plist in Resources */,
 				E3E442E61F7F4D32008CE769 /* LivingOfCosts.plist in Resources */,
-				E367FBFC1F827823003C015F /* Marukame.plist in Resources */,
 				E3E442A31F7CC20D008CE769 /* Fastfood.plist in Resources */,
-				E3B90B461F91C9CD004205A5 /* 7price.plist in Resources */,
 				E3E442A71F7E1015008CE769 /* ShopAndGallery.plist in Resources */,
 				E3E442A51F7CD0CE008CE769 /* Convenience.plist in Resources */,
-				E367FBFA1F827622003C015F /* YoshinoyaPrice.plist in Resources */,
 				E3AB05CE1F6E004C00B20261 /* Assets.xcassets in Resources */,
-				E367FBF61F8262D2003C015F /* StarbucksPrice.plist in Resources */,
+				E341697E1F9206D500DDA77C /* PriceKfc.plist in Resources */,
 				E3974B011F74F71B00CDD953 /* CustomTableViewCell.xib in Resources */,
+				E341697C1F92050200DDA77C /* PriceMarukame.plist in Resources */,
 				E3AB05CC1F6E004C00B20261 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
