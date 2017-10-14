@@ -28,16 +28,12 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
   var phpRate:Int = 0
   
   
-  var sectionTitle:[String] = ["チェーン店","カフェ","かかかかk"]
-  
-
-  let list:[String] = ["飲食全般","STARBUCKS","CoffeeBean","ケンタッキーKFC","丸亀正麺","マクドナルド","吉野家","コンビニ","スーパー","寝具","車・バイク系","生活家電","インターネット関連","住宅関連","服","本","文房具","生活費","工事費","修理費","その他"]
+  let list:[String] = ["飲食店全般","STARBUCKS","CoffeeBean","ケンタッキーKFC","丸亀正麺","マクドナルド","吉野家","コンビニ","調理器具","ゲーム＆カセット１０","おもちゃ","植物・ガーデニング","スーパー（食品）","スーパー（飲料・お酒）","寝具","車・バイク系","家電・カメラ・AV機器","DVD・ミュージック","インターネット関連","住宅関連20","ファッション","スポーツ用品","本・コミック・雑誌","文房具","生活費","工事費","修理費","ペット・動物","その他"]
   
   
   var aaaa:[String] = ["aaaa","aaaa"]
   
-  
-  let imageDesu:[String] = ["CoffeeSrarbucks","Convenience7","Image-11","LivingOfCosts","Image-10","Image-2","Image-3","Image-12","Image-10","Image-10","Image-10","Image10","CoffeeSrarbucks","Convenience7","Image-11","LivingOfCosts","Image-10","Image-2","Image-3","Image-12","Image-10"]
+  let imageDesu:[String] = ["CoffeeSrarbucks","Convenience7","Image-11","LivingOfCosts","Image-10","Image-2","Image-3","Image-12","Image-10","Image-10","Image-10","Image10","CoffeeSrarbucks","Convenience7","Image-11","LivingOfCosts","Image-10","Image-2","Image-3","Image-12","Image-10","","","","","","","","","",""]
   
 
   //ここに保存されて、次の画面に送る！
@@ -233,55 +229,55 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
   
   
   
-  
-  /*
-   Sectionの数
-   */
-  
-  internal func numberOfSections(in collectionView: UICollectionView) -> Int {
-    return 3
-  }
-  
-
-  /**
-   セクション毎のタイトルをヘッダーに表示
-   */
-  func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-    return sectionTitle[section]
-  }
-  
-  /*
-   テーブルに表示する配列の総数を返す.
-   */
-  func collectionView(_ collectionView: UICollectionView, numberOfRowsInSection section: Int) -> Int {
-    
-    // Section毎にCellの総数を変える.
-    switch(section){
-    case 0:
-      return 8
-      
-    case 1:
-      return 3
-      
-    case 2:
-      return 4
-      
-    default:
-      print("error")
-      return 0
-    }
-  }
-  
-  
-  
-  //セクションの値
-  func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-    
-    let Section = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "Section", for: indexPath) as! CustomCell
-    Section.sectionLabel.text? = sectionTitle[indexPath.section]
-    
-    return Section
-  }
+//  
+//  /*
+//   Sectionの数
+//   */
+//  
+//  internal func numberOfSections(in collectionView: UICollectionView) -> Int {
+//    return 3
+//  }
+//  
+//
+//  /**
+//   セクション毎のタイトルをヘッダーに表示
+//   */
+//  func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+//    return sectionTitle[section]
+//  }
+//  
+//  /*
+//   テーブルに表示する配列の総数を返す.
+//   */
+//  func collectionView(_ collectionView: UICollectionView, numberOfRowsInSection section: Int) -> Int {
+//    
+//    // Section毎にCellの総数を変える.
+//    switch(section){
+//    case 0:
+//      return 8
+//      
+//    case 1:
+//      return 3
+//      
+//    case 2:
+//      return 4
+//      
+//    default:
+//      print("error")
+//      return 0
+//    }
+//  }
+//  
+//  
+//  
+//  //セクションの値
+//  func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+//    
+//    let Section = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "Section", for: indexPath) as! CustomCell
+//    Section.sectionLabel.text? = sectionTitle[indexPath.section]
+//    
+//    return Section
+//  }
 
   
   
@@ -300,7 +296,10 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
    
     let cell:CustomCell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CustomCell
     
-    
+    //セルのテキストを可変にする！
+    cell.lblSample.adjustsFontSizeToFitWidth = true
+    cell.lblSample.minimumScaleFactor = 0.8 //# //最小でも80%までしか縮小しない場合
+
     
     
     cell.lblSample?.text = list[indexPath.row]

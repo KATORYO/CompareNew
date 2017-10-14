@@ -87,7 +87,9 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
       //addBtnの作成　plainが文字だけのもの、titleは""
       addBtn = UIBarButtonItem(title: "", style: .plain, target: self, action: "onClick")
       
-      
+      // 罫線を青色に設定.
+      myTableView1_3.separatorColor = UIColor.blue
+
       
       //fontawsome適用！
       self.addBtn.setTitleTextAttributes(attributes, for: .normal)
@@ -310,6 +312,15 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
     
     //取り出す時は型の宣言しなければならない！ as!NS~~
     dicB = array[indexPath.row] as! NSDictionary
+    
+    
+    
+    cell.nameLabel.adjustsFontSizeToFitWidth = true
+    cell.nameLabel.minimumScaleFactor = 0.5 //# 最小でも80%までしか縮小しない場合
+    cell.PesoLabel.adjustsFontSizeToFitWidth = true
+    cell.PesoLabel.minimumScaleFactor = 0.5 //# 最小でも80%までしか縮小しない場合
+    
+    
     
     cell.ProductsImage.image = UIImage(named: dicB["camera"] as! String)
     
