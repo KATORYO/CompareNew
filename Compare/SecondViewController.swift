@@ -270,9 +270,7 @@ override func didReceiveMemoryWarning() {
       }catch{
         print("削除失敗")
       }
-      
-      //self.contentTitle.append("memo")
-      //self.contentTitle = []
+  
       self.read()
       self.myTableViewMemo.reloadData()
       

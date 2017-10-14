@@ -36,6 +36,7 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
   
   var aaaa:[String] = ["aaaa","aaaa"]
   
+  
   let imageDesu:[String] = ["CoffeeSrarbucks","Convenience7","Image-11","LivingOfCosts","Image-10","Image-2","Image-3","Image-12","Image-10","Image-10","Image-10","Image10","CoffeeSrarbucks","Convenience7","Image-11","LivingOfCosts","Image-10","Image-2","Image-3","Image-12","Image-10"]
   
 
@@ -257,15 +258,14 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
     // Section毎にCellの総数を変える.
     switch(section){
     case 0:
-      return 5
+      return 8
       
     case 1:
-      return 6
+      return 3
       
     case 2:
-      return 8
-    case 3:
       return 4
+      
     default:
       print("error")
       return 0

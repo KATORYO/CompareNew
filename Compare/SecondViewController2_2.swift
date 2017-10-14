@@ -6,6 +6,7 @@
 //  Copyright © 2017年 mirai. All rights reserved.
 //
 
+//変えた
 import UIKit
 import CoreData
 import FontAwesome_swift
@@ -103,8 +104,6 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate,UIImagePicker
       myTitle.text? = contentTitle[MemoNo]
 
     }
-      //myTitle.text? = contentTitle[]
-    
     
     
     
@@ -122,9 +121,9 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate,UIImagePicker
     myMenuController.setTargetRect(CGRect.zero, in: self.view)
     
     // MenuItem生成.
-    let myMenuItem_1: UIMenuItem = UIMenuItem(title: "Menu1", action: #selector(SecondViewController2_2.onMenu1(sender:)))
-    let myMenuItem_2: UIMenuItem = UIMenuItem(title: "Menu2", action: #selector(SecondViewController2_2.onMenu2(sender:)))
-    let myMenuItem_3: UIMenuItem = UIMenuItem(title: "Menu3", action: #selector(SecondViewController2_2.onMenu3(sender:)))
+    let myMenuItem_1: UIMenuItem = UIMenuItem(title: "文字色", action: #selector(SecondViewController2_2.onMenu1(sender:)))
+    let myMenuItem_2: UIMenuItem = UIMenuItem(title: "テキスト編集", action: #selector(SecondViewController2_2.onMenu2(sender:)))
+    let myMenuItem_3: UIMenuItem = UIMenuItem(title: "写真", action: #selector(SecondViewController2_2.onMenu3(sender:)))
     
     // MenuItemを配列に格納.
     let myMenuItems: NSArray = [myMenuItem_1, myMenuItem_2, myMenuItem_3]
@@ -135,7 +134,14 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate,UIImagePicker
     
     keyboardToolbar(textView:  myTitle)
     
+    
+    
   }//viewdidloadの閉じタグ
+  
+  
+  
+  
+  
   
   
   
@@ -144,27 +150,39 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate,UIImagePicker
     
     let toolbar: UIToolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: 1, height: 1))
     toolbar.barStyle = UIBarStyle.default
-    toolbar.bounds.size.height = 28
+    toolbar.bounds.size.height = 25
     
     let flexSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
     
     
-    let done: UIBarButtonItem = UIBarButtonItem(title: "done", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.doneButtonActionn))
+    let done: UIBarButtonItem = UIBarButtonItem(title: "閉じる", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.doneButtonActionn))
     done.tintColor = UIColor.blue
     
-    let pic: UIBarButtonItem = UIBarButtonItem(title: "Pic", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.doneButtonAction))
-    pic.tintColor = UIColor.blue
+    
+    let choosePicture: UIBarButtonItem = UIBarButtonItem(title: "choosePicture", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.choosePicture))
+    choosePicture.tintColor = UIColor.blue
     
     
-    let writeWithPenAndInk: UIBarButtonItem = UIBarButtonItem(title: "pen", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.writeWithPenAndInkAction))
-    writeWithPenAndInk.tintColor = UIColor.blue
+    let cameraPhoto: UIBarButtonItem = UIBarButtonItem(title: "pen", style: .plain, target: self, action: #selector(self.cameraPhotoAction))
+    cameraPhoto.tintColor = UIColor.blue
+    
+    
+    //fontawsome適用！
+    let attributes = [NSFontAttributeName: UIFont.fontAwesome(ofSize: 22)] as [String: Any]
+    
+    cameraPhoto.setTitleTextAttributes(attributes, for: .normal)
+    cameraPhoto.title = String.fontAwesomeIcon(name: .camera)
+    
+    choosePicture.setTitleTextAttributes(attributes, for: .normal)
+    choosePicture.title = String.fontAwesomeIcon(name: .pictureO)
+
     
     
     var items = [UIBarButtonItem]()
     
-    items.append(pic)
+    items.append(choosePicture)
     items.append(flexSpace)
-    items.append(writeWithPenAndInk)
+    items.append(cameraPhoto)
     
     
     items.append(done)
@@ -176,7 +194,7 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate,UIImagePicker
     
   }
   
-  
+  //
   func doneButtonAction() {
     
     self.myTitle.resignFirstResponder()
@@ -184,7 +202,7 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate,UIImagePicker
   }
   
   
-  //カメラボタン
+  //カ
   func doneButtonActionn() {
     
     
@@ -195,9 +213,29 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate,UIImagePicker
   
   
   
+  // カメラロールから写真を選択する処理
+  @IBAction func choosePicture() {
+    // カメラロールが利用可能か？
+    if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
+      // 写真を選ぶビュー
+      let pickerView = UIImagePickerController()
+      // 写真の選択元をカメラロールにする
+      // 「.camera」にすればカメラを起動できる
+      pickerView.sourceType = .photoLibrary
+      // デリゲート
+      pickerView.delegate = self
+      // ビューに表示
+      self.present(pickerView, animated: true)
+    }
+  }
+  
+
+
+  
+  
   
     //カメラボタン
-  func writeWithPenAndInkAction(){
+  func cameraPhotoAction(){
     
     
     //カメラが使えるかどうか判断するための情報を取得する（列挙体p.286） //このデバイスで使えるかどうか
@@ -222,6 +260,59 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate,UIImagePicker
     self.myTitle.resignFirstResponder()
 
   }
+  
+  
+  //カメラで撮影し終えた後に発動するメリット
+  func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+    
+    //imageViewに撮影した写真をセットするために、imageを保存　　何かのボタンを押したときに表示させるための時ように、Imageに型をいれる
+    let image = info[UIImagePickerControllerOriginalImage] as! UIImage
+    
+    //imageViewに設
+    
+    //自分のデバイス（今このプログラムが動いている場所）に写真を保存
+    UIImageWriteToSavedPhotosAlbum(image,nil,nil,nil)
+    
+    
+    //モーダルで表示した写真撮影用の画面を閉じる（前の画面に戻る）
+    dismiss(animated: true, completion: nil)
+    
+  }
+
+  
+  
+  /// HTML形式で記述された文字列をNSAttributedStringに変換する
+  ///
+  /// - Parameter text: 変換する文字列
+  /// - Returns: HTMLドキュメントに変換されたNSAttributedString
+  func parseText2HTML(sourceText text: String) -> NSAttributedString? {
+    
+    // 受け取ったデータをUTF-8エンコードする
+    let encodeData = text.data(using: String.Encoding.utf8, allowLossyConversion: true)
+    
+    // 表示データのオプションを設定する
+    let attributedOptions : [String: AnyObject] = [
+      NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType as AnyObject,
+      NSCharacterEncodingDocumentAttribute: String.Encoding.utf8.rawValue as AnyObject
+    ]
+    
+    // 文字列の変換処理
+    var attributedString:NSAttributedString?
+    do {
+      attributedString = try NSAttributedString(
+      
+        data: encodeData!,
+        options: attributedOptions,
+        documentAttributes: nil
+      )
+    } catch let e {
+      // 変換でエラーが出た場合
+    }
+    
+    return attributedString
+  }
+  
+  
   
   
   
@@ -377,7 +468,6 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate,UIImagePicker
     //エンティティを操作するためのオブジェクトを作成
     let viewContext = appD.persistentContainer.viewContext
 
-    
     if ((nakamiComfirm == "") || (nakamiComfirm == nil)){
       print("保存しない")
     }else{
@@ -408,9 +498,6 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate,UIImagePicker
         }
         
         read()
-        
-        //contentTitle.append("memo")
-        //contentDate.append("saveData")
         
         myTitle.reloadInputViews()
         
