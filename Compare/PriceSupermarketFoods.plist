@@ -6,451 +6,581 @@
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ドーナツ</string>
+		<string>にんじん</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>115</string>
+		<string>16200</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>おにぎり 鮭</string>
+		<string>たまねぎ</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>140</string>
+		<string>16200</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>おにぎり 梅</string>
+		<string>じゃがいも</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>110</string>
+		<string>16200</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>肉まん</string>
+		<string>ねぎ</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>16200</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>消しゴム ミニ 1ヶ</string>
+		<string>大根</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>60</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>黒ボールペン</string>
-		<key>item</key>
-		<string>ハンバーガー</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>100</string>
+		<string>16200</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>のり </string>
+		<string>なす</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>120</string>
+		<string>16200</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>カッターミニ</string>
+		<string>白菜</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>220</string>
+		<string>16200</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ノート</string>
+		<string>筍</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>100</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>McDonalds.top</string>
-		<key>item</key>
-		<string>ふせん</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>260</string>
+		<string>16200</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>フランクフルト</string>
+		<string>キャベツ</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>100</string>
+		<string>16200</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ホットコーヒー R</string>
+		<string>レタス</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>100</string>
+		<string>16200</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ホットコーヒー L</string>
+		<string>ピーマン</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>150</string>
+		<string>16200</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ハンバーガー</string>
+		<string>きゅうり</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>16200</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ハンバーガー</string>
+		<string>大葉</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>16200</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ハンバーガー</string>
+		<string>トマト</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>16200</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ハンバーガー</string>
+		<string>セロリ</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>16200</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ハンバーガー</string>
+		<string>ゴーヤ</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>16200</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ハンバーガー</string>
+		<string>もやし</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>16200</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ハンバーガー</string>
+		<string>かぼちゃ</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>16200</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ハンバーガー</string>
+		<string>パセリ</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>16200</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ハンバーガー</string>
+		<string>バナナ</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>16200</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ハンバーガー</string>
+		<string>りんご</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>16200</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ハンバーガー</string>
+		<string>マンゴー</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>16200</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ハンバーガー</string>
+		<string>ぶどう</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>16200</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ハンバーガー</string>
+		<string>さくらんぼ</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>16200</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ハンバーガー</string>
+		<string>ドラゴンフルーツ</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>16200</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ハンバーガー</string>
+		<string>メロン</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>16200</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ハンバーガー</string>
+		<string>いちご</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>16200</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ハンバーガー</string>
+		<string></string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>16200</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ハンバーガー</string>
+		<string>CANON プリンター TS8030</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>16200</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ハンバーガー</string>
+		<string>CANON プリンター TS8030</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>16200</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ハンバーガー</string>
+		<string>CANON プリンター TS8030</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>16200</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ハンバーガー</string>
+		<string>CANON プリンター TS8030</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>16200</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ハンバーガー</string>
+		<string>CANON プリンター TS8030</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>16200</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ハンバーガー</string>
+		<string>CANON プリンター TS8030</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>16200</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ハンバーガー</string>
+		<string>CANON プリンター TS8030</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>16200</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ハンバーガー</string>
+		<string>CANON プリンター TS8030</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>16200</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ハンバーガー</string>
+		<string>CANON プリンター TS8030</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>16200</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ハンバーガー</string>
+		<string>CANON プリンター TS8030</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>16200</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ハンバーガー</string>
+		<string>CANON プリンター TS8030</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>16200</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ハンバーガー</string>
+		<string>CANON プリンター TS8030</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>16200</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ハンバーガー</string>
+		<string>CANON プリンター TS8030</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>16200</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ハンバーガー</string>
+		<string>CANON プリンター TS8030</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>16200</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ハンバーガー</string>
+		<string>CANON プリンター TS8030</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>16200</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>Burger</string>
+		<key>item</key>
+		<string>CANON プリンター TS8030</string>
+		<key>pricePeso</key>
+		<string>40php</string>
+		<key>priceYen</key>
+		<string>16200</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>Burger</string>
+		<key>item</key>
+		<string>CANON プリンター TS8030</string>
+		<key>pricePeso</key>
+		<string>40php</string>
+		<key>priceYen</key>
+		<string>16200</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>Burger</string>
+		<key>item</key>
+		<string>CANON プリンター TS8030</string>
+		<key>pricePeso</key>
+		<string>40php</string>
+		<key>priceYen</key>
+		<string>16200</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>Burger</string>
+		<key>item</key>
+		<string>CANON プリンター TS8030</string>
+		<key>pricePeso</key>
+		<string>40php</string>
+		<key>priceYen</key>
+		<string>16200</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>Burger</string>
+		<key>item</key>
+		<string>CANON プリンター TS8030</string>
+		<key>pricePeso</key>
+		<string>40php</string>
+		<key>priceYen</key>
+		<string>16200</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>Burger</string>
+		<key>item</key>
+		<string>CANON プリンター TS8030</string>
+		<key>pricePeso</key>
+		<string>40php</string>
+		<key>priceYen</key>
+		<string>16200</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>Burger</string>
+		<key>item</key>
+		<string>CANON プリンター TS8030</string>
+		<key>pricePeso</key>
+		<string>40php</string>
+		<key>priceYen</key>
+		<string>16200</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>Burger</string>
+		<key>item</key>
+		<string>CANON プリンター TS8030</string>
+		<key>pricePeso</key>
+		<string>40php</string>
+		<key>priceYen</key>
+		<string>16200</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>Burger</string>
+		<key>item</key>
+		<string>CANON プリンター TS8030</string>
+		<key>pricePeso</key>
+		<string>40php</string>
+		<key>priceYen</key>
+		<string>16200</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>Burger</string>
+		<key>item</key>
+		<string>CANON プリンター TS8030</string>
+		<key>pricePeso</key>
+		<string>40php</string>
+		<key>priceYen</key>
+		<string>16200</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>Burger</string>
+		<key>item</key>
+		<string>CANON プリンター TS8030</string>
+		<key>pricePeso</key>
+		<string>40php</string>
+		<key>priceYen</key>
+		<string>16200</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>Burger</string>
+		<key>item</key>
+		<string>CANON プリンター TS8030</string>
+		<key>pricePeso</key>
+		<string>40php</string>
+		<key>priceYen</key>
+		<string>16200</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>Burger</string>
+		<key>item</key>
+		<string>CANON プリンター TS8030</string>
+		<key>pricePeso</key>
+		<string>40php</string>
+		<key>priceYen</key>
+		<string>16200</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>Burger</string>
+		<key>item</key>
+		<string>CANON プリンター TS8030</string>
+		<key>pricePeso</key>
+		<string>40php</string>
+		<key>priceYen</key>
+		<string>16200</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>Burger</string>
+		<key>item</key>
+		<string>CANON プリンター TS8030</string>
+		<key>pricePeso</key>
+		<string>40php</string>
+		<key>priceYen</key>
+		<string>16200</string>
 	</dict>
 </array>
 </plist>

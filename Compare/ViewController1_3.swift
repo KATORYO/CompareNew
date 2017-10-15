@@ -7,8 +7,8 @@
 //
 
 import UIKit
-import FontAwesome_swift
 import CoreData
+import FontAwesome_swift
 
 class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
@@ -118,7 +118,7 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
       
       let filePathStb = Bundle.main.path(forResource: "PriceStarbucks", ofType: "plist")
       
-      let filePath7 = Bundle.main.path(forResource: "7price", ofType: "plist")
+      let filePathConvenience = Bundle.main.path(forResource: "PriceConvenience", ofType: "plist")
       
       let filePathYoshinoya = Bundle.main.path(forResource: "PriceYoshinoya", ofType: "plist")
       
@@ -138,7 +138,7 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
       case 1:
         array = NSArray(contentsOfFile:filePathStb!)!
       case 2:
-        array = NSArray(contentsOfFile: filePath7!)!
+        array = NSArray(contentsOfFile: filePathConvenience!)!
       case 3:
         array = NSArray(contentsOfFile: filePathYoshinoya!)!
       case 4:
@@ -148,7 +148,7 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
       case 6:
         array = NSArray(contentsOfFile:filePathStb!)!
       case 7:
-        array = NSArray(contentsOfFile: filePath7!)!
+        array = NSArray(contentsOfFile: filePathConvenience!)!
       case 8:
         array = NSArray(contentsOfFile: filePathYoshinoya!)!
       case 9:
@@ -158,7 +158,7 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
       case 11:
         array = NSArray(contentsOfFile:filePathStb!)!
       case 12:
-        array = NSArray(contentsOfFile: filePath7!)!
+        array = NSArray(contentsOfFile: filePathConvenience!)!
       case 13:
         array = NSArray(contentsOfFile: filePathYoshinoya!)!
       case 14:
@@ -168,7 +168,7 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
       case 16:
         array = NSArray(contentsOfFile:filePathStb!)!
       case 17:
-        array = NSArray(contentsOfFile: filePath7!)!
+        array = NSArray(contentsOfFile: filePathConvenience!)!
       case 18:
         array = NSArray(contentsOfFile: filePathYoshinoya!)!
       case 19:

@@ -155,7 +155,7 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate,UIImagePicker
     let flexSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
     
     
-    let done: UIBarButtonItem = UIBarButtonItem(title: "閉じる", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.doneButtonActionn))
+    let done: UIBarButtonItem = UIBarButtonItem(title: "閉じる", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.doneButtonActionn))
     done.tintColor = UIColor.blue
     
     
@@ -169,6 +169,9 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate,UIImagePicker
     
     //fontawsome適用！
     let attributes = [NSFontAttributeName: UIFont.fontAwesome(ofSize: 22)] as [String: Any]
+    
+    done.setTitleTextAttributes(attributes, for: .normal)
+    done.title = String.fontAwesomeIcon(name: .close)
     
     cameraPhoto.setTitleTextAttributes(attributes, for: .normal)
     cameraPhoto.title = String.fontAwesomeIcon(name: .camera)
@@ -194,17 +197,10 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate,UIImagePicker
     
   }
   
-  //
-  func doneButtonAction() {
-    
-    self.myTitle.resignFirstResponder()
-    //self.bottomSpace.constant = 12
-  }
-  
+
   
   //カ
   func doneButtonActionn() {
-    
     
     self.myTitle.resignFirstResponder()
     
@@ -505,6 +501,10 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate,UIImagePicker
         
       }else{
         print("編集保存")
+        
+        //編集モードでかつ文字が入ってない時
+          
+        
         let query:NSFetchRequest<Memo> = Memo.fetchRequest()
         
         //更新するデータの取得！ここで絞り込み
@@ -547,7 +547,6 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate,UIImagePicker
       }
     }
   }
-
 
 
   override func didReceiveMemoryWarning() {

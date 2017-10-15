@@ -24,6 +24,12 @@
 		E367FBF41F820592003C015F /* FontAwesome_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E367FBF31F820592003C015F /* FontAwesome_swift.framework */; };
 		E373D75B1F8352DD008D96BA /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E373D7591F83527F008D96BA /* SwiftyJSON.framework */; };
 		E375A4B41F90E6E60088EE82 /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E375A4B31F90E6E60088EE82 /* CircleImageView.swift */; };
+		E38AD5A81F92FFEF0051AF30 /* PriceHomeElectricAppliance.plist in Resources */ = {isa = PBXBuildFile; fileRef = E38AD5A71F92FFEF0051AF30 /* PriceHomeElectricAppliance.plist */; };
+		E38AD5AA1F932B820051AF30 /* PriceFurniture.plist in Resources */ = {isa = PBXBuildFile; fileRef = E38AD5A91F932B820051AF30 /* PriceFurniture.plist */; };
+		E38AD5AC1F932EC30051AF30 /* PriceCookWare.plist in Resources */ = {isa = PBXBuildFile; fileRef = E38AD5AB1F932EC30051AF30 /* PriceCookWare.plist */; };
+		E38AD5AE1F93304D0051AF30 /* PriceDvdMusic.plist in Resources */ = {isa = PBXBuildFile; fileRef = E38AD5AD1F93304D0051AF30 /* PriceDvdMusic.plist */; };
+		E38AD5B01F9339030051AF30 /* PriceFashion.plist in Resources */ = {isa = PBXBuildFile; fileRef = E38AD5AF1F9339030051AF30 /* PriceFashion.plist */; };
+		E38AD5B41F933BE60051AF30 /* PriceSupermarketFoods.plist in Resources */ = {isa = PBXBuildFile; fileRef = E38AD5B31F933BE60051AF30 /* PriceSupermarketFoods.plist */; };
 		E3974B001F74F71B00CDD953 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3974AFE1F74F71B00CDD953 /* CustomTableViewCell.swift */; };
 		E3974B011F74F71B00CDD953 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3974AFF1F74F71B00CDD953 /* CustomTableViewCell.xib */; };
 		E3AB05C51F6E004C00B20261 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AB05C41F6E004C00B20261 /* AppDelegate.swift */; };
@@ -38,8 +44,6 @@
 		E3BF59571F6E9E5300038E59 /* ViewController1-2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BF59561F6E9E5300038E59 /* ViewController1-2.swift */; };
 		E3BF59591F6EA02D00038E59 /* ViewController1_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BF59581F6EA02D00038E59 /* ViewController1_3.swift */; };
 		E3BF595B1F6ED1CB00038E59 /* Detail.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3BF595A1F6ED1CB00038E59 /* Detail.plist */; };
-		E3E442A31F7CC20D008CE769 /* Fastfood.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3E442A21F7CC20D008CE769 /* Fastfood.plist */; };
-		E3E442A51F7CD0CE008CE769 /* Convenience.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3E442A41F7CD0CE008CE769 /* Convenience.plist */; };
 		E3E442A71F7E1015008CE769 /* ShopAndGallery.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3E442A61F7E1015008CE769 /* ShopAndGallery.plist */; };
 		E3E442E61F7F4D32008CE769 /* LivingOfCosts.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3E442E51F7F4D32008CE769 /* LivingOfCosts.plist */; };
 		E3E442E81F7F522D008CE769 /* BigShopping.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3E442E71F7F522D008CE769 /* BigShopping.plist */; };
@@ -90,6 +94,12 @@
 		E367FBF31F820592003C015F /* FontAwesome_swift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FontAwesome_swift.framework; path = "../../Library/Developer/Xcode/DerivedData/Compare-euiaddjhbqqrmzgrkqdmyglpgsiz/Build/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework"; sourceTree = "<group>"; };
 		E373D7591F83527F008D96BA /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../Library/Developer/Xcode/DerivedData/Compare-euiaddjhbqqrmzgrkqdmyglpgsiz/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		E375A4B31F90E6E60088EE82 /* CircleImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
+		E38AD5A71F92FFEF0051AF30 /* PriceHomeElectricAppliance.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PriceHomeElectricAppliance.plist; sourceTree = "<group>"; };
+		E38AD5A91F932B820051AF30 /* PriceFurniture.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PriceFurniture.plist; sourceTree = "<group>"; };
+		E38AD5AB1F932EC30051AF30 /* PriceCookWare.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PriceCookWare.plist; sourceTree = "<group>"; };
+		E38AD5AD1F93304D0051AF30 /* PriceDvdMusic.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PriceDvdMusic.plist; sourceTree = "<group>"; };
+		E38AD5AF1F9339030051AF30 /* PriceFashion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PriceFashion.plist; sourceTree = "<group>"; };
+		E38AD5B31F933BE60051AF30 /* PriceSupermarketFoods.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PriceSupermarketFoods.plist; sourceTree = "<group>"; };
 		E3974AFE1F74F71B00CDD953 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		E3974AFF1F74F71B00CDD953 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 		E3AB05C11F6E004C00B20261 /* Compare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Compare.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,8 +121,6 @@
 		E3BF59561F6E9E5300038E59 /* ViewController1-2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController1-2.swift"; sourceTree = "<group>"; };
 		E3BF59581F6EA02D00038E59 /* ViewController1_3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController1_3.swift; sourceTree = "<group>"; };
 		E3BF595A1F6ED1CB00038E59 /* Detail.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Detail.plist; sourceTree = "<group>"; };
-		E3E442A21F7CC20D008CE769 /* Fastfood.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Fastfood.plist; sourceTree = "<group>"; };
-		E3E442A41F7CD0CE008CE769 /* Convenience.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Convenience.plist; sourceTree = "<group>"; };
 		E3E442A61F7E1015008CE769 /* ShopAndGallery.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ShopAndGallery.plist; sourceTree = "<group>"; };
 		E3E442E51F7F4D32008CE769 /* LivingOfCosts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LivingOfCosts.plist; sourceTree = "<group>"; };
 		E3E442E71F7F522D008CE769 /* BigShopping.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BigShopping.plist; sourceTree = "<group>"; };
@@ -207,19 +215,23 @@
 				E3AB05F61F6E187900B20261 /* CustomCell.swift */,
 				E3974AFE1F74F71B00CDD953 /* CustomTableViewCell.swift */,
 				E3974AFF1F74F71B00CDD953 /* CustomTableViewCell.xib */,
-				E3AB05CF1F6E004C00B20261 /* LaunchScreen.storyboard */,
-				E375A4B31F90E6E60088EE82 /* CircleImageView.swift */,
 				E3E442ED1F7F792A008CE769 /* McPrice.plist */,
 				E3AB05D21F6E004D00B20261 /* Info.plist */,
 				E3BF595A1F6ED1CB00038E59 /* Detail.plist */,
-				E3E442A21F7CC20D008CE769 /* Fastfood.plist */,
-				E3E442A41F7CD0CE008CE769 /* Convenience.plist */,
 				E3E442A61F7E1015008CE769 /* ShopAndGallery.plist */,
 				E3E442E51F7F4D32008CE769 /* LivingOfCosts.plist */,
 				E349CD041F7FBC0F00ABC485 /* ElectricAppliances.plist */,
 				E3E442E71F7F522D008CE769 /* BigShopping.plist */,
 				E3E442E91F7F535C008CE769 /* Construction.plist */,
 				E3E442EB1F7F55F6008CE769 /* Dwelling.plist */,
+				E38AD5A91F932B820051AF30 /* PriceFurniture.plist */,
+				E38AD5AB1F932EC30051AF30 /* PriceCookWare.plist */,
+				E38AD5AD1F93304D0051AF30 /* PriceDvdMusic.plist */,
+				E38AD5B31F933BE60051AF30 /* PriceSupermarketFoods.plist */,
+				E38AD5AF1F9339030051AF30 /* PriceFashion.plist */,
+				E38AD5A71F92FFEF0051AF30 /* PriceHomeElectricAppliance.plist */,
+				E375A4B31F90E6E60088EE82 /* CircleImageView.swift */,
+				E3AB05CF1F6E004C00B20261 /* LaunchScreen.storyboard */,
 				E341697F1F920FE000DDA77C /* PriceConvenience.plist */,
 				E341697D1F9206D500DDA77C /* PriceKfc.plist */,
 				E34169771F91E42300DDA77C /* PriceStarbucks.plist */,
@@ -388,10 +400,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E38AD5A81F92FFEF0051AF30 /* PriceHomeElectricAppliance.plist in Resources */,
 				E341697A1F91F54700DDA77C /* PriceYoshinoya.plist in Resources */,
 				E3E442EE1F7F792A008CE769 /* McPrice.plist in Resources */,
+				E38AD5B01F9339030051AF30 /* PriceFashion.plist in Resources */,
 				E3AB05D11F6E004D00B20261 /* LaunchScreen.storyboard in Resources */,
 				E3E442E81F7F522D008CE769 /* BigShopping.plist in Resources */,
+				E38AD5AE1F93304D0051AF30 /* PriceDvdMusic.plist in Resources */,
 				E34169801F920FE000DDA77C /* PriceConvenience.plist in Resources */,
 				E3E442EA1F7F535C008CE769 /* Construction.plist in Resources */,
 				E3BF595B1F6ED1CB00038E59 /* Detail.plist in Resources */,
@@ -399,13 +414,14 @@
 				E34169781F91E42300DDA77C /* PriceStarbucks.plist in Resources */,
 				E3E442EC1F7F55F6008CE769 /* Dwelling.plist in Resources */,
 				E3E442E61F7F4D32008CE769 /* LivingOfCosts.plist in Resources */,
-				E3E442A31F7CC20D008CE769 /* Fastfood.plist in Resources */,
+				E38AD5AC1F932EC30051AF30 /* PriceCookWare.plist in Resources */,
+				E38AD5AA1F932B820051AF30 /* PriceFurniture.plist in Resources */,
 				E3E442A71F7E1015008CE769 /* ShopAndGallery.plist in Resources */,
-				E3E442A51F7CD0CE008CE769 /* Convenience.plist in Resources */,
 				E3AB05CE1F6E004C00B20261 /* Assets.xcassets in Resources */,
 				E341697E1F9206D500DDA77C /* PriceKfc.plist in Resources */,
 				E3974B011F74F71B00CDD953 /* CustomTableViewCell.xib in Resources */,
 				E341697C1F92050200DDA77C /* PriceMarukame.plist in Resources */,
+				E38AD5B41F933BE60051AF30 /* PriceSupermarketFoods.plist in Resources */,
 				E3AB05CC1F6E004C00B20261 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -692,7 +708,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -738,7 +754,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -755,10 +771,12 @@
 				CODE_SIGN_ENTITLEMENTS = Compare/Compare.entitlements;
 				DEVELOPMENT_TEAM = L833ELDWTK;
 				INFOPLIST_FILE = Compare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.ne.ezweb-5829sphykatoryo.Compares";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -770,10 +788,12 @@
 				CODE_SIGN_ENTITLEMENTS = Compare/Compare.entitlements;
 				DEVELOPMENT_TEAM = L833ELDWTK;
 				INFOPLIST_FILE = Compare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.ne.ezweb-5829sphykatoryo.Compares";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

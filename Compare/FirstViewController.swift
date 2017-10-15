@@ -33,7 +33,7 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
   
   var aaaa:[String] = ["aaaa","aaaa"]
   
-  let imageDesu:[String] = ["CoffeeSrarbucks","Convenience7","Image-11","LivingOfCosts","Image-10","Image-2","Image-3","Image-12","Image-10","Image-10","Image-10","Image10","CoffeeSrarbucks","Convenience7","Image-11","LivingOfCosts","Image-10","Image-2","Image-3","Image-12","Image-10","","","","","","","","","",""]
+  let imageDesu:[String] = ["CoffeeSrarbucks","Image-2","Image-1","LivingOfCosts","Image-10","McDonalds.Top","Image-3","Image-12","Image-10","Image-10","Image-10","Image10","CoffeeSrarbucks","Convenience7","Image-11","LivingOfCosts","Image-10","Image-2","Image-3","Image-12","Image-10","","","","","","","","","",""]
   
 
   //ここに保存されて、次の画面に送る！
