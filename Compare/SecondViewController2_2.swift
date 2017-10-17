@@ -10,6 +10,7 @@
 import UIKit
 import CoreData
 import FontAwesome_swift
+import Social
 
 class SecondViewController2_2: UIViewController,UITextViewDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
   
@@ -22,6 +23,17 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate,UIImagePicker
   
   //メモ内容
   @IBOutlet weak var myTitle: UITextView!
+  
+ 
+  
+  
+  let dateformatter = NSDate()
+  
+  //twiiterボタン
+  var myComposeView : SLComposeViewController!
+  
+  //fontawsome適用！
+  let attributes = [NSFontAttributeName: UIFont.fontAwesome(ofSize: 22)] as [String: Any]
   
   //インスタンスの作成
   //let saves = UserDefaults.standard
@@ -58,13 +70,6 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate,UIImagePicker
     }
   }
   
-  
-  
-
-  
-  
-  
-  
   //テキストを閉じる処理
   @IBAction func closeBtn(_ sender: UIBarButtonItem) {
       myTitle.resignFirstResponder()
@@ -72,15 +77,134 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate,UIImagePicker
   
   
   
-  //戻るボタン　フォントオーサムで弄る為の
+  
+  
   @IBOutlet weak var BackBtn: UIBarButtonItem!
   
   
+  @IBAction func BackBtn(_ sender: UIBarButtonItem) {
+    
+    print("加藤諒作動しています")
+    //  //画面から非表示になる直前に呼ばれる！
+    //  //画面が戻るときに！
+    //  override func viewWillDisappear(_ animated: Bool) {
+    //    super.viewWillDisappear(animated)
+    var nakamiComfirm = ""
+    
+    nakamiComfirm = myTitle.text
+    
+    var mymyText = myTitle.text
+    
+    
+    let appD:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+    
+    //エンティティを操作するためのオブジェクトを作成
+    let viewContext = appD.persistentContainer.viewContext
+    
+    if ((nakamiComfirm == "") || (nakamiComfirm == nil)){
+      print("保存しない")
+    }else{
+      if MemoNo == -1{
+        print("新規追加")
+        let appD:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+        
+        //エンティティを操作するためのオブジェクトを作成
+        let viewContext = appD.persistentContainer.viewContext
+        
+        //ToDoエンティティオブジェクトを作成
+        let Memo = NSEntityDescription.entity(forEntityName: "Memo", in: viewContext)
+        
+        //ToDoエンティティにレコード（行）を挿入するためのオブジェクトを作成
+        let newRecord = NSManagedObject(entity: Memo!, insertInto: viewContext)
+        
+        //値のセット(アトリビュート毎に指定) forKeyはモデルで指定したアトリビュート名
+        newRecord.setValue(myTitle.text, forKey: "memo")
+        newRecord.setValue(Date(), forKey: "saveData")
+        
+        
+        
+        //レコード（行）の即時保存
+        do{
+          try viewContext.save()
+        }catch {
+          
+        }
+        
+        read()
+        
+        myTitle.reloadInputViews()
+        
+        print("viewWillDisappear")
+        
+      }else{
+        print("編集保存")
+        
+        //編集モードでかつ文字が入ってない時
+        
+        
+        let query:NSFetchRequest<Memo> = Memo.fetchRequest()
+        
+        //更新するデータの取得！ここで絞り込み
+        let namePredicte = NSPredicate(format: "saveData = %@", contentDate[MemoNo] as CVarArg)
+        //絞り込み検索（更新したいデータを取得する）
+        query.predicate = namePredicte
+        
+        
+        
+        do{
+          
+          let appD:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+          
+          //エンティティを操作するためのオブジェクトを作成
+          let viewContext = appD.persistentContainer.viewContext
+          
+          
+          //絞り込み検索している
+          let fetchResults = try! viewContext.fetch(query)
+          
+          
+          //全部有る分フェッチを回す（一つだけ）
+          for result:AnyObject in fetchResults {
+            
+            // 編集可能にする
+            let record = result as! NSManagedObject
+            
+            //編集された分はここに保存
+            //record setvalueが編集キー
+            record.setValue(myTitle.text, forKey: "memo")
+            
+            do{
+              //レコードの即時保存
+              //ここで確定！
+              try viewContext.save()
+            }catch{
+            }
+          }
+        }
+      }
+    }
+    //一つ前に戻る処理！
+    self.dismiss(animated: true, completion: nil)
+  }
+  
+  
+  
+  let strLeft = NSAttributedString(string: "")
+  let attachment = NSTextAttachment()
+ 
+ 
+  let str = NSMutableAttributedString()
+
   
   //viedDidLoad
   override func viewDidLoad() {
         super.viewDidLoad()
     
+     var myTitle2:NSAttributedString = myTitle.attributedText
+    
+    
+     let strImage = NSAttributedString(attachment: attachment)
+     attachment.image = UIImage(named: "Image-2")
   
     // キーボードの上部にビューをセットする
     //myTitle.inputAccessoryView = UILabel()
@@ -88,20 +212,34 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate,UIImagePicker
     
     
     
-    let attributes = [NSFontAttributeName: UIFont.fontAwesome(ofSize: 20)] as [String: Any]
+//    let attributes = [NSFontAttributeName: UIFont.fontAwesome(ofSize: 20)] as [String: Any]
     BackBtn.setTitleTextAttributes(attributes, for: .normal)
-    BackBtn.title = String.fontAwesomeIcon(name: .stepBackward)
+    BackBtn.title = String.fontAwesomeIcon(name: .chevronLeft)
+    
+  
     
     //CoreDataからデータを読み込む処理
     read()
     
     myTitle.text? = ""
     
+    
+    //現在データの取得コード
+    //datedesuyoに日付が入っている
+    let now = NSDate()
+    let formatter = DateFormatter()
+    formatter.dateFormat = "yyyy/MM/dd HH:mm:ss"
+    let dateDesuyo = formatter.string(from: now as Date)
+    
+    
+    
+    
       //ここが一つ前の新規ボタンを押しても表示されない鍵
     if MemoNo == -1 {
       myTitle.text? = ""
     }else{
       myTitle.text? = contentTitle[MemoNo]
+      
 
     }
     
@@ -124,6 +262,8 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate,UIImagePicker
     let myMenuItem_1: UIMenuItem = UIMenuItem(title: "文字色", action: #selector(SecondViewController2_2.onMenu1(sender:)))
     let myMenuItem_2: UIMenuItem = UIMenuItem(title: "テキスト編集", action: #selector(SecondViewController2_2.onMenu2(sender:)))
     let myMenuItem_3: UIMenuItem = UIMenuItem(title: "写真", action: #selector(SecondViewController2_2.onMenu3(sender:)))
+
+    
     
     // MenuItemを配列に格納.
     let myMenuItems: NSArray = [myMenuItem_1, myMenuItem_2, myMenuItem_3]
@@ -167,8 +307,11 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate,UIImagePicker
     cameraPhoto.tintColor = UIColor.blue
     
     
-    //fontawsome適用！
-    let attributes = [NSFontAttributeName: UIFont.fontAwesome(ofSize: 22)] as [String: Any]
+    let twitter: UIBarButtonItem = UIBarButtonItem(title: "twiter", style: .plain, target: self, action: #selector(self.twitter))
+    cameraPhoto.tintColor = UIColor.blue
+    
+    
+    
     
     done.setTitleTextAttributes(attributes, for: .normal)
     done.title = String.fontAwesomeIcon(name: .close)
@@ -179,6 +322,8 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate,UIImagePicker
     choosePicture.setTitleTextAttributes(attributes, for: .normal)
     choosePicture.title = String.fontAwesomeIcon(name: .pictureO)
 
+    twitter.setTitleTextAttributes(attributes, for: .normal)
+    twitter.title = String.fontAwesomeIcon(name: .twitter)
     
     
     var items = [UIBarButtonItem]()
@@ -186,6 +331,7 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate,UIImagePicker
     items.append(choosePicture)
     items.append(flexSpace)
     items.append(cameraPhoto)
+    items.append(twitter)
     
     
     items.append(done)
@@ -201,9 +347,22 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate,UIImagePicker
   
   //カ
   func doneButtonActionn() {
-    
     self.myTitle.resignFirstResponder()
-    
+  }
+  
+  
+  // ボタンイベント.
+  func twitter(sender : AnyObject) {
+    // SLComposeViewControllerのインスタンス化.
+    // ServiceTypeをTwitterに指定.
+    myComposeView = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+    // 投稿するテキストを指定.
+    myComposeView.setInitialText(myTitle.text)
+    // 投稿する画像を指定.
+    myComposeView.add(UIImage(named: "UIImage"))
+
+    // myComposeViewの画面遷移.
+    self.present(myComposeView, animated: true, completion: nil)
   }
   
   
@@ -304,7 +463,6 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate,UIImagePicker
     } catch let e {
       // 変換でエラーが出た場合
     }
-    
     return attributedString
   }
   
@@ -438,115 +596,21 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate,UIImagePicker
   
   //新規作成ボタン（compose）
   @IBAction func newPageBtn(_ sender: UIBarButtonItem) {
-    
     performSegue(withIdentifier: "nextAgain", sender: nil)
-    
   }
 
   
   
+//  func a(_ ) ->{
+//    var attach:NSTextAttachment = NSTextAttachment()
+//    attach.image = (image)
+//    attach.bounds=CGRect(x: 0, y: 0, width: 40, height: 40)
+//    var attr_string:NSAttributedString=NSAttributedString(attachment: attach)
+//    result.insertAttributedString(myTitle, atIndex: 40)
+//  }
   
   
-  //画面から非表示になる直前に呼ばれる！
-  //画面が戻るときに！
-  override func viewWillDisappear(_ animated: Bool) {
-    super.viewWillDisappear(animated)
-    
-    var nakamiComfirm = ""
-    
-    nakamiComfirm = myTitle.text
-    
-    var mymyText = myTitle.text
-    
-    
-    let appD:AppDelegate = UIApplication.shared.delegate as! AppDelegate
-    
-    //エンティティを操作するためのオブジェクトを作成
-    let viewContext = appD.persistentContainer.viewContext
 
-    if ((nakamiComfirm == "") || (nakamiComfirm == nil)){
-      print("保存しない")
-    }else{
-      if MemoNo == -1{
-        print("新規追加")
-        let appD:AppDelegate = UIApplication.shared.delegate as! AppDelegate
-        
-        //エンティティを操作するためのオブジェクトを作成
-        let viewContext = appD.persistentContainer.viewContext
-        
-        //ToDoエンティティオブジェクトを作成
-        let Memo = NSEntityDescription.entity(forEntityName: "Memo", in: viewContext)
-        
-        //ToDoエンティティにレコード（行）を挿入するためのオブジェクトを作成
-        let newRecord = NSManagedObject(entity: Memo!, insertInto: viewContext)
-        
-        //値のセット(アトリビュート毎に指定) forKeyはモデルで指定したアトリビュート名
-        newRecord.setValue(myTitle.text, forKey: "memo")
-        newRecord.setValue(Date(), forKey: "saveData")
-        
-        
-        
-        //レコード（行）の即時保存
-        do{
-          try viewContext.save()
-        }catch {
-          
-        }
-        
-        read()
-        
-        myTitle.reloadInputViews()
-        
-        print("viewWillDisappear")
-        
-      }else{
-        print("編集保存")
-        
-        //編集モードでかつ文字が入ってない時
-          
-        
-        let query:NSFetchRequest<Memo> = Memo.fetchRequest()
-        
-        //更新するデータの取得！ここで絞り込み
-        let namePredicte = NSPredicate(format: "saveData = %@", contentDate[MemoNo] as CVarArg)
-        //絞り込み検索（更新したいデータを取得する）
-        query.predicate = namePredicte
-        
-      
-        
-        do{
-          
-          let appD:AppDelegate = UIApplication.shared.delegate as! AppDelegate
-          
-          //エンティティを操作するためのオブジェクトを作成
-          let viewContext = appD.persistentContainer.viewContext
-          
-          
-          //絞り込み検索している
-          let fetchResults = try! viewContext.fetch(query)
-          
-          
-          //全部有る分フェッチを回す（一つだけ）
-          for result:AnyObject in fetchResults {
-            
-            // 編集可能にする
-            let record = result as! NSManagedObject
-            
-            //編集された分はここに保存
-            //record setvalueが編集キー
-            record.setValue(myTitle.text, forKey: "memo")
-          
-            do{
-              //レコードの即時保存
-              //ここで確定！
-              try viewContext.save()
-            }catch{
-            }
-          }
-        }
-      }
-    }
-  }
 
 
   override func didReceiveMemoryWarning() {

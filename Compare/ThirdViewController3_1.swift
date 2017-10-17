@@ -23,8 +23,23 @@ class ThirdViewController3_1: UIViewController,UITableViewDelegate,UITableViewDa
   
   var noDesu:Int = -1
  
+  
+  @IBOutlet weak var ImageCell: UIImageView!
+  
+  
+  @IBOutlet weak var editBtn: UIBarButtonItem!
+  
+   let attributes = [NSFontAttributeName: UIFont.fontAwesome(ofSize: 30)] as [String: Any]
+  
+  
     override func viewDidLoad() {
         super.viewDidLoad()
+      
+
+      //fontawsome適用！
+      self.editBtn.setTitleTextAttributes(attributes, for: .normal)
+          self.editBtn.title = String.fontAwesomeIcon(name: .th)
+      
       
         myTableView.reloadData()
       
@@ -105,6 +120,8 @@ class ThirdViewController3_1: UIViewController,UITableViewDelegate,UITableViewDa
   
   //ここで画面を表示 cellに値を設定！
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    
+    
     
     let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")! as UITableViewCell
     

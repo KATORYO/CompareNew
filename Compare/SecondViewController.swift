@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 import FontAwesome_swift
+import Social
 
 class SecondViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
   
@@ -19,10 +20,15 @@ class SecondViewController: UIViewController,UITableViewDelegate,UITableViewData
   
   var contentDate:[Date] = []
   
+  //fontawsomeのため
+  @IBOutlet weak var newPage: UIBarButtonItem!
+  @IBOutlet weak var editBtn: UIBarButtonItem!
+  let attributes = [NSFontAttributeName: UIFont.fontAwesome(ofSize: 25)] as [String: Any]
+  
+ 
   
   //appdelegateに書いた値を共有できるようにする
   var delegate: AppDelegate = UIApplication.shared.delegate as! AppDelegate
-  
   
   //メモNo
   var memoNo:Int = 0
@@ -36,6 +42,13 @@ class SecondViewController: UIViewController,UITableViewDelegate,UITableViewData
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+    //fontawsome適用！
+    self.editBtn.setTitleTextAttributes(attributes, for: .normal)
+    self.editBtn.title = String.fontAwesomeIcon(name: .th)
+    //fontawsome適用！
+    self.newPage.setTitleTextAttributes(attributes, for: .normal)
+    self.newPage.title = String.fontAwesomeIcon(name: .pencilSquareO)
     
     myTableViewMemo.delegate = self
     
@@ -59,7 +72,6 @@ class SecondViewController: UIViewController,UITableViewDelegate,UITableViewData
     
     read()
     
-    reloadInputViews()
     myTableViewMemo.reloadData()
     
   }
@@ -153,6 +165,7 @@ override func didReceiveMemoryWarning() {
     if contentTitle == nil {
       cell.textLabel?.text = ""
     }else{
+        //cell.detailTextLabel?.text = contentTitle[indexPath.row]
         cell.textLabel?.text = contentTitle[indexPath.row]
     }
     

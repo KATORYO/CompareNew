@@ -126,6 +126,10 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
       
       let filePathKfc = Bundle.main.path(forResource: "PriceKfc", ofType: "plist")
       
+      let filePathKHomeErectric = Bundle.main.path(forResource: "PriceHomeElectricAppliance", ofType: "plist")
+      
+      
+      
       
       //出来上がったら配列で記入してみる
 //      let filePathaa:[String] = [Bundle.main.path(forResource: "McPrice", ofType: "plist")!]
@@ -146,7 +150,7 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
       case 5:
         array = NSArray(contentsOfFile: (filePathKfc)!)!
       case 6:
-        array = NSArray(contentsOfFile:filePathStb!)!
+        array = NSArray(contentsOfFile: filePathKHomeErectric!)!
       case 7:
         array = NSArray(contentsOfFile: filePathConvenience!)!
       case 8:
@@ -319,15 +323,17 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
     
     
     
+    
     cell.nameLabel.adjustsFontSizeToFitWidth = true
     cell.nameLabel.minimumScaleFactor = 0.5 //# 最小でも80%までしか縮小しない場合
     cell.PesoLabel.adjustsFontSizeToFitWidth = true
     cell.PesoLabel.minimumScaleFactor = 0.5 //# 最小でも80%までしか縮小しない場合
-    
+    cell.YenLabel.adjustsFontSizeToFitWidth = true
+    cell.YenLabel.minimumScaleFactor = 0.5
     
     
     cell.ProductsImage.image = UIImage(named: dicB["camera"] as! String)
-    
+
     cell.nameLabel.text? = dicB["item"] as! String
     
     cell.PesoLabel.text? = dicB["pricePeso"] as! String

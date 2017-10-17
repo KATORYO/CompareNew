@@ -4,13 +4,13 @@
 <array>
 	<dict>
 		<key>camera</key>
-		<string>Burger 以下は税込みです</string>
+		<string>Burger</string>
 		<key>item</key>
-		<string>シャープ 冷蔵庫 2ドア 137L SJ-D14C</string>
+		<string>シャープ 冷蔵庫 5ドア 412L SJ-PW42B</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>33700</string>
+		<string>109620</string>
 	</dict>
 	<dict>
 		<key>camera</key>
@@ -26,191 +26,221 @@
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>SONY 薄型テレビ 49インチ 4K BRAVIA</string>
+		<string>シャープ 冷蔵庫 5ドア 412L SJ-PW42B</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>150810 </string>
+		<string>109620</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>SONY 薄型テレビ 24インチ</string>
+		<string>シャープ 冷蔵庫 5ドア 412L SJ-PW42B</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>29300</string>
+		<string>109620</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>パナソニック 洗濯機 （簡易乾燥機能付） 6kg </string>
+		<string>シャープ 冷蔵庫 5ドア 412L SJ-PW42B</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>36850</string>
+		<string>109620</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>パナソニック 洗濯機 （洗濯乾燥機） 10kg</string>
+		<string>シャープ 冷蔵庫 5ドア 412L SJ-PW42B</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>166000</string>
+		<string>109620</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>パナソニック 炊飯器 踊りだき 5.5</string>
+		<string>シャープ 冷蔵庫 5ドア 412L SJ-PW42B</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>150</string>
+		<string>109620</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ブルーレイDVDレコーダー</string>
+		<string>シャープ 冷蔵庫 5ドア 412L SJ-PW42B</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>43200</string>
+		<string>109620</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>パナソニック エオリア 6畳 木造和室</string>
+		<string>シャープ 冷蔵庫 5ドア 412L SJ-PW42B</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>34990</string>
+		<string>109620</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>SONY イヤホン WF-1000X</string>
+		<string>シャープ 冷蔵庫 5ドア 412L SJ-PW42B</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>23190</string>
+		<string>109620</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>マキタ 掃除機 コードレス 32w</string>
+		<string>シャープ 冷蔵庫 5ドア 412L SJ-PW42B</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>13000</string>
+		<string>109620</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>パナソニック 電子レンジ エレック 850w 22L</string>
+		<string>シャープ 冷蔵庫 5ドア 412L SJ-PW42B</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>12800</string>
+		<string>109620</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>パナソニック FAX</string>
+		<string>シャープ 冷蔵庫 5ドア 412L SJ-PW42B</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>11929</string>
+		<string>109620</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>シャープ 空気洗浄機 KC-F50</string>
+		<string>シャープ 冷蔵庫 5ドア 412L SJ-PW42B</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>15,780</string>
+		<string>109620</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>パナソニック エアコン エオリア CS-227CF</string>
+		<string>シャープ 冷蔵庫 5ドア 412L SJ-PW42B</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>34180</string>
+		<string>109620</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ルンバ 980</string>
+		<string>シャープ 冷蔵庫 5ドア 412L SJ-PW42B</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>98999</string>
+		<string>109620</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ティファール 電気ポット 0.8L</string>
+		<string>シャープ 冷蔵庫 5ドア 412L SJ-PW42B</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>3191</string>
+		<string>109620</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>SONY ラジオ ICF-P36</string>
+		<string>シャープ 冷蔵庫 5ドア 412L SJ-PW42B</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>2038</string>
+		<string>109620</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>CANON プリンター TS8030</string>
+		<string>シャープ 冷蔵庫 5ドア 412L SJ-PW42B</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>16200</string>
+		<string>109620</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>CANON カメラ</string>
+		<string>シャープ 冷蔵庫 5ドア 412L SJ-PW42B</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>**</string>
+		<string>109620</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>CANON カメラ</string>
+		<string>シャープ 冷蔵庫 5ドア 412L SJ-PW42B</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>**</string>
+		<string>109620</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>Burger</string>
+		<key>item</key>
+		<string>シャープ 冷蔵庫 5ドア 412L SJ-PW42B</string>
+		<key>pricePeso</key>
+		<string>40php</string>
+		<key>priceYen</key>
+		<string>109620</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>Burger</string>
+		<key>item</key>
+		<string>シャープ 冷蔵庫 5ドア 412L SJ-PW42B</string>
+		<key>pricePeso</key>
+		<string>40php</string>
+		<key>priceYen</key>
+		<string>109620</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>Burger</string>
+		<key>item</key>
+		<string>シャープ 冷蔵庫 5ドア 412L SJ-PW42B</string>
+		<key>pricePeso</key>
+		<string>40php</string>
+		<key>priceYen</key>
+		<string>109620</string>
 	</dict>
 </array>
 </plist>

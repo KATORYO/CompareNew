@@ -8,7 +8,7 @@
 		<key>item</key>
 		<string>ドーナツ</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>30</string>
 		<key>priceYen</key>
 		<string>115</string>
 	</dict>
@@ -18,7 +18,7 @@
 		<key>item</key>
 		<string>おにぎり 鮭</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>00</string>
 		<key>priceYen</key>
 		<string>140</string>
 	</dict>
@@ -28,7 +28,7 @@
 		<key>item</key>
 		<string>おにぎり 梅</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>00</string>
 		<key>priceYen</key>
 		<string>110</string>
 	</dict>
@@ -38,9 +38,9 @@
 		<key>item</key>
 		<string>肉まん</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>29</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>100</string>
 	</dict>
 	<dict>
 		<key>camera</key>
@@ -54,9 +54,9 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>黒ボールペン</string>
+		<string>Image-2</string>
 		<key>item</key>
-		<string>ハンバーガー</string>
+		<string>ボールペン 黒</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
@@ -78,7 +78,7 @@
 		<key>item</key>
 		<string>カッターミニ</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>13</string>
 		<key>priceYen</key>
 		<string>220</string>
 	</dict>
@@ -108,7 +108,7 @@
 		<key>item</key>
 		<string>フランクフルト</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>29</string>
 		<key>priceYen</key>
 		<string>100</string>
 	</dict>
@@ -136,9 +136,149 @@
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ハンバーガー</string>
+		<string>ポッキー 47g</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>40</string>
+		<key>priceYen</key>
+		<string>100php</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>Burger</string>
+		<key>item</key>
+		<string>オレオ 137g</string>
+		<key>pricePeso</key>
+		<string>47</string>
+		<key>priceYen</key>
+		<string>100php</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>Burger</string>
+		<key>item</key>
+		<string>スニッカーズ 61g</string>
+		<key>pricePeso</key>
+		<string>44</string>
+		<key>priceYen</key>
+		<string>100php</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>Burger</string>
+		<key>item</key>
+		<string>キットカット 17g</string>
+		<key>pricePeso</key>
+		<string>18</string>
+		<key>priceYen</key>
+		<string>100php</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>Burger</string>
+		<key>item</key>
+		<string>折りたたみ傘</string>
+		<key>pricePeso</key>
+		<string>199</string>
+		<key>priceYen</key>
+		<string>100php</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>Burger</string>
+		<key>item</key>
+		<string>トイレットペーパー 1個</string>
+		<key>pricePeso</key>
+		<string>18</string>
+		<key>priceYen</key>
+		<string>100php</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>Burger</string>
+		<key>item</key>
+		<string>ハサミ 小</string>
+		<key>pricePeso</key>
+		<string>19</string>
+		<key>priceYen</key>
+		<string>100php</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>Burger</string>
+		<key>item</key>
+		<string>両面テープ</string>
+		<key>pricePeso</key>
+		<string>52</string>
+		<key>priceYen</key>
+		<string>100php</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>Burger</string>
+		<key>item</key>
+		<string>セロテープ 50yds</string>
+		<key>pricePeso</key>
+		<string>36</string>
+		<key>priceYen</key>
+		<string>peso</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>Burger</string>
+		<key>item</key>
+		<string>紙コップ 25個</string>
+		<key>pricePeso</key>
+		<string>63</string>
+		<key>priceYen</key>
+		<string>100php</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>Burger</string>
+		<key>item</key>
+		<string>チュッパチャップス</string>
+		<key>pricePeso</key>
+		<string>13</string>
+		<key>priceYen</key>
+		<string>100php</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>Burger</string>
+		<key>item</key>
+		<string>ハイチュウ 57g</string>
+		<key>pricePeso</key>
+		<string>35</string>
+		<key>priceYen</key>
+		<string>100php</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>Burger</string>
+		<key>item</key>
+		<string>水 最安値</string>
+		<key>pricePeso</key>
+		<string>15</string>
+		<key>priceYen</key>
+		<string>100</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>Burger</string>
+		<key>item</key>
+		<string>ポカリスウェット 500ml</string>
+		<key>pricePeso</key>
+		<string>37</string>
+		<key>priceYen</key>
+		<string>100php</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>Burger</string>
+		<key>item</key>
+		<string>コカコーラ 500ml</string>
+		<key>pricePeso</key>
+		<string>31</string>
 		<key>priceYen</key>
 		<string>100php</string>
 	</dict>
@@ -156,9 +296,9 @@
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ハンバーガー</string>
+		<string>スプライト 缶 330ml</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>27</string>
 		<key>priceYen</key>
 		<string>100php</string>
 	</dict>
@@ -166,9 +306,9 @@
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ハンバーガー</string>
+		<string>レッドブル 250ml</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>77</string>
 		<key>priceYen</key>
 		<string>100php</string>
 	</dict>
@@ -176,9 +316,9 @@
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ハンバーガー</string>
+		<string>キリンビール 330ml</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>74</string>
 		<key>priceYen</key>
 		<string>100php</string>
 	</dict>
@@ -186,9 +326,9 @@
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ハンバーガー</string>
+		<string>日清 カップ麺 シーフード 60g</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>34</string>
 		<key>priceYen</key>
 		<string>100php</string>
 	</dict>
@@ -196,9 +336,9 @@
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ハンバーガー</string>
+		<string>フライドチキン 1pc</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>70</string>
 		<key>priceYen</key>
 		<string>100php</string>
 	</dict>
@@ -206,9 +346,9 @@
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ハンバーガー</string>
+		<string>メントス 37g</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>35</string>
 		<key>priceYen</key>
 		<string>100php</string>
 	</dict>
@@ -216,9 +356,9 @@
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ハンバーガー</string>
+		<string>MODESS ナプキン 4s</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>62</string>
 		<key>priceYen</key>
 		<string>100php</string>
 	</dict>
@@ -226,9 +366,9 @@
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ハンバーガー</string>
+		<string>髭剃り 1個 ノーマル</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>24</string>
 		<key>priceYen</key>
 		<string>100php</string>
 	</dict>
@@ -236,9 +376,9 @@
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ハンバーガー</string>
+		<string>せっけん </string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>36</string>
 		<key>priceYen</key>
 		<string>100php</string>
 	</dict>
@@ -246,9 +386,9 @@
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ハンバーガー</string>
+		<string>歯ブラシ 最安値</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>30</string>
 		<key>priceYen</key>
 		<string>100php</string>
 	</dict>
@@ -256,9 +396,9 @@
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ハンバーガー</string>
+		<string>ギャツビー ワックス 75g</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>105</string>
 		<key>priceYen</key>
 		<string>100php</string>
 	</dict>
@@ -266,9 +406,9 @@
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ハンバーガー</string>
+		<string>ギャツビー ワックス 25g</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>46</string>
 		<key>priceYen</key>
 		<string>100php</string>
 	</dict>
@@ -276,9 +416,9 @@
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ハンバーガー</string>
+		<string>JOY 食器用洗剤 85ml</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>25</string>
 		<key>priceYen</key>
 		<string>100php</string>
 	</dict>
@@ -286,9 +426,9 @@
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ハンバーガー</string>
+		<string>サンドイッチ ツナ</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>29</string>
 		<key>priceYen</key>
 		<string>100php</string>
 	</dict>
@@ -296,149 +436,9 @@
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ハンバーガー</string>
+		<string>ヤクルト 1本</string>
 		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>100php</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>ハンバーガー</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>100php</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>ハンバーガー</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>100php</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>ハンバーガー</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>100php</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>ハンバーガー</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>100php</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>ハンバーガー</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>100php</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>ハンバーガー</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>100php</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>ハンバーガー</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>100php</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>ハンバーガー</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>100php</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>ハンバーガー</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>100php</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>ハンバーガー</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>100php</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>ハンバーガー</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>100php</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>ハンバーガー</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>100php</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>ハンバーガー</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>100php</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>ハンバーガー</string>
-		<key>pricePeso</key>
-		<string>40php</string>
+		<string>10</string>
 		<key>priceYen</key>
 		<string>100php</string>
 	</dict>

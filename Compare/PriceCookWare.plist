@@ -6,11 +6,11 @@
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>フライパン</string>
+		<string>ティファール フライパン 27cm</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>100</string>
+		<string>2278</string>
 	</dict>
 	<dict>
 		<key>camera</key>
@@ -26,7 +26,7 @@
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>鍋</string>
+		<string>ティ</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>

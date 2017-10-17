@@ -27,13 +27,13 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
   
   var phpRate:Int = 0
   
+  //植物・ガーデニング
   
-  let list:[String] = ["飲食店全般","STARBUCKS","CoffeeBean","ケンタッキーKFC","丸亀正麺","マクドナルド","吉野家","コンビニ","調理器具","ゲーム＆カセット１０","おもちゃ","植物・ガーデニング","スーパー（食品）","スーパー（飲料・お酒）","寝具","車・バイク系","家電・カメラ・AV機器","DVD・ミュージック","インターネット関連","住宅関連20","ファッション","スポーツ用品","本・コミック・雑誌","文房具","生活費","工事費","修理費","ペット・動物","その他"]
-  
+  let list:[String] = ["飲食店全般","STARBUCKS","CoffeeBean","ケンタッキーKFC","丸亀正麺","マクドナルド","吉野家","コンビニ","調理器具","ゲーム＆カセット１０","おもちゃ","スーパー（食品）","スーパー（飲料・お酒）","寝具","車・バイク系","家電・カメラ・AV機器","DVD・ミュージック","インターネット関連","住宅関連","ファッション","スポーツ用品","本・コミック・雑誌20","本屋で買える文房具","生活費","工事費","修理費","その他"]
   
   var aaaa:[String] = ["aaaa","aaaa"]
   
-  let imageDesu:[String] = ["CoffeeSrarbucks","Image-2","Image-1","LivingOfCosts","Image-10","McDonalds.Top","Image-3","Image-12","Image-10","Image-10","Image-10","Image10","CoffeeSrarbucks","Convenience7","Image-11","LivingOfCosts","Image-10","Image-2","Image-3","Image-12","Image-10","","","","","","","","","",""]
+  let imageDesu:[String] = ["CoffeeSrarbucks","Image-2","Image-1","LivingOfCosts","Image","McDonalds.Top","YoshinoyaGyudon","first","Image-10","Image-10","Image-10","Image10","CoffeeSrarbucks","Convenience7","Image-11","LivingOfCosts","Image-10","Image-2","Image-3","Image-12","Image-10","","","",]
   
 
   //ここに保存されて、次の画面に送る！
@@ -76,7 +76,7 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
         completion: { _ in
         UIView.animate(withDuration: 1.0) {
         self.rateBtn.transform = CGAffineTransform.identity
-                    }
+        }
     })
     
     
@@ -158,13 +158,10 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
           
           var Rate:Int = 0
           
-          if self.userDefaults.object(forKey: "DataStore") != nil{
-            Rate = self.userDefaults.object(forKey: "DataStore") as! Int
-          }
-          self.userDefaults.set(Rate, forKey: "favArr")
-          self.userDefaults.synchronize()
-          
-          
+//          if self.userDefaults.object(forKey: "DataStore") != nil{
+//            Rate = self.userDefaults.object(forKey: "DataStore") as! Int
+//          }
+
           //amountPHP*cellの３番目のラベルを掛け算するやり方で実装を試みる
           //cell.textJPYlabal.amounPHP*JPY
           //問題はString型であること　はじめにInt型にするかを相談！

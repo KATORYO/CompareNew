@@ -30,6 +30,9 @@
 		E38AD5AE1F93304D0051AF30 /* PriceDvdMusic.plist in Resources */ = {isa = PBXBuildFile; fileRef = E38AD5AD1F93304D0051AF30 /* PriceDvdMusic.plist */; };
 		E38AD5B01F9339030051AF30 /* PriceFashion.plist in Resources */ = {isa = PBXBuildFile; fileRef = E38AD5AF1F9339030051AF30 /* PriceFashion.plist */; };
 		E38AD5B41F933BE60051AF30 /* PriceSupermarketFoods.plist in Resources */ = {isa = PBXBuildFile; fileRef = E38AD5B31F933BE60051AF30 /* PriceSupermarketFoods.plist */; };
+		E39658EB1F94C220005E6215 /* PriceSuperMarketDrink.plist in Resources */ = {isa = PBXBuildFile; fileRef = E39658EA1F94C220005E6215 /* PriceSuperMarketDrink.plist */; };
+		E39658ED1F94C5C0005E6215 /* PriceBedClothes.plist in Resources */ = {isa = PBXBuildFile; fileRef = E39658EC1F94C5C0005E6215 /* PriceBedClothes.plist */; };
+		E39658EF1F94C8FC005E6215 /* FontAwsomeEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39658EE1F94C8FC005E6215 /* FontAwsomeEdit.swift */; };
 		E3974B001F74F71B00CDD953 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3974AFE1F74F71B00CDD953 /* CustomTableViewCell.swift */; };
 		E3974B011F74F71B00CDD953 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3974AFF1F74F71B00CDD953 /* CustomTableViewCell.xib */; };
 		E3AB05C51F6E004C00B20261 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AB05C41F6E004C00B20261 /* AppDelegate.swift */; };
@@ -43,7 +46,6 @@
 		E3AB05F71F6E187900B20261 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AB05F61F6E187900B20261 /* CustomCell.swift */; };
 		E3BF59571F6E9E5300038E59 /* ViewController1-2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BF59561F6E9E5300038E59 /* ViewController1-2.swift */; };
 		E3BF59591F6EA02D00038E59 /* ViewController1_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BF59581F6EA02D00038E59 /* ViewController1_3.swift */; };
-		E3BF595B1F6ED1CB00038E59 /* Detail.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3BF595A1F6ED1CB00038E59 /* Detail.plist */; };
 		E3E442A71F7E1015008CE769 /* ShopAndGallery.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3E442A61F7E1015008CE769 /* ShopAndGallery.plist */; };
 		E3E442E61F7F4D32008CE769 /* LivingOfCosts.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3E442E51F7F4D32008CE769 /* LivingOfCosts.plist */; };
 		E3E442E81F7F522D008CE769 /* BigShopping.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3E442E71F7F522D008CE769 /* BigShopping.plist */; };
@@ -100,6 +102,9 @@
 		E38AD5AD1F93304D0051AF30 /* PriceDvdMusic.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PriceDvdMusic.plist; sourceTree = "<group>"; };
 		E38AD5AF1F9339030051AF30 /* PriceFashion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PriceFashion.plist; sourceTree = "<group>"; };
 		E38AD5B31F933BE60051AF30 /* PriceSupermarketFoods.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PriceSupermarketFoods.plist; sourceTree = "<group>"; };
+		E39658EA1F94C220005E6215 /* PriceSuperMarketDrink.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PriceSuperMarketDrink.plist; sourceTree = "<group>"; };
+		E39658EC1F94C5C0005E6215 /* PriceBedClothes.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PriceBedClothes.plist; sourceTree = "<group>"; };
+		E39658EE1F94C8FC005E6215 /* FontAwsomeEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontAwsomeEdit.swift; sourceTree = "<group>"; };
 		E3974AFE1F74F71B00CDD953 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		E3974AFF1F74F71B00CDD953 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 		E3AB05C11F6E004C00B20261 /* Compare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Compare.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,7 +125,6 @@
 		E3B52C5C1F86018D007B6BC9 /* Compare.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Compare.entitlements; sourceTree = "<group>"; };
 		E3BF59561F6E9E5300038E59 /* ViewController1-2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController1-2.swift"; sourceTree = "<group>"; };
 		E3BF59581F6EA02D00038E59 /* ViewController1_3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController1_3.swift; sourceTree = "<group>"; };
-		E3BF595A1F6ED1CB00038E59 /* Detail.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Detail.plist; sourceTree = "<group>"; };
 		E3E442A61F7E1015008CE769 /* ShopAndGallery.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ShopAndGallery.plist; sourceTree = "<group>"; };
 		E3E442E51F7F4D32008CE769 /* LivingOfCosts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LivingOfCosts.plist; sourceTree = "<group>"; };
 		E3E442E71F7F522D008CE769 /* BigShopping.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BigShopping.plist; sourceTree = "<group>"; };
@@ -214,10 +218,10 @@
 				E349CD431F80D60100ABC485 /* SecondViewController2_2.swift */,
 				E3AB05F61F6E187900B20261 /* CustomCell.swift */,
 				E3974AFE1F74F71B00CDD953 /* CustomTableViewCell.swift */,
+				E39658EE1F94C8FC005E6215 /* FontAwsomeEdit.swift */,
 				E3974AFF1F74F71B00CDD953 /* CustomTableViewCell.xib */,
 				E3E442ED1F7F792A008CE769 /* McPrice.plist */,
 				E3AB05D21F6E004D00B20261 /* Info.plist */,
-				E3BF595A1F6ED1CB00038E59 /* Detail.plist */,
 				E3E442A61F7E1015008CE769 /* ShopAndGallery.plist */,
 				E3E442E51F7F4D32008CE769 /* LivingOfCosts.plist */,
 				E349CD041F7FBC0F00ABC485 /* ElectricAppliances.plist */,
@@ -227,11 +231,13 @@
 				E38AD5A91F932B820051AF30 /* PriceFurniture.plist */,
 				E38AD5AB1F932EC30051AF30 /* PriceCookWare.plist */,
 				E38AD5AD1F93304D0051AF30 /* PriceDvdMusic.plist */,
-				E38AD5B31F933BE60051AF30 /* PriceSupermarketFoods.plist */,
+				E39658EA1F94C220005E6215 /* PriceSuperMarketDrink.plist */,
 				E38AD5AF1F9339030051AF30 /* PriceFashion.plist */,
-				E38AD5A71F92FFEF0051AF30 /* PriceHomeElectricAppliance.plist */,
+				E39658EC1F94C5C0005E6215 /* PriceBedClothes.plist */,
 				E375A4B31F90E6E60088EE82 /* CircleImageView.swift */,
 				E3AB05CF1F6E004C00B20261 /* LaunchScreen.storyboard */,
+				E38AD5B31F933BE60051AF30 /* PriceSupermarketFoods.plist */,
+				E38AD5A71F92FFEF0051AF30 /* PriceHomeElectricAppliance.plist */,
 				E341697F1F920FE000DDA77C /* PriceConvenience.plist */,
 				E341697D1F9206D500DDA77C /* PriceKfc.plist */,
 				E34169771F91E42300DDA77C /* PriceStarbucks.plist */,
@@ -356,7 +362,7 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
+								enabled = 0;
 							};
 							com.apple.Keychain = {
 								enabled = 1;
@@ -402,14 +408,15 @@
 			files = (
 				E38AD5A81F92FFEF0051AF30 /* PriceHomeElectricAppliance.plist in Resources */,
 				E341697A1F91F54700DDA77C /* PriceYoshinoya.plist in Resources */,
+				E39658ED1F94C5C0005E6215 /* PriceBedClothes.plist in Resources */,
 				E3E442EE1F7F792A008CE769 /* McPrice.plist in Resources */,
+				E39658EB1F94C220005E6215 /* PriceSuperMarketDrink.plist in Resources */,
 				E38AD5B01F9339030051AF30 /* PriceFashion.plist in Resources */,
 				E3AB05D11F6E004D00B20261 /* LaunchScreen.storyboard in Resources */,
 				E3E442E81F7F522D008CE769 /* BigShopping.plist in Resources */,
 				E38AD5AE1F93304D0051AF30 /* PriceDvdMusic.plist in Resources */,
 				E34169801F920FE000DDA77C /* PriceConvenience.plist in Resources */,
 				E3E442EA1F7F535C008CE769 /* Construction.plist in Resources */,
-				E3BF595B1F6ED1CB00038E59 /* Detail.plist in Resources */,
 				E349CD051F7FBC0F00ABC485 /* ElectricAppliances.plist in Resources */,
 				E34169781F91E42300DDA77C /* PriceStarbucks.plist in Resources */,
 				E3E442EC1F7F55F6008CE769 /* Dwelling.plist in Resources */,
@@ -607,6 +614,7 @@
 				E35C15AB1F83B9E900030C6E /* corenadata.xcdatamodeld in Sources */,
 				E3974B001F74F71B00CDD953 /* CustomTableViewCell.swift in Sources */,
 				E341E2351F8653F700394131 /* Memo+CoreDataClass.swift in Sources */,
+				E39658EF1F94C8FC005E6215 /* FontAwsomeEdit.swift in Sources */,
 				E3AB05C51F6E004C00B20261 /* AppDelegate.swift in Sources */,
 				E3AB05F71F6E187900B20261 /* CustomCell.swift in Sources */,
 				E349CD441F80D60100ABC485 /* SecondViewController2_2.swift in Sources */,
@@ -771,12 +779,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Compare/Compare.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L833ELDWTK;
 				INFOPLIST_FILE = Compare/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.ne.ezweb-5829sphykatoryo.Compares";
+				PRODUCT_BUNDLE_IDENTIFIER = com.katoryo.Compare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -788,12 +800,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Compare/Compare.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L833ELDWTK;
 				INFOPLIST_FILE = Compare/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.ne.ezweb-5829sphykatoryo.Compares";
+				PRODUCT_BUNDLE_IDENTIFIER = com.katoryo.Compare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
