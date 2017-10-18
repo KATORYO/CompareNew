@@ -1,5 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<array/>
+<array>
+	<dict>
+		<key>camera</key>
+		<string>ウォークマン</string>
+		<key>item</key>
+		<string>SONY WALKMAN NWZ-B153 4G</string>
+		<key>pricePeso</key>
+		<string>2249</string>
+		<key>priceYen</key>
+		<string>**</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>Burger</string>
+		<key>item</key>
+		<string>ウォークマン 128G NW-ZX100 series</string>
+		<key>pricePeso</key>
+		<string>P 19,999</string>
+		<key>priceYen</key>
+		<string>**</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>Burger</string>
+		<key>item</key>
+		<string>CANON カメラ</string>
+		<key>pricePeso</key>
+		<string>40php</string>
+		<key>priceYen</key>
+		<string>**</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>Burger</string>
+		<key>item</key>
+		<string>CANON カメラ</string>
+		<key>pricePeso</key>
+		<string>40php</string>
+		<key>priceYen</key>
+		<string>**</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>Burger</string>
+		<key>item</key>
+		<string>CANON カメラ</string>
+		<key>pricePeso</key>
+		<string>40php</string>
+		<key>priceYen</key>
+		<string>**</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>Burger</string>
+		<key>item</key>
+		<string>CANON カメラ</string>
+		<key>pricePeso</key>
+		<string>40php</string>
+		<key>priceYen</key>
+		<string>**</string>
+	</dict>
+</array>
 </plist>

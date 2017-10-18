@@ -18,7 +18,7 @@
 		<key>item</key>
 		<string>チーズバーガー</string>
 		<key>pricePeso</key>
-		<string>**</string>
+		<string>41</string>
 		<key>priceYen</key>
 		<string>130</string>
 	</dict>
@@ -38,7 +38,7 @@
 		<key>item</key>
 		<string>フィレオフィッシュ</string>
 		<key>pricePeso</key>
-		<string>**</string>
+		<string>104</string>
 		<key>priceYen</key>
 		<string>320</string>
 	</dict>
@@ -48,7 +48,7 @@
 		<key>item</key>
 		<string>チキンフィレオ</string>
 		<key>pricePeso</key>
-		<string>**</string>
+		<string>105</string>
 		<key>priceYen</key>
 		<string>350</string>
 	</dict>
@@ -58,7 +58,7 @@
 		<key>item</key>
 		<string>ビッグマック</string>
 		<key>pricePeso</key>
-		<string>**</string>
+		<string>134</string>
 		<key>priceYen</key>
 		<string>380</string>
 	</dict>
@@ -66,9 +66,9 @@
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ベーゴンレタスバーガー</string>
+		<string>クォーターパウンダーチーズ</string>
 		<key>pricePeso</key>
-		<string>**</string>
+		<string>140</string>
 		<key>priceYen</key>
 		<string>350</string>
 	</dict>
@@ -88,7 +88,7 @@
 		<key>item</key>
 		<string>マックフライポテト S</string>
 		<key>pricePeso</key>
-		<string>35</string>
+		<string>33</string>
 		<key>priceYen</key>
 		<string>150</string>
 	</dict>
@@ -98,7 +98,7 @@
 		<key>item</key>
 		<string>マックフライポテト M</string>
 		<key>pricePeso</key>
-		<string>**</string>
+		<string>55</string>
 		<key>priceYen</key>
 		<string>270</string>
 	</dict>
@@ -108,7 +108,7 @@
 		<key>item</key>
 		<string>マックフライポテト L</string>
 		<key>pricePeso</key>
-		<string>**</string>
+		<string>67</string>
 		<key>priceYen</key>
 		<string>320</string>
 	</dict>
@@ -148,7 +148,7 @@
 		<key>item</key>
 		<string>ソフトツイスト</string>
 		<key>pricePeso</key>
-		<string>10</string>
+		<string>13</string>
 		<key>priceYen</key>
 		<string>100</string>
 	</dict>
@@ -258,7 +258,7 @@
 		<key>item</key>
 		<string>ホットコーヒー S</string>
 		<key>pricePeso</key>
-		<string>29</string>
+		<string>31</string>
 		<key>priceYen</key>
 		<string>100</string>
 	</dict>
@@ -268,7 +268,7 @@
 		<key>item</key>
 		<string>ホットコーヒー M</string>
 		<key>pricePeso</key>
-		<string>＊＊</string>
+		<string>41</string>
 		<key>priceYen</key>
 		<string>150</string>
 	</dict>
@@ -306,9 +306,9 @@
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>えびフィレオセット</string>
+		<string>クォータパウンダーチーズセット M</string>
 		<key>pricePeso</key>
-		<string>＊＊</string>
+		<string>190</string>
 		<key>priceYen</key>
 		<string>680</string>
 	</dict>

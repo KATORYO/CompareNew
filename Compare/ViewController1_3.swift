@@ -20,19 +20,27 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
   var placeList:[String] = []
   
   var array:NSArray = []
+  
+  
+  //前の画面からゲット
+  //（配列）
+  var myImageList = ""
+  var myArrayList = ""
 
+  
   
   //firstViewからの値
   var scSelectedIndex = -1
   
   
   var amountPHP = 0
-  
   var ratePhp:Int = 0
+  
   
   let userDefault = UserDefaults.standard
   
   var arrayDesu:[String] = []
+  
 
   
   //@IBAction func myBack1_3(_ sender: UIBarButtonItem) {}
@@ -45,6 +53,7 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
   let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Favorite")
   
   var contentFavorite:[String] = []
+  var contentFavoriteImage:[String] = []
   
   var fetchedArray: [NSManagedObject] = []
   
@@ -217,11 +226,13 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
       //一件ずつ表示
       for result:AnyObject in fetchResults{
         let favorite:String? = result.value(forKey:"favorite") as? String
+        let favoriteImage:String? = result.value(forKey:"favoriteImage") as? String
         
         if favorite == nil {
           print("0です")
         }else{
           contentFavorite.append(favorite!)
+          contentFavoriteImage.append(favoriteImage!)
         }
 
       }
@@ -247,7 +258,15 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
       (actiton: UIAlertAction)->Void in
       //ここでアラートがオッケーだった場合の処理を記述
       print("aa")
+        
+        //お気に入りの保存したい番号をここでセットする
+        let IntDesu:Int = self.scSelectedIndex
+        
+        //(ここにスタバなんかを保存)
+        var ListArray = self.myArrayList
+        let ImageArray = self.myImageList
       
+        
         let appD:AppDelegate = UIApplication.shared.delegate as! AppDelegate
         
         //エンティティを操作するためのオブジェクトを作成
@@ -261,7 +280,9 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
         
             //値のセット(アトリビュート毎に指定) forKeyはモデルで指定したアトリビュート名
          
-            newRecord.setValue(String(), forKey: "favorite")
+            newRecord.setValue(ListArray, forKey: "favorite")
+        
+            newRecord.setValue(ImageArray, forKey: "favoriteImage")
             
             newRecord.setValue(Date(), forKey: "saveDate")
             

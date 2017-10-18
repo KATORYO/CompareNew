@@ -16,7 +16,13 @@ class CustomTableViewCell: UITableViewCell {
   @IBOutlet weak var YenLabel: UILabel!
   
 
-    override func awakeFromNib() {
+
+  @IBOutlet weak var ImageArray: UIImageView!
+  
+  @IBOutlet weak var LabelArray: UILabel!
+  
+  
+  override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }

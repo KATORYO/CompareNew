@@ -46,6 +46,10 @@
 		E3AB05F71F6E187900B20261 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AB05F61F6E187900B20261 /* CustomCell.swift */; };
 		E3BF59571F6E9E5300038E59 /* ViewController1-2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BF59561F6E9E5300038E59 /* ViewController1-2.swift */; };
 		E3BF59591F6EA02D00038E59 /* ViewController1_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BF59581F6EA02D00038E59 /* ViewController1_3.swift */; };
+		E3C9DCDC1F95D1AA00EB879B /* PriceStationery.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3C9DCDB1F95D1AA00EB879B /* PriceStationery.plist */; };
+		E3CD6D021F95E65B00F73692 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3CD6D011F95E65B00F73692 /* Photos.framework */; };
+		E3CD6D041F9611ED00F73692 /* PriceCarBike.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3CD6D031F9611EC00F73692 /* PriceCarBike.plist */; };
+		E3CD6D061F962B1000F73692 /* PriceOthers.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3CD6D051F962B1000F73692 /* PriceOthers.plist */; };
 		E3E442A71F7E1015008CE769 /* ShopAndGallery.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3E442A61F7E1015008CE769 /* ShopAndGallery.plist */; };
 		E3E442E61F7F4D32008CE769 /* LivingOfCosts.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3E442E51F7F4D32008CE769 /* LivingOfCosts.plist */; };
 		E3E442E81F7F522D008CE769 /* BigShopping.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3E442E71F7F522D008CE769 /* BigShopping.plist */; };
@@ -125,6 +129,10 @@
 		E3B52C5C1F86018D007B6BC9 /* Compare.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Compare.entitlements; sourceTree = "<group>"; };
 		E3BF59561F6E9E5300038E59 /* ViewController1-2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController1-2.swift"; sourceTree = "<group>"; };
 		E3BF59581F6EA02D00038E59 /* ViewController1_3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController1_3.swift; sourceTree = "<group>"; };
+		E3C9DCDB1F95D1AA00EB879B /* PriceStationery.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PriceStationery.plist; sourceTree = "<group>"; };
+		E3CD6D011F95E65B00F73692 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		E3CD6D031F9611EC00F73692 /* PriceCarBike.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PriceCarBike.plist; sourceTree = "<group>"; };
+		E3CD6D051F962B1000F73692 /* PriceOthers.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PriceOthers.plist; sourceTree = "<group>"; };
 		E3E442A61F7E1015008CE769 /* ShopAndGallery.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ShopAndGallery.plist; sourceTree = "<group>"; };
 		E3E442E51F7F4D32008CE769 /* LivingOfCosts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LivingOfCosts.plist; sourceTree = "<group>"; };
 		E3E442E71F7F522D008CE769 /* BigShopping.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BigShopping.plist; sourceTree = "<group>"; };
@@ -139,6 +147,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3CD6D021F95E65B00F73692 /* Photos.framework in Frameworks */,
 				E35C15A81F83AADA00030C6E /* CoreData.framework in Frameworks */,
 				E373D75B1F8352DD008D96BA /* SwiftyJSON.framework in Frameworks */,
 				E367FBF41F820592003C015F /* FontAwesome_swift.framework in Frameworks */,
@@ -168,6 +177,7 @@
 		662C6BD4D38385121224D93B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E3CD6D011F95E65B00F73692 /* Photos.framework */,
 				E35C15A71F83AADA00030C6E /* CoreData.framework */,
 				E373D7591F83527F008D96BA /* SwiftyJSON.framework */,
 				E367FBF31F820592003C015F /* FontAwesome_swift.framework */,
@@ -211,16 +221,15 @@
 				E3AB05CD1F6E004C00B20261 /* Assets.xcassets */,
 				E3AB05CA1F6E004C00B20261 /* Main.storyboard */,
 				E3AB05C61F6E004C00B20261 /* FirstViewController.swift */,
-				E3BF59561F6E9E5300038E59 /* ViewController1-2.swift */,
 				E35C15A91F83B9E900030C6E /* corenadata.xcdatamodeld */,
 				E3BF59581F6EA02D00038E59 /* ViewController1_3.swift */,
 				E3AB05C81F6E004C00B20261 /* SecondViewController.swift */,
 				E349CD431F80D60100ABC485 /* SecondViewController2_2.swift */,
 				E3AB05F61F6E187900B20261 /* CustomCell.swift */,
 				E3974AFE1F74F71B00CDD953 /* CustomTableViewCell.swift */,
+				E3BF59561F6E9E5300038E59 /* ViewController1-2.swift */,
 				E39658EE1F94C8FC005E6215 /* FontAwsomeEdit.swift */,
 				E3974AFF1F74F71B00CDD953 /* CustomTableViewCell.xib */,
-				E3E442ED1F7F792A008CE769 /* McPrice.plist */,
 				E3AB05D21F6E004D00B20261 /* Info.plist */,
 				E3E442A61F7E1015008CE769 /* ShopAndGallery.plist */,
 				E3E442E51F7F4D32008CE769 /* LivingOfCosts.plist */,
@@ -229,13 +238,16 @@
 				E3E442E91F7F535C008CE769 /* Construction.plist */,
 				E3E442EB1F7F55F6008CE769 /* Dwelling.plist */,
 				E38AD5A91F932B820051AF30 /* PriceFurniture.plist */,
+				E3C9DCDB1F95D1AA00EB879B /* PriceStationery.plist */,
 				E38AD5AB1F932EC30051AF30 /* PriceCookWare.plist */,
 				E38AD5AD1F93304D0051AF30 /* PriceDvdMusic.plist */,
 				E39658EA1F94C220005E6215 /* PriceSuperMarketDrink.plist */,
 				E38AD5AF1F9339030051AF30 /* PriceFashion.plist */,
 				E39658EC1F94C5C0005E6215 /* PriceBedClothes.plist */,
+				E3CD6D051F962B1000F73692 /* PriceOthers.plist */,
 				E375A4B31F90E6E60088EE82 /* CircleImageView.swift */,
 				E3AB05CF1F6E004C00B20261 /* LaunchScreen.storyboard */,
+				E3CD6D031F9611EC00F73692 /* PriceCarBike.plist */,
 				E38AD5B31F933BE60051AF30 /* PriceSupermarketFoods.plist */,
 				E38AD5A71F92FFEF0051AF30 /* PriceHomeElectricAppliance.plist */,
 				E341697F1F920FE000DDA77C /* PriceConvenience.plist */,
@@ -243,6 +255,7 @@
 				E34169771F91E42300DDA77C /* PriceStarbucks.plist */,
 				E341697B1F92050200DDA77C /* PriceMarukame.plist */,
 				E34169791F91F54700DDA77C /* PriceYoshinoya.plist */,
+				E3E442ED1F7F792A008CE769 /* McPrice.plist */,
 			);
 			path = Compare;
 			sourceTree = "<group>";
@@ -409,13 +422,16 @@
 				E38AD5A81F92FFEF0051AF30 /* PriceHomeElectricAppliance.plist in Resources */,
 				E341697A1F91F54700DDA77C /* PriceYoshinoya.plist in Resources */,
 				E39658ED1F94C5C0005E6215 /* PriceBedClothes.plist in Resources */,
+				E3CD6D061F962B1000F73692 /* PriceOthers.plist in Resources */,
 				E3E442EE1F7F792A008CE769 /* McPrice.plist in Resources */,
 				E39658EB1F94C220005E6215 /* PriceSuperMarketDrink.plist in Resources */,
 				E38AD5B01F9339030051AF30 /* PriceFashion.plist in Resources */,
+				E3CD6D041F9611ED00F73692 /* PriceCarBike.plist in Resources */,
 				E3AB05D11F6E004D00B20261 /* LaunchScreen.storyboard in Resources */,
 				E3E442E81F7F522D008CE769 /* BigShopping.plist in Resources */,
 				E38AD5AE1F93304D0051AF30 /* PriceDvdMusic.plist in Resources */,
 				E34169801F920FE000DDA77C /* PriceConvenience.plist in Resources */,
+				E3C9DCDC1F95D1AA00EB879B /* PriceStationery.plist in Resources */,
 				E3E442EA1F7F535C008CE769 /* Construction.plist in Resources */,
 				E349CD051F7FBC0F00ABC485 /* ElectricAppliances.plist in Resources */,
 				E34169781F91E42300DDA77C /* PriceStarbucks.plist in Resources */,

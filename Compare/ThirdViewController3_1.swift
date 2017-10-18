@@ -18,12 +18,14 @@ class ThirdViewController3_1: UIViewController,UITableViewDelegate,UITableViewDa
   var numbFingers = -1
 
   var contentFavorite:[String] = []
+  var contentFavoriteImage:[String] = []
   
   var contentFavoriteDate:[Date] = []
   
   var noDesu:Int = -1
  
   
+  @IBOutlet weak var LabelCell: UILabel!
   @IBOutlet weak var ImageCell: UIImageView!
   
   
@@ -40,6 +42,10 @@ class ThirdViewController3_1: UIViewController,UITableViewDelegate,UITableViewDa
       self.editBtn.setTitleTextAttributes(attributes, for: .normal)
           self.editBtn.title = String.fontAwesomeIcon(name: .th)
       
+        read()
+      
+      
+        
       
         myTableView.reloadData()
       
@@ -87,13 +93,16 @@ class ThirdViewController3_1: UIViewController,UITableViewDelegate,UITableViewDa
       //一件ずつ表示
       for result:AnyObject in fetchResults{
         let favorite:String? = result.value(forKey:"favorite") as? String
+        let favoriteImage:String? = result.value(forKey: "favoriteImage") as? String
         let saveDate:Date = result.value(forKey: "saveDate") as! Date
         
         if contentFavorite.count == nil{
           print("失敗です")
         }else{
         contentFavorite.append(favorite as! String)
+        contentFavoriteImage.append(favoriteImage as! String)
         contentFavoriteDate.append(saveDate)
+          
         }
   
       }
@@ -130,6 +139,7 @@ class ThirdViewController3_1: UIViewController,UITableViewDelegate,UITableViewDa
       cell.textLabel?.text = ""
     }else{
     cell.textLabel?.text = contentFavorite[indexPath.row]
+    
       
       
     }

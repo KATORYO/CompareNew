@@ -29,15 +29,18 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
   
   //植物・ガーデニング
   
-  let list:[String] = ["飲食店全般","STARBUCKS","CoffeeBean","ケンタッキーKFC","丸亀正麺","マクドナルド","吉野家","コンビニ","調理器具","ゲーム＆カセット１０","おもちゃ","スーパー（食品）","スーパー（飲料・お酒）","寝具","車・バイク系","家電・カメラ・AV機器","DVD・ミュージック","インターネット関連","住宅関連","ファッション","スポーツ用品","本・コミック・雑誌20","本屋で買える文房具","生活費","工事費","修理費","その他"]
+  let list:[String] = ["飲食店全般","<STARBUCKS","CoffeeBean","<ケンタッキーKFC","<丸亀正麺","<マクドナルド","<吉野家","<コンビニ","調理器具","ゲーム＆カセット１０","おもちゃ","<スーパー（食品）","<スーパー（飲料・お酒）","寝具","<車・バイク系","<家電・カメラ・AV機器","DVD・ミュージック","インターネット関連","住宅関連","ファッション","スポーツ用品","本・コミック・雑誌20","本屋で買える文房具","生活費","工事費","修理費","その他"]
   
   var aaaa:[String] = ["aaaa","aaaa"]
   
-  let imageDesu:[String] = ["CoffeeSrarbucks","Image-2","Image-1","LivingOfCosts","Image","McDonalds.Top","YoshinoyaGyudon","first","Image-10","Image-10","Image-10","Image10","CoffeeSrarbucks","Convenience7","Image-11","LivingOfCosts","Image-10","Image-2","Image-3","Image-12","Image-10","","","",]
+  let imageDesu:[String] = ["CoffeeSrarbucks","Image-2","Image-1","LivingOfCosts","Image","McDonalds.Top","YoshinoyaGyudon","first","Image-10","Image-10","Image-10","Image10","CoffeeSrarbucks","Convenience7","Image-11","LivingOfCosts","Image-10","Image-2","Image-3","Image-12","Image-10","","","","","",""]
   
 
   //ここに保存されて、次の画面に送る！
-  var selectedName = ""
+  var selectedNameList = ""
+  
+  var selectedNameImage = ""
+  
   
   var selectedIndex = -1 //選択された行番号！
 		
@@ -311,6 +314,45 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
    */
   func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
     
+    
+    switch indexPath.row {
+    case 0:
+      selectedNameList = list[indexPath.row]
+      selectedNameImage = imageDesu[indexPath.row]
+    case 1:
+      selectedNameList = list[indexPath.row]
+      selectedNameImage = imageDesu[indexPath.row]
+    case 2:
+      selectedNameList = list[indexPath.row]
+      selectedNameImage = imageDesu[indexPath.row]
+    case 3:
+      selectedNameList = list[indexPath.row]
+      selectedNameImage = imageDesu[indexPath.row]
+    case 4:
+      selectedNameList = list[indexPath.row]
+      selectedNameImage = imageDesu[indexPath.row]
+    case 5:
+      selectedNameList = list[indexPath.row]
+      selectedNameImage = imageDesu[indexPath.row]
+    case 6:
+      selectedNameList = list[indexPath.row]
+      selectedNameImage = imageDesu[indexPath.row]
+    case 7:
+      selectedNameList = list[indexPath.row]
+      selectedNameImage = imageDesu[indexPath.row]
+    case 8:
+      selectedNameList = list[indexPath.row]
+      selectedNameImage = imageDesu[indexPath.row]
+    case 9:
+      selectedNameList = list[indexPath.row]
+      selectedNameImage = imageDesu[indexPath.row]
+    case 10:
+      selectedNameList = list[indexPath.row]
+      selectedNameImage = imageDesu[indexPath.row]
+    default:
+      break
+    }
+    
     selectedIndex = indexPath.row
     
     //セグエを指定して、画面遷移 アイデンティファイヤーの通路！
@@ -319,13 +361,6 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
     print("Num: \(indexPath.row)")
     print("Value:\(collectionView)")
   }
-  
-  
- 
-  
-  
-  
-  
   
   //override(上書き)だが、prepareはviewcontroller画面に組み込まれているため、上書きする必要がある！
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -336,7 +371,10 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
     //移動先画面のオブジェクトを取得！
     let dv: ViewController1_3 = segue.destination as! ViewController1_3
     
-    //dv.scSelectedName = selectedName
+    //ここに格納する（配列）
+    dv.myArrayList = selectedNameList
+    dv.myImageList = selectedNameImage
+    
     
     dv.scSelectedIndex = selectedIndex
     

@@ -6,57 +6,17 @@
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ティファール フライパン 27cm</string>
+		<string>ウォーターサーバーWater Dispenser </string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>1950</string>
 		<key>priceYen</key>
-		<string>2278</string>
+		<string>**</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>中華鍋</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>100</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>ティ</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>100</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>ミトン</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>100</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>卵焼き機</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>100</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>ステンレス・ケトル 2.5L</string>
+		<string>CANON カメラ</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
@@ -66,211 +26,171 @@
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>包丁</string>
+		<string>CANON カメラ</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>100</string>
+		<string>**</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ナイフ</string>
+		<string>CANON カメラ</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>100</string>
+		<string>**</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>まな板</string>
+		<string>CANON カメラ</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>100</string>
+		<string>**</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>箸</string>
+		<string>CANON カメラ</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>100</string>
+		<string>**</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>弁当箱</string>
+		<string>CANON カメラ</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>100</string>
+		<string>**</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>水筒</string>
+		<string>CANON カメラ</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>100</string>
+		<string>**</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>マグカップ</string>
+		<string>CANON カメラ</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>100</string>
+		<string>**</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>スポンジ</string>
+		<string>CANON カメラ</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>100</string>
+		<string>**</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ゴム手袋</string>
+		<string>CANON カメラ</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>100</string>
+		<string>**</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ミトン</string>
+		<string>CANON カメラ</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>100</string>
+		<string>**</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>エプロン</string>
+		<string>CANON カメラ</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>100</string>
+		<string>**</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>三菱アルミホイル 25cm*8m ：~~~~</string>
+		<string>CANON カメラ</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>92</string>
+		<string>**</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>旭化成 サランラップ 家庭用 30cm*50m ：</string>
+		<string>CANON カメラ</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>354</string>
+		<string>**</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>テーブルランナー</string>
+		<string>CANON カメラ</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>100</string>
+		<string>**</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>キッチン用洗剤</string>
+		<string>CANON カメラ</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>100</string>
+		<string>**</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>たこ焼きプレート</string>
+		<string>CANON カメラ</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>100</string>
+		<string>**</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>サーモス 保温弁当箱 DBQ-50 ：</string>
+		<string>CANON カメラ</string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>
-		<string>2523</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>たわし</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>118</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>ノート</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>100</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>ノート</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>100</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>ノート</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>100</string>
+		<string>**</string>
 	</dict>
 </array>
 </plist>
