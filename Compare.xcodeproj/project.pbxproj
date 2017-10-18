@@ -10,6 +10,8 @@
 		48944E67403DCFE59645E4F8 /* Pods_CompareUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 143F436D254C9E84908EB02F /* Pods_CompareUITests.framework */; };
 		853DF582209A7A9F2656BBE7 /* Pods_CompareTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79843CD9F3D5DDFCC423723F /* Pods_CompareTests.framework */; };
 		CF026E275FEA1985348D2398 /* Pods_Compare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A250D83141773BC535CD54 /* Pods_Compare.framework */; };
+		E31C611A1F972F4400246B63 /* CustomTableViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31C61191F972F4400246B63 /* CustomTableViewCell2.swift */; };
+		E31C611E1F97353E00246B63 /* CustomTableView2.xib in Resources */ = {isa = PBXBuildFile; fileRef = E31C611D1F97353E00246B63 /* CustomTableView2.xib */; };
 		E34169781F91E42300DDA77C /* PriceStarbucks.plist in Resources */ = {isa = PBXBuildFile; fileRef = E34169771F91E42300DDA77C /* PriceStarbucks.plist */; };
 		E341697A1F91F54700DDA77C /* PriceYoshinoya.plist in Resources */ = {isa = PBXBuildFile; fileRef = E34169791F91F54700DDA77C /* PriceYoshinoya.plist */; };
 		E341697C1F92050200DDA77C /* PriceMarukame.plist in Resources */ = {isa = PBXBuildFile; fileRef = E341697B1F92050200DDA77C /* PriceMarukame.plist */; };
@@ -86,6 +88,8 @@
 		7C7D1432A11B124BAB9BD23F /* Pods-CompareTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CompareTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CompareTests/Pods-CompareTests.release.xcconfig"; sourceTree = "<group>"; };
 		99D3DB189CCAA400CDB21B83 /* Pods-CompareUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CompareUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CompareUITests/Pods-CompareUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		ABA31608120C339660EFA48B /* Pods-CompareTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CompareTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CompareTests/Pods-CompareTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E31C61191F972F4400246B63 /* CustomTableViewCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell2.swift; sourceTree = "<group>"; };
+		E31C611D1F97353E00246B63 /* CustomTableView2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableView2.xib; sourceTree = "<group>"; };
 		E34169771F91E42300DDA77C /* PriceStarbucks.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PriceStarbucks.plist; sourceTree = "<group>"; };
 		E34169791F91F54700DDA77C /* PriceYoshinoya.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PriceYoshinoya.plist; sourceTree = "<group>"; };
 		E341697B1F92050200DDA77C /* PriceMarukame.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PriceMarukame.plist; sourceTree = "<group>"; };
@@ -227,8 +231,10 @@
 				E349CD431F80D60100ABC485 /* SecondViewController2_2.swift */,
 				E3AB05F61F6E187900B20261 /* CustomCell.swift */,
 				E3974AFE1F74F71B00CDD953 /* CustomTableViewCell.swift */,
+				E31C61191F972F4400246B63 /* CustomTableViewCell2.swift */,
 				E3BF59561F6E9E5300038E59 /* ViewController1-2.swift */,
 				E39658EE1F94C8FC005E6215 /* FontAwsomeEdit.swift */,
+				E31C611D1F97353E00246B63 /* CustomTableView2.xib */,
 				E3974AFF1F74F71B00CDD953 /* CustomTableViewCell.xib */,
 				E3AB05D21F6E004D00B20261 /* Info.plist */,
 				E3E442A61F7E1015008CE769 /* ShopAndGallery.plist */,
@@ -420,6 +426,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E38AD5A81F92FFEF0051AF30 /* PriceHomeElectricAppliance.plist in Resources */,
+				E31C611E1F97353E00246B63 /* CustomTableView2.xib in Resources */,
 				E341697A1F91F54700DDA77C /* PriceYoshinoya.plist in Resources */,
 				E39658ED1F94C5C0005E6215 /* PriceBedClothes.plist in Resources */,
 				E3CD6D061F962B1000F73692 /* PriceOthers.plist in Resources */,
@@ -630,6 +637,7 @@
 				E35C15AB1F83B9E900030C6E /* corenadata.xcdatamodeld in Sources */,
 				E3974B001F74F71B00CDD953 /* CustomTableViewCell.swift in Sources */,
 				E341E2351F8653F700394131 /* Memo+CoreDataClass.swift in Sources */,
+				E31C611A1F972F4400246B63 /* CustomTableViewCell2.swift in Sources */,
 				E39658EF1F94C8FC005E6215 /* FontAwsomeEdit.swift in Sources */,
 				E3AB05C51F6E004C00B20261 /* AppDelegate.swift in Sources */,
 				E3AB05F71F6E187900B20261 /* CustomCell.swift in Sources */,

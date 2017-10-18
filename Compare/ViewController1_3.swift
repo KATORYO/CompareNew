@@ -27,8 +27,6 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
   var myImageList = ""
   var myArrayList = ""
 
-  
-  
   //firstViewからの値
   var scSelectedIndex = -1
   
@@ -41,19 +39,13 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
   
   var arrayDesu:[String] = []
   
-
-  
-  //@IBAction func myBack1_3(_ sender: UIBarButtonItem) {}
-  // Sectionで使用する配列を定義する.
-  //private let mySections: NSArray = ["iPhone", "Android"]
- 
-  
   
   //coredateここから
   let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Favorite")
   
   var contentFavorite:[String] = []
   var contentFavoriteImage:[String] = []
+  var contentFavoriteInt:[String] = []
   
   var fetchedArray: [NSManagedObject] = []
   
@@ -93,6 +85,8 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
     override func viewDidLoad() {
         super.viewDidLoad()
       
+      print(myArrayList)
+      
       //addBtnの作成　plainが文字だけのもの、titleは""
       addBtn = UIBarButtonItem(title: "", style: .plain, target: self, action: "onClick")
       
@@ -119,6 +113,51 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
       //tableViewを使えるようにする！
       self.myTableView1_3.register(UINib(nibName: "CustomTableViewCell", bundle: nil), forCellReuseIdentifier: "Cell")
     
+      
+      
+      //読み込み処理（READ）
+      func read(){
+        
+        //AppDelegate用意
+        let appD:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+        
+        //エンティティを操作するためのオブジェクトを使用
+        let viewContext = appD.persistentContainer.viewContext
+        
+        //どのエンティティからデータを取得してくるかc設定
+        let query:NSFetchRequest<Favorite> = Favorite.fetchRequest()
+        
+        do{
+          //保存されてるデータをすべて取得
+          let fetchResults = try viewContext.fetch(query)
+          
+          //一件ずつ表示
+          for result:AnyObject in fetchResults{
+            let favorite:String? = result.value(forKey:"favorite") as? String
+            let favoriteImage:String? = result.value(forKey:"favoriteImage") as? String
+            let favoriteNo:String = result.value(forKey: "favoriteNo") as! String
+            
+            if favorite == nil {
+              print("0です")
+            }else{
+              contentFavorite.append(favorite!)
+              contentFavoriteImage.append(favoriteImage!)
+              contentFavoriteInt.append(favoriteNo)
+            }
+            
+          }
+        }catch{
+        }
+        
+        //画面表示
+        //print(contentTitle[0]+memoNo)
+        
+        
+        // myTitle.reloadInputViews()
+      }
+      
+      
+      
       
       
       
@@ -206,47 +245,7 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
   
   
   
-  
-  //CoreDataに保存されているデータの読み込み処理（READ）
-  func read(){
-    
-    //AppDelegateを使う用意をしておく
-    let appD:AppDelegate = UIApplication.shared.delegate as! AppDelegate
-    
-    //エンティティを操作するためのオブジェクトを使用
-    let viewContext = appD.persistentContainer.viewContext
-    
-    //どのエンティティからデータを取得してくるかc設定
-    let query:NSFetchRequest<Favorite> = Favorite.fetchRequest()
 
-    do{
-      //保存されてるデータをすべて取得
-      let fetchResults = try viewContext.fetch(query)
-      
-      //一件ずつ表示
-      for result:AnyObject in fetchResults{
-        let favorite:String? = result.value(forKey:"favorite") as? String
-        let favoriteImage:String? = result.value(forKey:"favoriteImage") as? String
-        
-        if favorite == nil {
-          print("0です")
-        }else{
-          contentFavorite.append(favorite!)
-          contentFavoriteImage.append(favoriteImage!)
-        }
-
-      }
-    }catch{
-    }
-    
-    //画面表示
-    //print(contentTitle[0]+memoNo)
-    
-    
-   // myTitle.reloadInputViews()
-  }
-
-  
   
   
   
@@ -278,11 +277,14 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
             //ToDoエンティティにレコード（行）を挿入するためのオブジェクトを作成
             let newRecord = NSManagedObject(entity: favorite!, insertInto: viewContext)
         
+        
             //値のセット(アトリビュート毎に指定) forKeyはモデルで指定したアトリビュート名
          
             newRecord.setValue(ListArray, forKey: "favorite")
         
             newRecord.setValue(ImageArray, forKey: "favoriteImage")
+        
+        //newRecord.setValue(self.scSelectedIndex, forKey: "favoriteNo")
             
             newRecord.setValue(Date(), forKey: "saveDate")
             
@@ -292,7 +294,7 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
             }catch {
               
         }
-            self.read()
+        //self.read()
             
             print("viewWillDisappear")
           
@@ -341,9 +343,6 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
     
     //取り出す時は型の宣言しなければならない！ as!NS~~
     dicB = array[indexPath.row] as! NSDictionary
-    
-    
-    
     
     cell.nameLabel.adjustsFontSizeToFitWidth = true
     cell.nameLabel.minimumScaleFactor = 0.5 //# 最小でも80%までしか縮小しない場合

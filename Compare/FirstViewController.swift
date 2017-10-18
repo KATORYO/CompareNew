@@ -29,7 +29,7 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
   
   //植物・ガーデニング
   
-  let list:[String] = ["飲食店全般","<STARBUCKS","CoffeeBean","<ケンタッキーKFC","<丸亀正麺","<マクドナルド","<吉野家","<コンビニ","調理器具","ゲーム＆カセット１０","おもちゃ","<スーパー（食品）","<スーパー（飲料・お酒）","寝具","<車・バイク系","<家電・カメラ・AV機器","DVD・ミュージック","インターネット関連","住宅関連","ファッション","スポーツ用品","本・コミック・雑誌20","本屋で買える文房具","生活費","工事費","修理費","その他"]
+  let list:[String] = ["飲食店全般","STARBUCKS","CoffeeBean","<ケンタッキーKFC","<丸亀正麺","<マクドナルド","<吉野家","<コンビニ","調理器具","ゲーム＆カセット１０","おもちゃ","<スーパー（食品）","<スーパー（飲料・お酒）","寝具","<車・バイク系","<家電・カメラ・AV機器","DVD・ミュージック","インターネット関連","住宅関連","ファッション","スポーツ用品","本・コミック・雑誌20","本屋で買える文房具","生活費","工事費","修理費","その他"]
   
   var aaaa:[String] = ["aaaa","aaaa"]
   
@@ -353,6 +353,9 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
       break
     }
     
+    var thisIsNameList = selectedNameList
+    var thisIsNameImage = selectedNameImage
+    
     selectedIndex = indexPath.row
     
     //セグエを指定して、画面遷移 アイデンティファイヤーの通路！
@@ -364,7 +367,6 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
   
   //override(上書き)だが、prepareはviewcontroller画面に組み込まれているため、上書きする必要がある！
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    
     
     //移動先の画面に渡したい情報をセットできる
     //dv　今から移動する画面のオブジェクト(インスタンス)

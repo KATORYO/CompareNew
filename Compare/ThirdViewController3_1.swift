@@ -19,14 +19,14 @@ class ThirdViewController3_1: UIViewController,UITableViewDelegate,UITableViewDa
 
   var contentFavorite:[String] = []
   var contentFavoriteImage:[String] = []
+  var contentFavoriteNo:[Int] = []
   
   var contentFavoriteDate:[Date] = []
   
   var noDesu:Int = -1
  
   
-  @IBOutlet weak var LabelCell: UILabel!
-  @IBOutlet weak var ImageCell: UIImageView!
+
   
   
   @IBOutlet weak var editBtn: UIBarButtonItem!
@@ -43,16 +43,18 @@ class ThirdViewController3_1: UIViewController,UITableViewDelegate,UITableViewDa
           self.editBtn.title = String.fontAwesomeIcon(name: .th)
       
         read()
-      
-      
-        
-      
-        myTableView.reloadData()
-      
+    
         myTableView.reloadData()
         // 罫線を青色に設定.
-        myTableView.separatorColor = UIColor.blue
+        myTableView.separatorColor = UIColor.orange
      
+      
+      
+      //registerで登録する！！
+      //tableViewを使えるようにする！
+      self.myTableView.register(UINib(nibName: "CustomTableView2", bundle: nil), forCellReuseIdentifier: "Cell2")
+      
+      
     }
   
   
@@ -75,6 +77,7 @@ class ThirdViewController3_1: UIViewController,UITableViewDelegate,UITableViewDa
   func read(){
 
     contentFavorite = []
+    contentFavoriteImage = []
     contentFavoriteDate = []
     //AppDelegateを使う用意をしておく
     let appD:AppDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -94,6 +97,7 @@ class ThirdViewController3_1: UIViewController,UITableViewDelegate,UITableViewDa
       for result:AnyObject in fetchResults{
         let favorite:String? = result.value(forKey:"favorite") as? String
         let favoriteImage:String? = result.value(forKey: "favoriteImage") as? String
+        //let favoriteNo:Int? = result.value(forKey: "favoriteNo") as? Int
         let saveDate:Date = result.value(forKey: "saveDate") as! Date
         
         if contentFavorite.count == nil{
@@ -101,6 +105,7 @@ class ThirdViewController3_1: UIViewController,UITableViewDelegate,UITableViewDa
         }else{
         contentFavorite.append(favorite as! String)
         contentFavoriteImage.append(favoriteImage as! String)
+        //contentFavoriteNo.append(favoriteNo as! Int)
         contentFavoriteDate.append(saveDate)
           
         }
@@ -130,19 +135,12 @@ class ThirdViewController3_1: UIViewController,UITableViewDelegate,UITableViewDa
   //ここで画面を表示 cellに値を設定！
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     
+    let cell = tableView.dequeueReusableCell(withIdentifier: "Cell2", for: indexPath) as! CustomTableViewCell2
     
+   
+    cell.LabelArray?.text = contentFavorite[indexPath.row]
     
-    let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")! as UITableViewCell
-    
-    
-    if contentFavorite == nil {
-      cell.textLabel?.text = ""
-    }else{
-    cell.textLabel?.text = contentFavorite[indexPath.row]
-    
-      
-      
-    }
+    cell.ImageArray?.image = UIImage(named: contentFavoriteImage[indexPath.row])
     
     
     cell.accessoryType = .disclosureIndicator
@@ -156,13 +154,26 @@ class ThirdViewController3_1: UIViewController,UITableViewDelegate,UITableViewDa
   //押された時の処理//データ受け渡し画面
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     
+    
     self.numbFingers = indexPath.row
+      //contentFavoriteNo[indexPath.row]
     
     
     performSegue(withIdentifier: "nextFavorite", sender: nil)
   }
 
-  
+    //次の画面を設定
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    
+    let next: ViewController1_3 = segue.destination as! ViewController1_3
+    
+    
+    next.scSelectedIndex = numbFingers
+
+   
+    
+  }
+
   
   
   

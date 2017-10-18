@@ -3,6 +3,7 @@
     <entity name="Favorite" representedClassName="Favorite" syncable="YES" codeGenerationType="class">
         <attribute name="favorite" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="favoriteImage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="favoriteNo" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="saveDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
     </entity>
     <entity name="Memo" representedClassName=".Memo" syncable="YES">
@@ -10,7 +11,7 @@
         <attribute name="saveData" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Favorite" positionX="-36" positionY="27" width="128" height="90"/>
+        <element name="Favorite" positionX="-36" positionY="27" width="128" height="105"/>
         <element name="Memo" positionX="-36" positionY="9" width="128" height="75"/>
     </elements>
 </model>
