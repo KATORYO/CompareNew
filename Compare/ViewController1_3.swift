@@ -46,6 +46,7 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
   //coredateここから
   let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Favorite")
   
+  
   var contentFavorite:[String] = []
   var contentFavoriteImage:[String] = []
   var contentFavoriteInt:[String] = []
@@ -92,6 +93,8 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
 
       print(myArrayList)
       
+      
+      //3-1から送られている番号
       //0~30は表示しない
       if 0...30 ~= scNumFin{
         print("表示しない")
@@ -304,13 +307,21 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
         
         
             //値のセット(アトリビュート毎に指定) forKeyはモデルで指定したアトリビュート名
-         
+        
+        //型変更Int->String
+        var ChangeNo:String = self.scSelectedIndex.description
+        
+       
             newRecord.setValue(ListArray, forKey: "favorite")
         
             newRecord.setValue(ImageArray, forKey: "favoriteImage")
         
-        //newRecord.setValue(self.scSelectedIndex, forKey: "favoriteNo")
-            
+           //newRecord.setValue(self.scSelectedIndex, forKey: "favoriteNo") as! String
+        
+            newRecord.setValue(ChangeNo, forKey: "favoriteNo")
+        
+        
+        
             newRecord.setValue(Date(), forKey: "saveDate")
             
             //レコード（行）の即時保存

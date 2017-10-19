@@ -333,7 +333,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="お気に入り" id="ZVh-Br-6xW">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="TJV-6K-uS4"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="TJV-6K-uS4">
+                            <connections>
+                                <action selector="editBtn:" destination="jVb-Sw-9a7" id="WMM-OM-qBY"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="editBtn" destination="TJV-6K-uS4" id="kGp-fM-XXh"/>
@@ -634,6 +638,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="YwE-qv-3jq"/>
-        <segue reference="eHJ-wm-1uF"/>
+        <segue reference="Xtd-3i-Vdn"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -79,6 +79,7 @@ class ThirdViewController3_1: UIViewController,UITableViewDelegate,UITableViewDa
   func read(){
 
     contentFavorite = []
+    contentFavoriteNo = []
     contentFavoriteImage = []
     contentFavoriteDate = []
     //AppDelegateを使う用意をしておく
@@ -99,7 +100,9 @@ class ThirdViewController3_1: UIViewController,UITableViewDelegate,UITableViewDa
       for result:AnyObject in fetchResults{
         let favorite:String? = result.value(forKey:"favorite") as? String
         let favoriteImage:String? = result.value(forKey: "favoriteImage") as? String
-        //let favoriteNo:Int? = result.value(forKey: "favoriteNo") as? Int
+        
+        let favoriteNo = result.value(forKey: "favoriteNo") as! String
+        
         let saveDate:Date = result.value(forKey: "saveDate") as! Date
         
         if contentFavorite.count == nil{
@@ -107,7 +110,13 @@ class ThirdViewController3_1: UIViewController,UITableViewDelegate,UITableViewDa
         }else{
         contentFavorite.append(favorite as! String)
         contentFavoriteImage.append(favoriteImage as! String)
-        //contentFavoriteNo.append(favoriteNo as! Int)
+          
+          
+          //型変換　String型からInt
+          var favoriteNo2 = NumberFormatter().number(from: favoriteNo) as! Int
+          
+        contentFavoriteNo.append(favoriteNo2 as! Int)
+          
         contentFavoriteDate.append(saveDate)
           
         }
@@ -156,15 +165,19 @@ class ThirdViewController3_1: UIViewController,UITableViewDelegate,UITableViewDa
   //押された時の処理//データ受け渡し画面
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     
+    //self.numbFingers = indexPath.row
     
-    self.numbFingers = indexPath.row
-      //contentFavoriteNo[indexPath.row]
+    self.numbFingers = contentFavoriteNo[indexPath.row]
     
+    
+    
+    //3-1の情報を1-3に
     self.numFin = indexPath.row
     
     performSegue(withIdentifier: "nextFavorite", sender: nil)
   }
 
+  
     //次の画面を設定
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     
