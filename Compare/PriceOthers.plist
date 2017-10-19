@@ -16,9 +16,9 @@
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>CANON カメラ</string>
+		<string>パスポート発給 10年</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>16000円 日本円</string>
 		<key>priceYen</key>
 		<string>**</string>
 	</dict>
@@ -26,9 +26,9 @@
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>CANON カメラ</string>
+		<string>パスポート発給 5年</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>11000円 日本円</string>
 		<key>priceYen</key>
 		<string>**</string>
 	</dict>
@@ -36,9 +36,9 @@
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>CANON カメラ</string>
+		<string>帰国 渡航書発給</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>2500円 日本円</string>
 		<key>priceYen</key>
 		<string>**</string>
 	</dict>
@@ -46,7 +46,7 @@
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>CANON カメラ</string>
+		<string></string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>

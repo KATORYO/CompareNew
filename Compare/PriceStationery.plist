@@ -18,7 +18,7 @@
 		<key>item</key>
 		<string>ゼブラ ボールペン 0.5</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>59</string>
 		<key>priceYen</key>
 		<string>101</string>
 	</dict>
@@ -26,9 +26,9 @@
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>三菱 鉛筆 6B</string>
+		<string>鉛筆 3本 6B</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>22</string>
 		<key>priceYen</key>
 		<string>102</string>
 	</dict>
@@ -56,9 +56,9 @@
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>コクヨ ハサミ </string>
+		<string>ハサミ </string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>51</string>
 		<key>priceYen</key>
 		<string>146</string>
 	</dict>
@@ -66,9 +66,9 @@
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>CANON プリンター TS8030</string>
+		<string>テープ</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>14</string>
 		<key>priceYen</key>
 		<string>16200php</string>
 	</dict>

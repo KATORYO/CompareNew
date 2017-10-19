@@ -16,6 +16,8 @@ class ThirdViewController3_1: UIViewController,UITableViewDelegate,UITableViewDa
   
   
   var numbFingers = -1
+  
+  var numFin = -1
 
   var contentFavorite:[String] = []
   var contentFavoriteImage:[String] = []
@@ -31,7 +33,7 @@ class ThirdViewController3_1: UIViewController,UITableViewDelegate,UITableViewDa
   
   @IBOutlet weak var editBtn: UIBarButtonItem!
   
-   let attributes = [NSFontAttributeName: UIFont.fontAwesome(ofSize: 30)] as [String: Any]
+   let attributes = [NSFontAttributeName: UIFont.fontAwesome(ofSize: 25)] as [String: Any]
   
   
     override func viewDidLoad() {
@@ -158,6 +160,7 @@ class ThirdViewController3_1: UIViewController,UITableViewDelegate,UITableViewDa
     self.numbFingers = indexPath.row
       //contentFavoriteNo[indexPath.row]
     
+    self.numFin = indexPath.row
     
     performSegue(withIdentifier: "nextFavorite", sender: nil)
   }
@@ -168,16 +171,33 @@ class ThirdViewController3_1: UIViewController,UITableViewDelegate,UITableViewDa
     let next: ViewController1_3 = segue.destination as! ViewController1_3
     
     
+    
     next.scSelectedIndex = numbFingers
 
+    next.scNumFin = numFin
    
     
   }
-
+  @IBAction func editBtn(_ sender: UIBarButtonItem) {
+    setEditing(isEditing, animated: true)
+  }
   
   
   
+  /*
+   編集ボタンが押された際に呼び出される
+   */
+  override func setEditing(_ editing: Bool, animated: Bool) {
+    super.setEditing(editing, animated: animated)
+    
+    //通常モードと編集モードを切り替える。
+    if(myTableView.isEditing == true) {
+      myTableView.isEditing = false
+    } else {
+      myTableView.isEditing = true
+    }
   
+  }
   
   //スワイプ処理！
   //なぜこれで表示されるのか？？＝＝delegateで委譲している為！

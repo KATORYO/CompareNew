@@ -51,21 +51,14 @@ class SecondViewController: UIViewController,UITableViewDelegate,UITableViewData
     self.newPage.title = String.fontAwesomeIcon(name: .pencilSquareO)
     
     myTableViewMemo.delegate = self
-    
     myTableViewMemo.reloadData()
-    
     
     // 罫線を青色に設定.
     myTableViewMemo.separatorColor = UIColor.blue
     
-    
     // 編集中のセル選択を許可.
-    myTableViewMemo.allowsSelectionDuringEditing = true
-    
-//    read()
-//    
-//    reloadInputViews()
-    
+    //編集中でも中身確認ができるmyTableViewMemo.allowsSelectionDuringEditing = true
+  
   }
   
   override func viewWillAppear(_ animated: Bool) {
@@ -78,8 +71,6 @@ class SecondViewController: UIViewController,UITableViewDelegate,UITableViewData
   
   
   
-  
- 
   
   
   
@@ -205,7 +196,9 @@ override func didReceiveMemoryWarning() {
   
   //エディットボタン！
   @IBAction func editBtn(_ sender: UIBarButtonItem) {
+    
     setEditing(isEditing, animated: true)
+    
   }
   
   
@@ -216,18 +209,31 @@ override func didReceiveMemoryWarning() {
   override func setEditing(_ editing: Bool, animated: Bool) {
     super.setEditing(editing, animated: animated)
     
-    // TableViewを編集可能にする
-    myTableViewMemo.setEditing(editing, animated: true)
+    if contentTitle == nil{
+      print("失敗")
+    }else{
     
-    // 編集中のときのみaddButtonをナビゲーションバーの左に表示する
-    if editing {
-      print("編集中")
-      let addButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.add, target: self, action: #selector(SecondViewController.addCell(sender:)))
-      self.navigationItem.setLeftBarButton(addButton, animated: true)
+    //通常モードと編集モードを切り替える。
+    if(myTableViewMemo.isEditing == true) {
+      myTableViewMemo.isEditing = false
     } else {
-      print("通常モード")
-      self.navigationItem.setLeftBarButton(nil, animated: true)
+      myTableViewMemo.isEditing = true
     }
+    
+    
+    }
+//    // TableViewを編集可能にする
+//    myTableViewMemo.setEditing(editing, animated: true)
+//
+//    // 編集中のときのみaddButtonをナビゲーションバーの左に表示する
+//    //if editing {
+//      print("編集中")
+//      let addButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.add, target: self, action: #selector(SecondViewController.addCell(sender:)))
+//      self.navigationItem.setLeftBarButton(addButton, animated: true)
+//    } else {
+//      print("通常モード")
+//      //self.navigationItem.setLeftBarButton(nil, animated: true)
+//    }
   }
   /*
    addButtonが押された際呼び出される

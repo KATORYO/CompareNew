@@ -8,7 +8,7 @@
 		<key>item</key>
 		<string>釜揚げうどん 並</string>
 		<key>pricePeso</key>
-		<string>15peso</string>
+		<string>95</string>
 		<key>priceYen</key>
 		<string>290</string>
 	</dict>
@@ -18,19 +18,9 @@
 		<key>item</key>
 		<string>釜揚げうどん 大</string>
 		<key>pricePeso</key>
-		<string>15peso</string>
+		<string>145</string>
 		<key>priceYen</key>
 		<string>390</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>MarukameUdon</string>
-		<key>item</key>
-		<string>釜揚げうどん　並</string>
-		<key>pricePeso</key>
-		<string>15peso</string>
-		<key>priceYen</key>
-		<string>100php</string>
 	</dict>
 	<dict>
 		<key>camera</key>
@@ -58,7 +48,7 @@
 		<key>item</key>
 		<string>ぶっかけうどん 並</string>
 		<key>pricePeso</key>
-		<string>15peso</string>
+		<string>95</string>
 		<key>priceYen</key>
 		<string>290</string>
 	</dict>
@@ -68,7 +58,7 @@
 		<key>item</key>
 		<string>ぶっかけうどん 大</string>
 		<key>pricePeso</key>
-		<string>15peso</string>
+		<string>145</string>
 		<key>priceYen</key>
 		<string>390</string>
 	</dict>
@@ -118,7 +108,7 @@
 		<key>item</key>
 		<string>カレーうどん 並</string>
 		<key>pricePeso</key>
-		<string>15peso</string>
+		<string>170</string>
 		<key>priceYen</key>
 		<string>410</string>
 	</dict>
@@ -128,7 +118,7 @@
 		<key>item</key>
 		<string>カレーうどん 大</string>
 		<key>pricePeso</key>
-		<string>15peso</string>
+		<string>220</string>
 		<key>priceYen</key>
 		<string>510</string>
 	</dict>
@@ -148,7 +138,7 @@
 		<key>item</key>
 		<string>野菜かき揚げ</string>
 		<key>pricePeso</key>
-		<string>15peso</string>
+		<string>40</string>
 		<key>priceYen</key>
 		<string>130</string>
 	</dict>
@@ -168,19 +158,9 @@
 		<key>item</key>
 		<string>えび天</string>
 		<key>pricePeso</key>
-		<string>15peso</string>
+		<string>60</string>
 		<key>priceYen</key>
 		<string>150</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>MarukameUdon</string>
-		<key>item</key>
-		<string>いか天</string>
-		<key>pricePeso</key>
-		<string>15peso</string>
-		<key>priceYen</key>
-		<string>110</string>
 	</dict>
 	<dict>
 		<key>camera</key>
@@ -218,7 +198,7 @@
 		<key>item</key>
 		<string>さつまいも天</string>
 		<key>pricePeso</key>
-		<string>15peso</string>
+		<string>40</string>
 		<key>priceYen</key>
 		<string>100</string>
 	</dict>
@@ -301,6 +281,36 @@
 		<string>15peso</string>
 		<key>priceYen</key>
 		<string>130</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>MarukameUdon</string>
+		<key>item</key>
+		<string>カレーライス</string>
+		<key>pricePeso</key>
+		<string>160</string>
+		<key>priceYen</key>
+		<string>**</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>MarukameUdon</string>
+		<key>item</key>
+		<string>ねぎ</string>
+		<key>pricePeso</key>
+		<string>０</string>
+		<key>priceYen</key>
+		<string>０</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>MarukameUdon</string>
+		<key>item</key>
+		<string>天かす</string>
+		<key>pricePeso</key>
+		<string>００</string>
+		<key>priceYen</key>
+		<string>０</string>
 	</dict>
 </array>
 </plist>

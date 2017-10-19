@@ -4,7 +4,7 @@
 <array>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>McDonalds.BurgerNormal</string>
 		<key>item</key>
 		<string>ハンバーガー</string>
 		<key>pricePeso</key>
@@ -14,7 +14,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>McDonalds.HamburgerB</string>
 		<key>item</key>
 		<string>チーズバーガー</string>
 		<key>pricePeso</key>
@@ -24,7 +24,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>McDonalds.BurgerD</string>
 		<key>item</key>
 		<string>チキンスリスプ</string>
 		<key>pricePeso</key>
@@ -34,7 +34,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>McDonaldsFish</string>
 		<key>item</key>
 		<string>フィレオフィッシュ</string>
 		<key>pricePeso</key>
@@ -44,7 +44,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>McDonalds.BurgerD</string>
 		<key>item</key>
 		<string>チキンフィレオ</string>
 		<key>pricePeso</key>
@@ -54,7 +54,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>McDonalds.HamburgerB</string>
 		<key>item</key>
 		<string>ビッグマック</string>
 		<key>pricePeso</key>
@@ -64,7 +64,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>McDonalds.Hamburger</string>
 		<key>item</key>
 		<string>クォーターパウンダーチーズ</string>
 		<key>pricePeso</key>
@@ -74,7 +74,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>McDonalds.HamburgerB</string>
 		<key>item</key>
 		<string>えびフィレオ</string>
 		<key>pricePeso</key>
@@ -84,7 +84,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>McDonalds.FriedPoteto</string>
+		<string>McDonalds.PotetoS</string>
 		<key>item</key>
 		<string>マックフライポテト S</string>
 		<key>pricePeso</key>
@@ -94,7 +94,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>McDonalds.FriedPoteto</string>
+		<string>McDonalds.Poteto</string>
 		<key>item</key>
 		<string>マックフライポテト M</string>
 		<key>pricePeso</key>
@@ -134,7 +134,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>McDonalds.Nagetto</string>
+		<string>McDonalds.Corn</string>
 		<key>item</key>
 		<string>スイートコーン</string>
 		<key>pricePeso</key>
@@ -144,7 +144,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>McDonalds.Nagetto</string>
+		<string>McDonaldsSoft</string>
 		<key>item</key>
 		<string>ソフトツイスト</string>
 		<key>pricePeso</key>
@@ -184,7 +184,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>McDonalds.Nagetto</string>
+		<string>AnySalada</string>
 		<key>item</key>
 		<string>サイドサラダ</string>
 		<key>pricePeso</key>
@@ -194,7 +194,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>McDonalds.Nagetto</string>
+		<string>AnyDrinkS</string>
 		<key>item</key>
 		<string>ドリンク S</string>
 		<key>pricePeso</key>
@@ -204,7 +204,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>McDonalds.Nagetto</string>
+		<string>AnyDrinkM</string>
 		<key>item</key>
 		<string>ドリンク M</string>
 		<key>pricePeso</key>
@@ -214,7 +214,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>McDonalds.Nagetto</string>
+		<string>AnyDrinkL</string>
 		<key>item</key>
 		<string>ドリンク L</string>
 		<key>pricePeso</key>
@@ -224,7 +224,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>McDonalds.Nagetto</string>
+		<string>AnyIceCoffeeS</string>
 		<key>item</key>
 		<string>アイスコーヒー S</string>
 		<key>pricePeso</key>
@@ -234,7 +234,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>McDonalds.Nagetto</string>
+		<string>AnyIceCoffeeS</string>
 		<key>item</key>
 		<string>アイスコーヒー M</string>
 		<key>pricePeso</key>
@@ -244,7 +244,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>McDonalds.set</string>
+		<string>AnyDrinkIceL</string>
 		<key>item</key>
 		<string>アイスコーヒー L</string>
 		<key>pricePeso</key>
@@ -254,7 +254,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>McDonalds.set</string>
+		<string>AnyHotCoffee</string>
 		<key>item</key>
 		<string>ホットコーヒー S</string>
 		<key>pricePeso</key>
@@ -264,7 +264,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>McDonalds.set</string>
+		<string>AnyHotCoffee</string>
 		<key>item</key>
 		<string>ホットコーヒー M</string>
 		<key>pricePeso</key>
@@ -304,7 +304,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>McDonalds.set</string>
 		<key>item</key>
 		<string>クォータパウンダーチーズセット M</string>
 		<key>pricePeso</key>
@@ -354,7 +354,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>AnyRice</string>
 		<key>item</key>
 		<string>ライス</string>
 		<key>pricePeso</key>

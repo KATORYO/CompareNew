@@ -29,11 +29,11 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
   
   //植物・ガーデニング
   
-  let list:[String] = ["飲食店全般","STARBUCKS","CoffeeBean","<ケンタッキーKFC","<丸亀正麺","<マクドナルド","<吉野家","<コンビニ","調理器具","ゲーム＆カセット１０","おもちゃ","<スーパー（食品）","<スーパー（飲料・お酒）","寝具","<車・バイク系","<家電・カメラ・AV機器","DVD・ミュージック","インターネット関連","住宅関連","ファッション","スポーツ用品","本・コミック・雑誌20","本屋で買える文房具","生活費","工事費","修理費","その他"]
+  let list:[String] = ["<マクドナルド","STARBUCKS","<ケンタッキーKFC","<丸亀正麺","<吉野家","<コンビニ","調理器具","ゲーム＆カセット１０","おもちゃ","<スーパー（食品）","<スーパー（飲料・お酒）","寝具","<車・バイク系","<家電・カメラ・AV機器","DVD・ミュージック","インターネット関連","住宅関連","ファッション","スポーツ用品","本・コミック・雑誌20","本屋で買える文房具","生活費","工事費","修理費","その他"]
   
   var aaaa:[String] = ["aaaa","aaaa"]
   
-  let imageDesu:[String] = ["CoffeeSrarbucks","Image-2","Image-1","LivingOfCosts","Image","McDonalds.Top","YoshinoyaGyudon","first","Image-10","Image-10","Image-10","Image10","CoffeeSrarbucks","Convenience7","Image-11","LivingOfCosts","Image-10","Image-2","Image-3","Image-12","Image-10","","","","","",""]
+  let imageDesu:[String] = ["McDonalds.Top","StarbucksTop","KfcTop","MarukameTop","YoshinoyaGyudon","ConvenienceTop","CookwareTop","GameTop","ToyTop","SuperFoodTop","SuperDrinkTop","BedClothes","CarBikeTop","ApplianceTop","MusicTop","InternetTop","DwellingTop","FashionTop","SportsTop","BookTop","StationeryTop","LivingOfCostsTop","ConstructionTop","RepairTop","EtcTop"]
   
 
   //ここに保存されて、次の画面に送る！

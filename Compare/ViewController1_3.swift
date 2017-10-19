@@ -31,6 +31,9 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
   var scSelectedIndex = -1
   
   
+  var scNumFin = -1
+  
+  
   var amountPHP = 0
   var ratePhp:Int = 0
   
@@ -84,24 +87,24 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
   
     override func viewDidLoad() {
         super.viewDidLoad()
-      
-      print(myArrayList)
-      
-      //addBtnの作成　plainが文字だけのもの、titleは""
-      addBtn = UIBarButtonItem(title: "", style: .plain, target: self, action: "onClick")
-      
       // 罫線を青色に設定.
       myTableView1_3.separatorColor = UIColor.blue
 
+      print(myArrayList)
       
-      //fontawsome適用！
-      self.addBtn.setTitleTextAttributes(attributes, for: .normal)
+      //0~30は表示しない
+      if 0...30 ~= scNumFin{
+        print("表示しない")
+      }else{
+      //addBtnの作成　plainが文字だけのもの、titleは""
+      addBtn = UIBarButtonItem(title: "", style: .plain, target: self, action: "onClick")
+      
+      //fontawsome適用
+        self.addBtn.setTitleTextAttributes(attributes, for: .normal)
       self.addBtn.title = String.fontAwesomeIcon(name: .star)
-      
-      
       //viewに表示！
       self.navigationItem.rightBarButtonItem = addBtn
-      
+      }
       // Keyを指定して読み込み
 //      UserDefaults.standard.integer(forKey: "DataStore")
 //      
@@ -136,6 +139,7 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
             let favorite:String? = result.value(forKey:"favorite") as? String
             let favoriteImage:String? = result.value(forKey:"favoriteImage") as? String
             let favoriteNo:String = result.value(forKey: "favoriteNo") as! String
+            
             
             if favorite == nil {
               print("0です")
@@ -176,9 +180,30 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
       
       let filePathKHomeErectric = Bundle.main.path(forResource: "PriceHomeElectricAppliance", ofType: "plist")
       
+      let filePathSuperFoods = Bundle.main.path(forResource: "PriceSupermarketFoods", ofType: "plist")
+      
+      let filePathCarBike = Bundle.main.path(forResource: "PriceCarBike", ofType: "plist")
+      
+      let filePathBedClothes = Bundle.main.path(forResource: "PriceBedClothes", ofType: "plist")
+      
+      let filePathStationery = Bundle.main.path(forResource: "PriceStationery", ofType: "plist")
+      
+      let filePathSuperDrink = Bundle.main.path(forResource: "PriceSuperMarketDrink", ofType: "plist")
+      
+      let filePathFashion = Bundle.main.path(forResource: "PriceFashion", ofType: "plist")
+      
+       let filePathDvd = Bundle.main.path(forResource: "PriceDvdMusic", ofType: "plist")
+      
+       let filePathCookWare = Bundle.main.path(forResource: "PriceCookWare", ofType: "plist")
+      
+       let filePathSports = Bundle.main.path(forResource: "PriceSports", ofType: "plist")
+      
+       let filePathFuniture = Bundle.main.path(forResource: "PriceFuniture", ofType: "plist")
+      
+       let filePathOther = Bundle.main.path(forResource: "PriceOthers", ofType: "plist")
       
       
-      
+  
       //出来上がったら配列で記入してみる
 //      let filePathaa:[String] = [Bundle.main.path(forResource: "McPrice", ofType: "plist")!]
       
@@ -190,40 +215,38 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
       case 1:
         array = NSArray(contentsOfFile:filePathStb!)!
       case 2:
-        array = NSArray(contentsOfFile: filePathConvenience!)!
+        array = NSArray(contentsOfFile: filePathKfc!)!
       case 3:
-        array = NSArray(contentsOfFile: filePathYoshinoya!)!
+        array = NSArray(contentsOfFile: filePathMarukame!)!
       case 4:
-        array = NSArray(contentsOfFile: filePathMarukame!)!
+        array = NSArray(contentsOfFile: filePathYoshinoya!)!
       case 5:
-        array = NSArray(contentsOfFile: (filePathKfc)!)!
+        array = NSArray(contentsOfFile: filePathConvenience!)!
       case 6:
-        array = NSArray(contentsOfFile: filePathKHomeErectric!)!
+        array = NSArray(contentsOfFile: filePathCookWare!)!
       case 7:
-        array = NSArray(contentsOfFile: filePathConvenience!)!
+        array = NSArray(contentsOfFile: filePathYoshinoya!)!
       case 8:
-        array = NSArray(contentsOfFile: filePathYoshinoya!)!
+        array = NSArray(contentsOfFile: filePathMarukame!)!
       case 9:
-        array = NSArray(contentsOfFile: filePathMarukame!)!
+        array = NSArray(contentsOfFile: filePathSuperFoods!)!
       case 10:
-        array = NSArray(contentsOfFile: (filePathMc)!)!
+        array = NSArray(contentsOfFile: filePathSuperDrink!)!
       case 11:
-        array = NSArray(contentsOfFile:filePathStb!)!
+        array = NSArray(contentsOfFile: filePathBedClothes!)!
       case 12:
-        array = NSArray(contentsOfFile: filePathConvenience!)!
+        array = NSArray(contentsOfFile: filePathCarBike!)!
       case 13:
-        array = NSArray(contentsOfFile: filePathYoshinoya!)!
+        array = NSArray(contentsOfFile: filePathKHomeErectric!)!
       case 14:
-        array = NSArray(contentsOfFile: filePathMarukame!)!
+        array = NSArray(contentsOfFile: filePathDvd!)!
       case 15:
-        array = NSArray(contentsOfFile: (filePathMc)!)!
+        array = NSArray(contentsOfFile: filePathStb!)!
       case 16:
-        array = NSArray(contentsOfFile:filePathStb!)!
-      case 17:
         array = NSArray(contentsOfFile: filePathConvenience!)!
-      case 18:
+      case 17:
         array = NSArray(contentsOfFile: filePathYoshinoya!)!
-      case 19:
+      case 18:
         array = NSArray(contentsOfFile: filePathMarukame!)!
       default:
         break
@@ -248,7 +271,6 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
 
   
   
-  
   // addBtnをタップしたときのアクション
   func onClick() {
     let alert = UIAlertController(title: "お気に入り追加", message: "お気に入り画面に追加されます", preferredStyle: .alert)
@@ -258,6 +280,7 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
       //ここでアラートがオッケーだった場合の処理を記述
       print("aa")
         
+        
         //お気に入りの保存したい番号をここでセットする
         let IntDesu:Int = self.scSelectedIndex
         
@@ -265,6 +288,8 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
         var ListArray = self.myArrayList
         let ImageArray = self.myImageList
       
+        
+        
         
         let appD:AppDelegate = UIApplication.shared.delegate as! AppDelegate
         
