@@ -50,6 +50,7 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate,UIImagePicker
   var fetchedArray: [NSManagedObject] = []
   
   
+  var NoDesuYo = 0
   
   
   override func viewWillAppear(_ animated: Bool) {
@@ -470,7 +471,13 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate,UIImagePicker
     //エンティティを操作するためのオブジェクトを作成
     let viewContext = appD.persistentContainer.viewContext
     
-    if ((nakamiComfirm == "") || (nakamiComfirm == nil)){
+//    if ((nakamiComfirm == "") || (nakamiComfirm == nil)){
+    
+    
+    //var abc:String = ""
+    //isEmptyは空かどうかの判断
+    if nakamiComfirm.isEmpty {
+      print("empty!!")
       print("保存しない")
     }else{
       if MemoNo == -1{
@@ -587,7 +594,27 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate,UIImagePicker
   //新規作成ボタン（compose）
   @IBAction func newPageBtn(_ sender: UIBarButtonItem) {
     performSegue(withIdentifier: "nextAgain", sender: nil)
+    
   }
+  
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    
+    let same: SecondViewController2_2 = segue.destination as! SecondViewController2_2
+    
+     var noDesuYo:Int = 1
+    
+    same.NoDesuYo = noDesuYo
+
+  }
+  
+  
+  override func didReceiveMemoryWarning() {
+    super.didReceiveMemoryWarning()
+    // Dispose of any resources that can be recreated.
+  }
+  
+  
+  
   
   
   
@@ -602,11 +629,6 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate,UIImagePicker
   
   
   
-  
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
-  }
   // cell.textLabel!.text = self.saves
   
   /*

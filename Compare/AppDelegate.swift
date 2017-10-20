@@ -20,13 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
    
-    //string
-    let favorite = ["fav": String()]
     
-    // デフォルト値登録
-    // ※すでに値が更新されていた場合は、更新後の値のままになる
-    userDefaults.register(defaults: favorite)
-  
     return true
   }
 

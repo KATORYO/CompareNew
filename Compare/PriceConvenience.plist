@@ -280,7 +280,7 @@
 		<key>pricePeso</key>
 		<string>31</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>150</string>
 	</dict>
 	<dict>
 		<key>camera</key>
@@ -370,7 +370,7 @@
 		<key>pricePeso</key>
 		<string>24</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>100</string>
 	</dict>
 	<dict>
 		<key>camera</key>
@@ -426,11 +426,11 @@
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>サンドイッチ ツナ</string>
+		<string>サンドイッチ ツナ : ツナたまご</string>
 		<key>pricePeso</key>
 		<string>29</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>220</string>
 	</dict>
 	<dict>
 		<key>camera</key>

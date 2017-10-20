@@ -212,11 +212,11 @@ class ThirdViewController3_1: UIViewController,UITableViewDelegate,UITableViewDa
   
   }
   
-  //スワイプ処理！
-  //なぜこれで表示されるのか？？＝＝delegateで委譲している為！
-  // UITableViewDelegate
-  func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
-let action = UITableViewRowAction(style: .default, title: "削除"){ action, indexPath in
+        //スワイプ処理！
+      //なぜこれで表示されるのか？？＝＝delegateで委譲している為！
+    // UITableViewDelegate
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+  let action = UITableViewRowAction(style: .default, title: "削除"){ action, indexPath in
   
   //アクション
   

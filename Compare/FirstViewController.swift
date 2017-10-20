@@ -27,6 +27,10 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
   
   var phpRate:Int = 0
   
+  
+  
+  
+  
   //植物・ガーデニング
   
   let list:[String] = ["<マクドナルド","STARBUCKS","<ケンタッキーKFC","<丸亀正麺","<吉野家","<コンビニ","調理器具","ゲーム＆カセット１０","おもちゃ","<スーパー（食品）","<スーパー（飲料・お酒）","寝具","<車・バイク系","<家電・カメラ・AV機器","DVD・ミュージック","インターネット関連","住宅関連","ファッション","スポーツ用品","本・コミック・雑誌20","本屋で買える文房具","生活費","工事費","修理費","その他"]
@@ -46,13 +50,15 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
 		
   
   
+  
   @IBOutlet weak var myCollectionView: UICollectionView!
-
-  
-  
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+    
+    // デフォルト値 //userdefault
+//    amountPHP = userDefaults.register(defaults: ["DataStore": "default"])
     
     // TouchDownの時のイベントを追加する.
     rateBtn.addTarget(self, action: #selector(FirstViewController.onDownButton(sender:)), for: .touchDown)
@@ -64,11 +70,11 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
     print("リストの数\(list.count)")
     print("イメージの数\(imageDesu.count)")
     
-    // デフォルト値 //userdefault
-    userDefaults.register(defaults: ["DataStore": "default"])
+   
     
     
-    rateBtn.setTitle("現在のペソを確認\(Int(amountJPY))", for: .normal)
+    rateBtn.setTitle("ペソを確認！", for: .normal)
+//    rateBtn.setTitle("現在のペソを確認\(Int(amountJPY))", for: .normal)
 
     
     //rateBtnの起動時アニメーション
@@ -86,9 +92,7 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
     /*
      移動するアニメーション.
      */
-
     rateBtn.layer.position = CGPoint(x: -30, y: 0)
-    
     // アニメーション処理
     UIView.animate(withDuration: TimeInterval(CGFloat(2.0)),
     animations: {() -> Void in
@@ -100,7 +104,7 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
     }
     )
 
-
+    
     //collectionViewの起動時アニメーション
     UIView.animate(withDuration: 0.4,
                    animations: {
@@ -116,8 +120,6 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
   }//viewdidloadの閉じたぐ！
   
 
-  
-  
   
   
   @IBAction func rateBtn(_ sender: UIButton) {
@@ -149,7 +151,7 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
           // StringからDouble型に変換
           let rate = Double(ratePHP)!
           // ペソに変換(小数第4位まで)
-          let amountPHP = round(self.amountJPY * rate * 10000) / 10000
+          var amountPHP = round(self.amountJPY * rate * 10000) / 10000
           // ラベルに表示
           self.rateBtn.setTitle("\(amountPHP)ペソ", for: .normal) //= "\(amountUSD)ドル"
           print(amountPHP)
@@ -161,10 +163,30 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
           
           var Rate:Int = 0
           
-//          if self.userDefaults.object(forKey: "DataStore") != nil{
-//            Rate = self.userDefaults.object(forKey: "DataStore") as! Int
+          
+          //空の配列
+          //var favArr:[String] = []
+          
+          var ryate:[Int] = []
+          
+          
+          
+          //配列に追加
+          //空の場合の対処法
+//          if self.userDefaults.integer(forKey: "integerKeyName") != nil{
+//            ryate = [self.userDefaults.integer(amountPHP, forKey: "integerKeyName")]
 //          }
+          
+          ryate.append(Int(amountPHP))
+          
+          UserDefaults.standard.set(amountPHP, forKey: "integerKeyName")
+          
+          //self.userDefaults.set(ryate, forKey: "integerKeyName")
+          
+          self.userDefaults.synchronize()
 
+          
+          print(ryate)
           //amountPHP*cellの３番目のラベルを掛け算するやり方で実装を試みる
           //cell.textJPYlabal.amounPHP*JPY
           //問題はString型であること　はじめにInt型にするかを相談！

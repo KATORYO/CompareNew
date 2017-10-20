@@ -22,19 +22,23 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
   var array:NSArray = []
   
   
+  //ここにPlistから受け取った情報を格納
+  var amountPhpArray:[Int] = []
+  
+  
   //前の画面からゲット
   //（配列）
-  var myImageList = ""
-  var myArrayList = ""
+  var myImageList:String = ""
+  var myArrayList:String = ""
 
   //firstViewからの値
-  var scSelectedIndex = -1
+  var scSelectedIndex:Int = -1
   
   
-  var scNumFin = -1
+  var scNumFin:Int = -1
   
   
-  var amountPHP = 0
+  var amountPHP:Int = 0
   var ratePhp:Int = 0
   
   
@@ -88,6 +92,21 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
   
     override func viewDidLoad() {
         super.viewDidLoad()
+      
+      
+      
+      UserDefaults.standard.integer(forKey: "integerKeyName")
+      
+      
+      amountPHP = UserDefaults.standard.integer(forKey: "integerKeyName")
+      
+      //userDefaultに格納されたものを表示
+      print("中身確認\(amountPHP)")
+      
+      
+
+      
+      
       // 罫線を青色に設定.
       myTableView1_3.separatorColor = UIColor.blue
 
@@ -257,7 +276,7 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
 
       //array = NSArray(contentsOfFile: (filePathMc)!)!
 
-      for data in array{
+         for data in array{
         let dic = data as! NSDictionary
         
         //Key配列の追加！
@@ -288,7 +307,7 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
         let IntDesu:Int = self.scSelectedIndex
         
         //(ここにスタバなんかを保存)
-        var ListArray = self.myArrayList
+        let ListArray = self.myArrayList
         let ImageArray = self.myImageList
       
         
@@ -307,9 +326,8 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
         
         
             //値のセット(アトリビュート毎に指定) forKeyはモデルで指定したアトリビュート名
-        
-        //型変更Int->String
-        var ChangeNo:String = self.scSelectedIndex.description
+            //型変更Int->String
+            var ChangeNo:String = self.scSelectedIndex.description
         
        
             newRecord.setValue(ListArray, forKey: "favorite")
@@ -393,6 +411,22 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
     cell.nameLabel.text? = dicB["item"] as! String
     
     cell.PesoLabel.text? = dicB["pricePeso"] as! String
+    
+    //amountPHPにレートが入っている
+    //print("ここに入っている\(amountPHP)")
+    //型変換
+//    amountPhpArray[Int] = NumberFormatter[].number[from: dicB["priceYen"] as! Int]
+//    amountPhpArray = NumberFormatter().number(from: dicB["priceYen"]) as! Int
+    
+    //型変換
+  //amountPhpArray.append(Int(dicB["priceYen"] as! String)!)
+  
+    
+//    var amountP:Int = Int(0.45)
+//    for element in amountPhpArray {
+//      //print(element * amountPHP)
+//      print(Double(element * amountP)); 10000
+//    }
     
     cell.YenLabel.text? = dicB["priceYen"] as! String
     

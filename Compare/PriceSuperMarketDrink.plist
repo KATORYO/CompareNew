@@ -4,61 +4,11 @@
 <array>
 	<dict>
 		<key>camera</key>
-		<string>Burger　以下は税抜き</string>
+		<string>Burger　以下は税込み</string>
 		<key>item</key>
-		<string>天然水 2L</string>
+		<string>フィリピン1L水 : 天然水 2L</string>
 		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>80</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>コカコーラ 2L</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>134</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>アクエリアス 2L</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>134</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>サントリー 烏龍茶 2L</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>134</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>コカコーラ 500ml</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>78</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>UCCコーヒー 930ml </string>
-		<key>pricePeso</key>
-		<string>40php</string>
+		<string>15</string>
 		<key>priceYen</key>
 		<string>86</string>
 	</dict>
@@ -66,11 +16,51 @@
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>アサヒスーパードライ 350ml</string>
+		<string>コカコーラ 1.5L</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>48</string>
 		<key>priceYen</key>
-		<string>180</string>
+		<string>134</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>Burger</string>
+		<key>item</key>
+		<string>ポカリスウェット 2L</string>
+		<key>pricePeso</key>
+		<string>125</string>
+		<key>priceYen</key>
+		<string>264</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>Burger</string>
+		<key>item</key>
+		<string>おーいお茶 2L</string>
+		<key>pricePeso</key>
+		<string>211</string>
+		<key>priceYen</key>
+		<string>126</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>Burger</string>
+		<key>item</key>
+		<string>コカコーラ 500ml</string>
+		<key>pricePeso</key>
+		<string>25</string>
+		<key>priceYen</key>
+		<string>84</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>Burger</string>
+		<key>item</key>
+		<string>キリン一番搾り 350ml</string>
+		<key>pricePeso</key>
+		<string>65</string>
+		<key>priceYen</key>
+		<string>189</string>
 	</dict>
 	<dict>
 		<key>camera</key>
@@ -78,7 +68,7 @@
 		<key>item</key>
 		<string>リプトン 25パック</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>104</string>
 		<key>priceYen</key>
 		<string>240</string>
 	</dict>
@@ -86,51 +76,31 @@
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ミトン</string>
+		<string>ペプシ 330ml</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>22</string>
 		<key>priceYen</key>
-		<string>100</string>
+		<string>100aa</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ミトン</string>
+		<string>スプライト 1.5L</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>48</string>
 		<key>priceYen</key>
-		<string>100</string>
+		<string>137</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>ミトン</string>
+		<string>モンスター 473ml</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>94</string>
 		<key>priceYen</key>
-		<string>100</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>ミトン</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>100</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>ミトン</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>100</string>
+		<string>205</string>
 	</dict>
 </array>
 </plist>
