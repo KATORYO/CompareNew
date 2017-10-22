@@ -34,7 +34,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>YoshinoyaGyudon</string>
+		<string>AnySalada</string>
 		<key>item</key>
 		<string>サラダ</string>
 		<key>pricePeso</key>
@@ -54,7 +54,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>YoshinoyaGyudon</string>
+		<string>AnyMiso</string>
 		<key>item</key>
 		<string>みそ汁</string>
 		<key>pricePeso</key>
@@ -64,7 +64,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>YoshinoyaGyudon</string>
+		<string>AnyMiso</string>
 		<key>item</key>
 		<string>とん汁</string>
 		<key>pricePeso</key>
@@ -74,7 +74,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>YoshinoyaGyudon</string>
+		<string>SuperFoodEgg</string>
 		<key>item</key>
 		<string>玉子</string>
 		<key>pricePeso</key>
@@ -84,7 +84,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>YoshinoyaGyudon</string>
+		<string>AnyEgg</string>
 		<key>item</key>
 		<string>ねぎ玉子</string>
 		<key>pricePeso</key>
@@ -94,7 +94,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>YoshinoyaGyudon</string>
+		<string>AnyRice</string>
 		<key>item</key>
 		<string>ご飯</string>
 		<key>pricePeso</key>
@@ -114,7 +114,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>YoshinoyaGyudon</string>
+		<string>YoshinoyaGyoza</string>
 		<key>item</key>
 		<string>餃子</string>
 		<key>pricePeso</key>
@@ -124,7 +124,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>YoshinoyaGyudon</string>
+		<string>YoshinoyaShumai</string>
 		<key>item</key>
 		<string>カニシューマイ</string>
 		<key>pricePeso</key>
@@ -134,7 +134,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>YoshinoyaGyudon</string>
+		<string>YoshinoyaUnagi</string>
 		<key>item</key>
 		<string>鰻重 一枚盛 </string>
 		<key>pricePeso</key>
@@ -144,7 +144,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>YoshinoyaGyudon</string>
+		<string>YoshinoyaRamen</string>
 		<key>item</key>
 		<string>ビーフらーめん</string>
 		<key>pricePeso</key>

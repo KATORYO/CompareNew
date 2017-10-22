@@ -16,7 +16,7 @@ import AssetsLibrary
 
 class SecondViewController2_2: UIViewController,UITextViewDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
   
-  
+
   
   let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Memo")
   
@@ -51,6 +51,10 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate,UIImagePicker
   
   
   var NoDesuYo = 0
+  
+  
+  
+  let notificationCenter = NotificationCenter.default
   
   
   override func viewWillAppear(_ animated: Bool) {
@@ -96,11 +100,11 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate,UIImagePicker
   override func viewDidLoad() {
     super.viewDidLoad()
     
+   
+    
     var myTitle2:NSAttributedString = myTitle.attributedText
     
-    
-    //print(myTitle2)
-    
+  
     
     //    let attributes = [NSFontAttributeName: UIFont.fontAwesome(ofSize: 20)] as [String: Any]
     BackBtn.setTitleTextAttributes(attributes, for: .normal)
@@ -168,6 +172,7 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate,UIImagePicker
   }//viewdidloadの閉じタグ
   
   
+  
   //キーボード押した時に上に現れる
   func keyboardToolbar(textView: UITextView) {
     
@@ -193,6 +198,9 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate,UIImagePicker
     let twitter: UIBarButtonItem = UIBarButtonItem(title: "twiter", style: .plain, target: self, action: #selector(self.twitter))
     cameraPhoto.tintColor = UIColor.blue
     
+    let faceBook: UIBarButtonItem = UIBarButtonItem(title: "faceBook", style: .plain, target: self, action: #selector(self.facebook))
+    cameraPhoto.tintColor = UIColor.blue
+    
     
     
     done.setTitleTextAttributes(attributes, for: .normal)
@@ -207,6 +215,9 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate,UIImagePicker
     twitter.setTitleTextAttributes(attributes, for: .normal)
     twitter.title = String.fontAwesomeIcon(name: .twitter)
     
+    faceBook.setTitleTextAttributes(attributes, for: .normal)
+    faceBook.title = String.fontAwesomeIcon(name: .facebook)
+    
     
     var items = [UIBarButtonItem]()
     
@@ -214,6 +225,7 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate,UIImagePicker
     items.append(flexSpace)
     items.append(cameraPhoto)
     items.append(twitter)
+    items.append(faceBook)
     
     
     items.append(done)
@@ -236,14 +248,38 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate,UIImagePicker
     // SLComposeViewControllerのインスタンス化.
     // ServiceTypeをTwitterに指定.
     myComposeView = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+    
     // 投稿するテキストを指定.
-    myComposeView.setInitialText(myTitle.text)
+    myComposeView.setInitialText("Facebook Test")
+    
+    //myComposeView = UIImage(frame: CGRect(x: 0, y: 0, width: 100, height: 10))
+    
     // 投稿する画像を指定.
-    myComposeView.add(UIImage(named: "UIImage"))
+    myComposeView.add(UIImage(named: "EtcTop"))
+    
+    
     
     // myComposeViewの画面遷移.
     self.present(myComposeView, animated: true, completion: nil)
   }
+  
+  
+  func facebook(sender : AnyObject) {
+    
+    // ServiceTypeをFacebookに指定.
+    myComposeView = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
+    
+    // 投稿するテキストを指定.
+    myComposeView.setInitialText(myTitle.text)
+    
+    // 投稿する画像を指定.
+    myComposeView.add(UIImage(named: "EtcTop"))
+    
+    // myComposeViewの画面遷移.
+    self.present(myComposeView, animated: true, completion: nil)
+    
+  }
+  
   
   
   
@@ -343,9 +379,9 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate,UIImagePicker
   
   
   //テキストビューに編集する
-  //UITextFieldが編集終了する直前に呼ばれる.
+  //UITextViewが編集終了する直前に呼ばれる.
   func textViewShouldEndEditing(_ textview: UITextView) -> Bool {
-    print("textFieldShouldEndEditing:" + textview.text!)
+    print("textFieldShouldEndEditing" + myTitle.text!)
     return true
   }
   
@@ -454,10 +490,8 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate,UIImagePicker
   }
   
   
-  
+  //戻るボタンと保存ボタン
   @IBAction func BackBtn(_ sender: UIBarButtonItem) {
-    
-   
     
     var nakamiComfirm = ""
     
@@ -472,8 +506,6 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate,UIImagePicker
     let viewContext = appD.persistentContainer.viewContext
     
 //    if ((nakamiComfirm == "") || (nakamiComfirm == nil)){
-    
-    
     //var abc:String = ""
     //isEmptyは空かどうかの判断
     if nakamiComfirm.isEmpty {
@@ -606,6 +638,9 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate,UIImagePicker
     same.NoDesuYo = noDesuYo
 
   }
+
+  
+  
   
   
   override func didReceiveMemoryWarning() {

@@ -33,9 +33,8 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
   
   //植物・ガーデニング
   
-  let list:[String] = ["<マクドナルド","STARBUCKS","<ケンタッキーKFC","<丸亀正麺","<吉野家","<コンビニ","調理器具","ゲーム＆カセット１０","おもちゃ","<スーパー（食品）","<スーパー（飲料・お酒）","寝具","<車・バイク系","<家電・カメラ・AV機器","DVD・ミュージック","インターネット関連","住宅関連","ファッション","スポーツ用品","本・コミック・雑誌20","本屋で買える文房具","生活費","工事費","修理費","その他"]
+  let list:[String] = ["マクドナルド","STARBUCKS","ケンタッキーKFC","丸亀正麺","吉野家","コンビニ","調理器具","ゲーム＆カセット","おもちゃ","スーパー（食品）","スーパー（飲料・お酒）","家具","車・バイク系","家電・カメラ・AV機器","DVD・ミュージック","インターネット関連","住宅関連","ファッション","スポーツ用品","本・コミック・雑誌","本屋で買える文房具","生活費","工事費","修理費","その他"]
   
-  var aaaa:[String] = ["aaaa","aaaa"]
   
   let imageDesu:[String] = ["McDonalds.Top","StarbucksTop","KfcTop","MarukameTop","YoshinoyaGyudon","ConvenienceTop","CookwareTop","GameTop","ToyTop","SuperFoodTop","SuperDrinkTop","BedClothes","CarBikeTop","ApplianceTop","MusicTop","InternetTop","DwellingTop","FashionTop","SportsTop","BookTop","StationeryTop","LivingOfCostsTop","ConstructionTop","RepairTop","EtcTop"]
   
@@ -180,6 +179,7 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
           ryate.append(Int(amountPHP))
           
           UserDefaults.standard.set(amountPHP, forKey: "integerKeyName")
+          
           
           //self.userDefaults.set(ryate, forKey: "integerKeyName")
           
@@ -369,6 +369,48 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
       selectedNameList = list[indexPath.row]
       selectedNameImage = imageDesu[indexPath.row]
     case 10:
+      selectedNameList = list[indexPath.row]
+      selectedNameImage = imageDesu[indexPath.row]
+    case 11:
+      selectedNameList = list[indexPath.row]
+      selectedNameImage = imageDesu[indexPath.row]
+    case 12:
+      selectedNameList = list[indexPath.row]
+      selectedNameImage = imageDesu[indexPath.row]
+    case 13:
+      selectedNameList = list[indexPath.row]
+      selectedNameImage = imageDesu[indexPath.row]
+    case 14:
+      selectedNameList = list[indexPath.row]
+      selectedNameImage = imageDesu[indexPath.row]
+    case 15:
+      selectedNameList = list[indexPath.row]
+      selectedNameImage = imageDesu[indexPath.row]
+    case 16:
+      selectedNameList = list[indexPath.row]
+      selectedNameImage = imageDesu[indexPath.row]
+    case 17:
+      selectedNameList = list[indexPath.row]
+      selectedNameImage = imageDesu[indexPath.row]
+    case 18:
+      selectedNameList = list[indexPath.row]
+      selectedNameImage = imageDesu[indexPath.row]
+    case 19:
+      selectedNameList = list[indexPath.row]
+      selectedNameImage = imageDesu[indexPath.row]
+    case 20:
+      selectedNameList = list[indexPath.row]
+      selectedNameImage = imageDesu[indexPath.row]
+    case 21:
+      selectedNameList = list[indexPath.row]
+      selectedNameImage = imageDesu[indexPath.row]
+    case 22:
+      selectedNameList = list[indexPath.row]
+      selectedNameImage = imageDesu[indexPath.row]
+    case 23:
+      selectedNameList = list[indexPath.row]
+      selectedNameImage = imageDesu[indexPath.row]
+    case 24:
       selectedNameList = list[indexPath.row]
       selectedNameImage = imageDesu[indexPath.row]
     default:

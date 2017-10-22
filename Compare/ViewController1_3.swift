@@ -21,6 +21,9 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
   
   var array:NSArray = []
   
+  @IBOutlet weak var titleLabel: UILabel!
+  
+  
   
   //ここにPlistから受け取った情報を格納
   var amountPhpArray:[Int] = []
@@ -30,6 +33,8 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
   //（配列）
   var myImageList:String = ""
   var myArrayList:String = ""
+  
+  var myArrayListFrom3_1:String = ""
 
   //firstViewからの値
   var scSelectedIndex:Int = -1
@@ -38,7 +43,8 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
   var scNumFin:Int = -1
   
   
-  var amountPHP:Int = 0
+  
+  var amountPHP:Double = 0
   var ratePhp:Int = 0
   
   
@@ -93,25 +99,29 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
     override func viewDidLoad() {
         super.viewDidLoad()
       
+//      もしmyArrayListがからの場合、myArrayList3_1が発動！
+//      タイトル設定（重要）
+      titleLabel.adjustsFontSizeToFitWidth = true
+      titleLabel.minimumScaleFactor = 0.7
+      
+      if myArrayList == ""{
+        titleLabel.text? = "\(myArrayListFrom3_1)を比較！"
+      }else if myArrayListFrom3_1 == ""{
+       titleLabel.text? = "\(myArrayList)を比較！"
+      }
       
       
-      UserDefaults.standard.integer(forKey: "integerKeyName")
+    
       
-      
-      amountPHP = UserDefaults.standard.integer(forKey: "integerKeyName")
+      amountPHP = UserDefaults.standard.object(forKey: "integerKeyName") as! Double
       
       //userDefaultに格納されたものを表示
       print("中身確認\(amountPHP)")
       
       
 
-      
-      
       // 罫線を青色に設定.
-      myTableView1_3.separatorColor = UIColor.blue
-
-      print(myArrayList)
-      
+      myTableView1_3.separatorColor = UIColor.lightGray
       
       //3-1から送られている番号
       //0~30は表示しない
@@ -173,17 +183,8 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
             
           }
         }catch{
-        }
-        
-        //画面表示
-        //print(contentTitle[0]+memoNo)
-        
-        
-        // myTitle.reloadInputViews()
       }
-      
-      
-      
+    }
       
       
       
@@ -206,7 +207,7 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
       
       let filePathCarBike = Bundle.main.path(forResource: "PriceCarBike", ofType: "plist")
       
-      let filePathBedClothes = Bundle.main.path(forResource: "PriceBedClothes", ofType: "plist")
+      let filePathBedClothes = Bundle.main.path(forResource: "PriceFurniture", ofType: "plist")
       
       let filePathStationery = Bundle.main.path(forResource: "PriceStationery", ofType: "plist")
       
@@ -220,9 +221,23 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
       
        let filePathSports = Bundle.main.path(forResource: "PriceSports", ofType: "plist")
       
-       let filePathFuniture = Bundle.main.path(forResource: "PriceFuniture", ofType: "plist")
-      
        let filePathOther = Bundle.main.path(forResource: "PriceOthers", ofType: "plist")
+      
+      let filePathInternet = Bundle.main.path(forResource: "PriceInternet", ofType: "plist")
+      
+      let filePathBook = Bundle.main.path(forResource: "PriceBook", ofType: "plist")
+      
+      let filePathPublicTranspotation = Bundle.main.path(forResource: "PricePublicTranspotation", ofType: "plist")
+      
+      let filePathToy = Bundle.main.path(forResource: "PriceToy", ofType: "plist")
+      
+      let filePathConstruction = Bundle.main.path(forResource: "PriceConstruction", ofType: "plist")
+      
+      let filePathRepair = Bundle.main.path(forResource: "PriceRepair", ofType: "plist")
+      
+      let filePathGame = Bundle.main.path(forResource: "PriceGame", ofType: "plist")
+      
+      let filePathDwelling = Bundle.main.path(forResource: "PriceDwelling", ofType: "plist")
       
       
   
@@ -247,9 +262,9 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
       case 6:
         array = NSArray(contentsOfFile: filePathCookWare!)!
       case 7:
-        array = NSArray(contentsOfFile: filePathYoshinoya!)!
+        array = NSArray(contentsOfFile: filePathGame!)!
       case 8:
-        array = NSArray(contentsOfFile: filePathMarukame!)!
+        array = NSArray(contentsOfFile: filePathToy!)!
       case 9:
         array = NSArray(contentsOfFile: filePathSuperFoods!)!
       case 10:
@@ -263,13 +278,25 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
       case 14:
         array = NSArray(contentsOfFile: filePathDvd!)!
       case 15:
-        array = NSArray(contentsOfFile: filePathStb!)!
+        array = NSArray(contentsOfFile: filePathInternet!)!
       case 16:
-        array = NSArray(contentsOfFile: filePathConvenience!)!
+        array = NSArray(contentsOfFile: filePathDwelling!)!
       case 17:
-        array = NSArray(contentsOfFile: filePathYoshinoya!)!
+        array = NSArray(contentsOfFile: filePathFashion!)!
       case 18:
-        array = NSArray(contentsOfFile: filePathMarukame!)!
+        array = NSArray(contentsOfFile: filePathSports!)!
+      case 19:
+        array = NSArray(contentsOfFile: filePathBook!)!
+      case 20:
+        array = NSArray(contentsOfFile: filePathStationery!)!
+      case 21:
+        array = NSArray(contentsOfFile: filePathPublicTranspotation!)!
+      case 22:
+        array = NSArray(contentsOfFile: filePathConstruction!)!
+      case 23:
+        array = NSArray(contentsOfFile: filePathRepair!)!
+      case 24:
+        array = NSArray(contentsOfFile: filePathOther!)!
       default:
         break
       //ファイルパスの読み込み
@@ -290,6 +317,22 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
   
   
   
+  @IBAction func myChange(_ sender: UISwitch) {
+    
+    
+    
+    if sender.isOn {
+      print("ぺそ表示")
+      //myLabel.backgroundColor = UIColor.orange
+    }
+    else {
+      print("円表示")
+      //myChange = UIColor.orange
+    }
+  
+  }
+  
+  
 
   
   
@@ -302,6 +345,8 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
       //ここでアラートがオッケーだった場合の処理を記述
       print("aa")
         
+        
+        self.contentFavorite = []
         
         //お気に入りの保存したい番号をここでセットする
         let IntDesu:Int = self.scSelectedIndex
@@ -330,6 +375,8 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
             var ChangeNo:String = self.scSelectedIndex.description
         
        
+        print(ChangeNo)
+        
             newRecord.setValue(ListArray, forKey: "favorite")
         
             newRecord.setValue(ImageArray, forKey: "favoriteImage")
@@ -351,7 +398,8 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
         //self.read()
             
             print("viewWillDisappear")
-          
+        
+        
     }))
     
     
@@ -364,14 +412,88 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
   }//addBtn(お気に入り)ボタンを押した時の閉じタグ
   
   
-  //ヘッダー
-  func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-    let headerView:UIView = UIView()
-    headerView.backgroundColor = UIColor.blue
-    let headerLet = UILabel()
+  //Mark: ヘッダーに設定するViewを設定する
+  func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView?{
     
-    return headerView
+//    //ヘッダーにするビューを生成
+//    let view = UIView()
+//    view.frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: 40)
+//    view.backgroundColor = #colorLiteral(red: 1, green: 0.9970277546, blue: 0.8703434157, alpha: 1)
+    
+    //ヘッダーにするビューを生成
+    let view = UIView()
+    view.frame = CGRect(x: 0, y: 0, width: 300, height: 40)
+    view.backgroundColor = #colorLiteral(red: 1, green: 0.9970277546, blue: 0.8703434157, alpha: 1)
+    
+    
+    //ヘッダーに追加するラベルを生成
+    let headerLabel = UILabel()
+    
+     headerLabel.frame =  CGRect(x: 0, y: -5, width: 75, height: 38)
+    headerLabel.text = "イメージ"
+    headerLabel.textColor = UIColor.blue
+    headerLabel.textAlignment = NSTextAlignment.left
+     headerLabel.font = UIFont.boldSystemFont(ofSize: 19)
+    view.addSubview(headerLabel)
+    
+    let headerLabel2 = UILabel()
+    headerLabel2.frame =  CGRect(x: 95, y: -5, width: 80, height: 38)
+    headerLabel2.text = "アイテム"
+    headerLabel2.textColor = UIColor.blue
+    headerLabel2.textAlignment = NSTextAlignment.left
+    headerLabel2.font = UIFont.boldSystemFont(ofSize: 19)
+    view.addSubview(headerLabel2)
+    
+    
+    let headerLabel3 = UILabel()
+    headerLabel3.frame =  CGRect(x: 185, y: -5, width: 91, height: 38)
+    headerLabel3.text = "フィリピン"
+    headerLabel3.textColor = UIColor.blue
+    headerLabel3.textAlignment = NSTextAlignment.center
+     headerLabel3.font = UIFont.boldSystemFont(ofSize: 19)
+    view.addSubview(headerLabel3)
+    
+    let headerLabel4 = UILabel()
+    headerLabel4.frame =  CGRect(x: 280, y: -5, width: 80, height: 38)
+    headerLabel4.text = "ジャパン"
+    headerLabel4.textColor = UIColor.blue
+    headerLabel4.textAlignment = NSTextAlignment.center
+     headerLabel4.font = UIFont.boldSystemFont(ofSize: 19)
+    view.addSubview(headerLabel4)
+    
+    
+    
+    //ラベルを最前面に移動
+    //self.view.bringSubview(toFront: headerLabel2)
+    
+    return view
   }
+  
+  //ヘッダー
+//  func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UILabel? {
+//    let headerView:UIView = UIView()
+//
+//    var headerLabel:UILabel = UILabel()
+//    let headerLabelItem:UILabel = UILabel()
+//    let headerLabelPesp:UILabel = UILabel()
+//    let headerLabelYen:UILabel = UILabel()
+//
+//    headerLabel.text = "イメージ"
+//    headerLabelItem.text = "アイテム"
+//    headerLabelPesp.text = "フィリピン"
+//    headerLabelYen.text = "ジャパン"
+//
+//    var Array:[UILabel] = []
+//
+//    Array.append(headerLabel)
+//    Array.append(headerLabelItem)
+//    Array.append(headerLabelPesp)
+//    Array.append(headerLabelYen)
+//    headerView.backgroundColor = UIColor.blue
+//
+//
+//    return headerView as! UILabel
+//  }
   
   
   
@@ -379,7 +501,7 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
   func numberOfSections(in tableView: UITableView) -> Int {
     
     return 1
-   
+    
   }
   
   
@@ -412,6 +534,10 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
     
     cell.PesoLabel.text? = dicB["pricePeso"] as! String
     
+    
+    //罫線の余白をとる
+    cell.layoutMargins = UIEdgeInsets.zero
+    
     //amountPHPにレートが入っている
     //print("ここに入っている\(amountPHP)")
     //型変換
@@ -419,13 +545,14 @@ class ViewController1_3: UIViewController,UITableViewDelegate,UITableViewDataSou
 //    amountPhpArray = NumberFormatter().number(from: dicB["priceYen"]) as! Int
     
     //型変換
-  //amountPhpArray.append(Int(dicB["priceYen"] as! String)!)
+//amountPhpArray.append(Int(dicB["priceYen"] as! String)!)
   
+    
     
 //    var amountP:Int = Int(0.45)
 //    for element in amountPhpArray {
-//      //print(element * amountPHP)
-//      print(Double(element * amountP)); 10000
+//      print(element * amountP)
+//      //print(Double(element * amountP)); 10000
 //    }
     
     cell.YenLabel.text? = dicB["priceYen"] as! String

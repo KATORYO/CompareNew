@@ -16,9 +16,9 @@
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>CANON プリンター TS8030</string>
+		<string>サンダル （街中のディスカウント店）</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>500</string>
 		<key>priceYen</key>
 		<string>16200php</string>
 	</dict>
@@ -26,9 +26,9 @@
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>CANON プリンター TS8030</string>
+		<string>アンダーソン 帽子</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>600</string>
 		<key>priceYen</key>
 		<string>16200</string>
 	</dict>
@@ -36,17 +36,17 @@
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>CANON プリンター TS8030</string>
+		<string>スポーツ用ハーフパンツ</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>550</string>
 		<key>priceYen</key>
-		<string>16200</string>
+		<string>llglg</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>CANON プリンター TS8030</string>
+		<string></string>
 		<key>pricePeso</key>
 		<string>40php</string>
 		<key>priceYen</key>

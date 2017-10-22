@@ -17,6 +17,7 @@ class CustomTableViewCell2: UITableViewCell {
 
   @IBOutlet weak var LabelArray: UILabel!
   
+
   
   override func awakeFromNib() {
     super.awakeFromNib()

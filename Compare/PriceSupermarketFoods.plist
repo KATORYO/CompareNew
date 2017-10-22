@@ -4,7 +4,7 @@
 <array>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>SuperFoodCarot</string>
 		<key>item</key>
 		<string>にんじん 1本 以下は税抜き</string>
 		<key>pricePeso</key>
@@ -14,7 +14,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>SuperFoodOnion</string>
 		<key>item</key>
 		<string>たまねぎ 1個</string>
 		<key>pricePeso</key>
@@ -24,7 +24,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>SuperFoodPotato</string>
 		<key>item</key>
 		<string>じゃがいも 1kg</string>
 		<key>pricePeso</key>
@@ -34,7 +34,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>MarukameGreenOnion</string>
 		<key>item</key>
 		<string>長ねぎ 1本</string>
 		<key>pricePeso</key>
@@ -44,7 +44,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>SuperFoodBuro</string>
 		<key>item</key>
 		<string>ブロッコリー </string>
 		<key>pricePeso</key>
@@ -54,7 +54,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>SuperFoodEggplant</string>
 		<key>item</key>
 		<string>なす 1本</string>
 		<key>pricePeso</key>
@@ -64,7 +64,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>SuperFoodHakusai</string>
 		<key>item</key>
 		<string>白菜 1玉</string>
 		<key>pricePeso</key>
@@ -74,7 +74,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>SuperFoodchabege</string>
 		<key>item</key>
 		<string>キャベツ 1個</string>
 		<key>pricePeso</key>
@@ -84,7 +84,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>SuperFoodretasu</string>
 		<key>item</key>
 		<string>レタス 1個</string>
 		<key>pricePeso</key>
@@ -94,7 +94,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>SuperFoodPumpkin</string>
 		<key>item</key>
 		<string>かぼちゃ 360g</string>
 		<key>pricePeso</key>
@@ -104,7 +104,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>SuperFoodBanana</string>
 		<key>item</key>
 		<string>バナナ 1カット 5本 </string>
 		<key>pricePeso</key>
@@ -114,7 +114,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>SuperFood</string>
 		<key>item</key>
 		<string>りんご 1個</string>
 		<key>pricePeso</key>
@@ -124,7 +124,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>SuperFoodMango</string>
 		<key>item</key>
 		<string>マンゴー 1 個</string>
 		<key>pricePeso</key>
@@ -134,7 +134,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>SuperFoodGrapes</string>
 		<key>item</key>
 		<string>巨峰 1パック</string>
 		<key>pricePeso</key>
@@ -144,7 +144,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>SuperFoodSweetPotato</string>
 		<key>item</key>
 		<string>さつまいも芋 フィリピン1kg : 日本 1本</string>
 		<key>pricePeso</key>
@@ -154,7 +154,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>SuperFoodKiui</string>
 		<key>item</key>
 		<string>キーウィフルーツ 1個</string>
 		<key>pricePeso</key>
@@ -164,7 +164,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>SuperFoodLemon</string>
 		<key>item</key>
 		<string>レモン アメリカ</string>
 		<key>pricePeso</key>
@@ -174,7 +174,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>SuperFoodSalt</string>
 		<key>item</key>
 		<string>塩 100g</string>
 		<key>pricePeso</key>
@@ -194,7 +194,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>SuperFoodYakisoba</string>
 		<key>item</key>
 		<string>UFO 焼きそば</string>
 		<key>pricePeso</key>
@@ -204,7 +204,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>SuperFoodSuger</string>
 		<key>item</key>
 		<string>西友 上白糖  : フィリピン上白糖 1kg</string>
 		<key>pricePeso</key>
@@ -214,7 +214,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>SuperFoodYakisoba</string>
 		<key>item</key>
 		<string>日清 カップ麺 　シーフード</string>
 		<key>pricePeso</key>
@@ -224,7 +224,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>SuperFoodYakisoba</string>
 		<key>item</key>
 		<string>日清 どん兵衛 </string>
 		<key>pricePeso</key>
@@ -234,7 +234,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>SuperFoodBork</string>
 		<key>item</key>
 		<string>豚肉 1kg</string>
 		<key>pricePeso</key>
@@ -244,7 +244,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>SuperFoodBeef</string>
 		<key>item</key>
 		<string>牛肉 1kg</string>
 		<key>pricePeso</key>
@@ -254,7 +254,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>SuperFoodEgg</string>
 		<key>item</key>
 		<string>JA全農 卵 L 10個 : フィリピン卵12個</string>
 		<key>pricePeso</key>
@@ -264,7 +264,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>SuperFoodWatermeron</string>
 		<key>item</key>
 		<string>スイカ 1kg</string>
 		<key>pricePeso</key>
@@ -274,7 +274,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>SuperFoodHurikake</string>
 		<key>item</key>
 		<string>ふりかけ 混ぜ込みわかめ</string>
 		<key>pricePeso</key>
@@ -284,7 +284,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>SuperFoodHurikake</string>
 		<key>item</key>
 		<string>ふりかけ 混ぜ込みたらこ</string>
 		<key>pricePeso</key>
@@ -294,17 +294,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>日清 どん兵衛</string>
-		<key>pricePeso</key>
-		<string>145</string>
-		<key>priceYen</key>
-		<string>100</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
+		<string>SuperFoodMilk</string>
 		<key>item</key>
 		<string>牛乳 1L</string>
 		<key>pricePeso</key>
@@ -314,17 +304,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>マンゴー 1kg</string>
-		<key>pricePeso</key>
-		<string>153</string>
-		<key>priceYen</key>
-		<string>--</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
+		<string>SuperFoodDurian</string>
 		<key>item</key>
 		<string>ドリアン 1kg</string>
 		<key>pricePeso</key>
@@ -334,7 +314,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>SuperFoodSoy</string>
 		<key>item</key>
 		<string>キッコーマン 醤油</string>
 		<key>pricePeso</key>
@@ -344,7 +324,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>SuperFoodVinegar</string>
 		<key>item</key>
 		<string>ミツカン 穀物酢</string>
 		<key>pricePeso</key>
@@ -354,7 +334,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>SuperFoodVinegar</string>
 		<key>item</key>
 		<string>本みりん</string>
 		<key>pricePeso</key>
@@ -364,7 +344,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>SuperFoodChoco</string>
 		<key>item</key>
 		<string>リンツ チョコ 85%</string>
 		<key>pricePeso</key>
@@ -374,7 +354,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>SuperFoodpinapple</string>
 		<key>item</key>
 		<string>パイナップル 1本</string>
 		<key>pricePeso</key>

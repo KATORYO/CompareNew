@@ -26,11 +26,11 @@
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>SONY 薄型テレビ 49インチ 4K BRAVIA</string>
+		<string>SONY 薄型テレビ 55インチ 4K BRAVIA</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>188999</string>
 		<key>priceYen</key>
-		<string>150810 </string>
+		<string>324772</string>
 	</dict>
 	<dict>
 		<key>camera</key>
@@ -191,6 +191,26 @@
 		<string>40php</string>
 		<key>priceYen</key>
 		<string>16200</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>Burger</string>
+		<key>item</key>
+		<string>CANON カメラ</string>
+		<key>pricePeso</key>
+		<string>40php</string>
+		<key>priceYen</key>
+		<string>**</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>Burger</string>
+		<key>item</key>
+		<string>CANON カメラ</string>
+		<key>pricePeso</key>
+		<string>40php</string>
+		<key>priceYen</key>
+		<string>**</string>
 	</dict>
 	<dict>
 		<key>camera</key>

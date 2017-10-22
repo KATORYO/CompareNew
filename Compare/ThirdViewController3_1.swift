@@ -26,8 +26,9 @@ class ThirdViewController3_1: UIViewController,UITableViewDelegate,UITableViewDa
   var contentFavoriteDate:[Date] = []
   
   var noDesu:Int = -1
- 
   
+ 
+  var contentFavoriteDesu:String = ""
 
   
   
@@ -46,9 +47,10 @@ class ThirdViewController3_1: UIViewController,UITableViewDelegate,UITableViewDa
       
         read()
     
+      
         myTableView.reloadData()
         // 罫線を青色に設定.
-        myTableView.separatorColor = UIColor.orange
+        myTableView.separatorColor = UIColor.lightGray
      
       
       
@@ -68,7 +70,7 @@ class ThirdViewController3_1: UIViewController,UITableViewDelegate,UITableViewDa
   override func viewWillAppear(_ animated: Bool) {
     
     read()
-    
+
     reloadInputViews()
     myTableView.reloadData()
     
@@ -82,6 +84,8 @@ class ThirdViewController3_1: UIViewController,UITableViewDelegate,UITableViewDa
     contentFavoriteNo = []
     contentFavoriteImage = []
     contentFavoriteDate = []
+    
+    
     //AppDelegateを使う用意をしておく
     let appD:AppDelegate = UIApplication.shared.delegate as! AppDelegate
     
@@ -109,8 +113,7 @@ class ThirdViewController3_1: UIViewController,UITableViewDelegate,UITableViewDa
           print("失敗です")
         }else{
         contentFavorite.append(favorite as! String)
-        contentFavoriteImage.append(favoriteImage as! String)
-          
+     contentFavoriteImage.append(favoriteImage as! String)
           
           //型変換　String型からInt
           var favoriteNo2 = NumberFormatter().number(from: favoriteNo) as! Int
@@ -171,6 +174,10 @@ class ThirdViewController3_1: UIViewController,UITableViewDelegate,UITableViewDa
     
     
     
+    
+    contentFavoriteDesu = contentFavorite[indexPath.row]
+    
+    
     //3-1の情報を1-3に
     self.numFin = indexPath.row
     
@@ -184,6 +191,8 @@ class ThirdViewController3_1: UIViewController,UITableViewDelegate,UITableViewDa
     let next: ViewController1_3 = segue.destination as! ViewController1_3
     
     
+    //マクドナルド等の情報を送っている
+    next.myArrayListFrom3_1 = contentFavoriteDesu
     
     next.scSelectedIndex = numbFingers
 

@@ -54,7 +54,7 @@ class SecondViewController: UIViewController,UITableViewDelegate,UITableViewData
     myTableViewMemo.reloadData()
     
     // 罫線を青色に設定.
-    myTableViewMemo.separatorColor = UIColor.blue
+    myTableViewMemo.separatorColor = UIColor.lightGray
     
     // 編集中のセル選択を許可.
     //編集中でも中身確認ができるmyTableViewMemo.allowsSelectionDuringEditing = true
@@ -151,12 +151,23 @@ override func didReceiveMemoryWarning() {
 
     let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")! as UITableViewCell
     
+    
+    let formatter:DateFormatter = DateFormatter()
+      formatter.dateFormat = "yyyy/MM/dd HH:mm"
+    
+    formatter.locale = Locale(identifier: "ja_JP")
+    
+    let date = formatter.string(from: contentDate[indexPath.row])
+    
+    
 //    let sectionData = contentTitle[indexPath.row]
 //    let cellData = sectionData
     if contentTitle == nil {
       cell.textLabel?.text = ""
+      cell.detailTextLabel?.text = String(describing: contentDate[indexPath.row])
     }else{
         //cell.detailTextLabel?.text = contentTitle[indexPath.row]
+      cell.detailTextLabel?.text = date
         cell.textLabel?.text = contentTitle[indexPath.row]
     }
     
@@ -165,6 +176,9 @@ override func didReceiveMemoryWarning() {
     //入力したときのデータを入れたい！
       //cell.detailTextLabel?.text = data_in_code_entry
       cell.accessoryType = .disclosureIndicator
+    
+    //サブタイトルのカラーが青色
+      cell.detailTextLabel?.textColor = UIColor.blue
     
 //    
     

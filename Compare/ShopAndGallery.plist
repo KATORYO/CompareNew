@@ -3,10 +3,13 @@
 <plist version="1.0">
 <array>
 	<dict>
-		<key>description</key>
-		<string>キッチン用品</string>
-		<key>image</key>
-		<string>Convenience7</string>
+		<key>マクドナルド</key>
+		<dict>
+			<key>New item - 2</key>
+			<string></string>
+			<key>New item</key>
+			<string></string>
+		</dict>
 	</dict>
 	<dict>
 		<key>description</key>

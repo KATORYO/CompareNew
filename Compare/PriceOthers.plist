@@ -18,9 +18,9 @@
 		<key>item</key>
 		<string>パスポート発給 10年</string>
 		<key>pricePeso</key>
-		<string>16000円 日本円</string>
+		<string>7200</string>
 		<key>priceYen</key>
-		<string>**</string>
+		<string>16000</string>
 	</dict>
 	<dict>
 		<key>camera</key>
@@ -28,89 +28,79 @@
 		<key>item</key>
 		<string>パスポート発給 5年</string>
 		<key>pricePeso</key>
-		<string>11000円 日本円</string>
+		<string>4950</string>
 		<key>priceYen</key>
-		<string>**</string>
+		<string>11000</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>帰国 渡航書発給</string>
+		<string>マッサージ 60分 タイ式 </string>
 		<key>pricePeso</key>
-		<string>2500円 日本円</string>
+		<string>400</string>
 		<key>priceYen</key>
-		<string>**</string>
+		<string>5000</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string></string>
+		<string>クレープ チョコ</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>100</string>
 		<key>priceYen</key>
-		<string>**</string>
+		<string>350</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>CANON カメラ</string>
+		<string>モーニング パンケーキ</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>120</string>
 		<key>priceYen</key>
-		<string>**</string>
+		<string>700</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>CANON カメラ</string>
+		<string>映画入場料 平均</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>220</string>
 		<key>priceYen</key>
-		<string>**</string>
+		<string>aasa</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>CANON カメラ</string>
+		<string>ボーリング 1ゲーム</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>150</string>
 		<key>priceYen</key>
-		<string>**</string>
+		<string>::::</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>CANON カメラ</string>
+		<string>靴レンタル</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>50</string>
 		<key>priceYen</key>
-		<string>**</string>
+		<string>aaa</string>
 	</dict>
 	<dict>
 		<key>camera</key>
 		<string>Burger</string>
 		<key>item</key>
-		<string>CANON カメラ</string>
+		<string>靴下レンタル</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>15</string>
 		<key>priceYen</key>
-		<string>**</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>CANON カメラ</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>**</string>
+		<string>¥aaa</string>
 	</dict>
 	<dict>
 		<key>camera</key>
