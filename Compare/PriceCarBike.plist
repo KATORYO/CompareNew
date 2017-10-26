@@ -8,9 +8,9 @@
 		<key>item</key>
 		<string>トヨタ ハイエース 2004 CBF-TRH200V-RBMDK</string>
 		<key>pricePeso</key>
-		<string>1,326,000</string>
+		<string>1326000</string>
 		<key>priceYen</key>
-		<string>2,200,000</string>
+		<string>2200000</string>
 	</dict>
 	<dict>
 		<key>camera</key>
@@ -18,9 +18,9 @@
 		<key>item</key>
 		<string>トヨタ プリウス 2018 A DAA ZVW51-AHXHB</string>
 		<key>pricePeso</key>
-		<string>1,659,000</string>
+		<string>1659000</string>
 		<key>priceYen</key>
-		<string>3,107,455</string>
+		<string>3107455</string>
 	</dict>
 	<dict>
 		<key>camera</key>
@@ -28,9 +28,9 @@
 		<key>item</key>
 		<string>トヨタ アルファード DBA-AGH35W-PFXQK</string>
 		<key>pricePeso</key>
-		<string>3,329,000</string>
+		<string>3329000</string>
 		<key>priceYen</key>
-		<string>6,716,618</string>
+		<string>6716618</string>
 	</dict>
 	<dict>
 		<key>camera</key>
@@ -38,9 +38,9 @@
 		<key>item</key>
 		<string>トヨタ 86 DBAZN6F2B7 </string>
 		<key>pricePeso</key>
-		<string>1,801,000</string>
+		<string>1801000</string>
 		<key>priceYen</key>
-		<string>2,623,320</string>
+		<string>2623320</string>
 	</dict>
 	<dict>
 		<key>camera</key>
@@ -48,9 +48,9 @@
 		<key>item</key>
 		<string>ホンダ ズーマーX</string>
 		<key>pricePeso</key>
-		<string>86,900</string>
+		<string>86900</string>
 		<key>priceYen</key>
-		<string>243,000円</string>
+		<string>243000円</string>
 	</dict>
 	<dict>
 		<key>camera</key>
@@ -58,9 +58,9 @@
 		<key>item</key>
 		<string>ホンダ CBR250R</string>
 		<key>pricePeso</key>
-		<string>225,000</string>
+		<string>225000</string>
 		<key>priceYen</key>
-		<string>498,960円</string>
+		<string>498960円</string>
 	</dict>
 	<dict>
 		<key>camera</key>
@@ -68,9 +68,9 @@
 		<key>item</key>
 		<string>ホンダ PCX150</string>
 		<key>pricePeso</key>
-		<string>158,000</string>
+		<string>158000</string>
 		<key>priceYen</key>
-		<string>360,720円</string>
+		<string>360720円</string>
 	</dict>
 	<dict>
 		<key>camera</key>
@@ -94,7 +94,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>NoImage</string>
 		<key>item</key>
 		<string>リアボックス （デパート）</string>
 		<key>pricePeso</key>

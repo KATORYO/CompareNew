@@ -4,33 +4,23 @@
 <array>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>Fashion-1</string>
 		<key>item</key>
-		<string>CANON プリンター TS8030</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>16200</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>サンダル （街中のディスカウント店）</string>
+		<string>ビーチサンダル （街中のディスカウント店）</string>
 		<key>pricePeso</key>
 		<string>500</string>
 		<key>priceYen</key>
-		<string>16200php</string>
+		<string>1490</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>Fashion-2</string>
 		<key>item</key>
 		<string>アンダーソン 帽子</string>
 		<key>pricePeso</key>
 		<string>600</string>
 		<key>priceYen</key>
-		<string>16200</string>
+		<string>2190</string>
 	</dict>
 	<dict>
 		<key>camera</key>
@@ -40,327 +30,57 @@
 		<key>pricePeso</key>
 		<string>550</string>
 		<key>priceYen</key>
-		<string>llglg</string>
+		<string>1490</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>Fashion-3</string>
 		<key>item</key>
-		<string></string>
+		<string>ユニクロ スリムフィット </string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>990</string>
 		<key>priceYen</key>
-		<string>16200</string>
+		<string>3229</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>Fashion-4</string>
 		<key>item</key>
-		<string>CANON プリンター TS8030</string>
+		<string>ユニクロ カラージーンズ</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>990</string>
 		<key>priceYen</key>
-		<string>16200</string>
+		<string>3229</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>Fashion-4</string>
 		<key>item</key>
-		<string>CANON プリンター TS8030</string>
+		<string>ユニクロ レギンスパンツ</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>990</string>
 		<key>priceYen</key>
-		<string>16200</string>
+		<string>3229</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>Fashion-5</string>
 		<key>item</key>
-		<string>CANON プリンター TS8030</string>
+		<string>ユニクロ Tシャツ</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>390</string>
 		<key>priceYen</key>
-		<string>16200</string>
+		<string>637</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>SportsWear</string>
 		<key>item</key>
-		<string>CANON プリンター TS8030</string>
+		<string>Tシャツ （市場）</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>100</string>
 		<key>priceYen</key>
-		<string>16200</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>CANON プリンター TS8030</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>16200</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>CANON プリンター TS8030</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>16200</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>CANON プリンター TS8030</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>16200</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>CANON プリンター TS8030</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>16200</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>CANON プリンター TS8030</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>16200</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>CANON プリンター TS8030</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>16200</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>CANON プリンター TS8030</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>16200</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>CANON プリンター TS8030</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>16200</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>CANON プリンター TS8030</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>16200</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>CANON プリンター TS8030</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>16200</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>CANON プリンター TS8030</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>16200</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>CANON プリンター TS8030</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>16200</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>CANON プリンター TS8030</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>16200</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>CANON プリンター TS8030</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>16200</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>CANON プリンター TS8030</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>16200</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>CANON プリンター TS8030</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>16200</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>CANON プリンター TS8030</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>16200</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>CANON プリンター TS8030</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>16200</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>CANON プリンター TS8030</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>16200</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>CANON プリンター TS8030</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>16200</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>CANON プリンター TS8030</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>16200</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>CANON プリンター TS8030</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>16200</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>CANON プリンター TS8030</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>16200</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>CANON プリンター TS8030</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>16200</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>CANON プリンター TS8030</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>16200</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>CANON プリンター TS8030</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>16200</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>CANON プリンター TS8030</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>16200</string>
+		<string>--</string>
 	</dict>
 </array>
 </plist>

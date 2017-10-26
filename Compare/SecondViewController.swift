@@ -43,6 +43,8 @@ class SecondViewController: UIViewController,UITableViewDelegate,UITableViewData
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    
+    print()
     //fontawsome適用！
     self.editBtn.setTitleTextAttributes(attributes, for: .normal)
     self.editBtn.title = String.fontAwesomeIcon(name: .th)

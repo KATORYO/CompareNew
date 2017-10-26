@@ -40,7 +40,7 @@
 		<key>pricePeso</key>
 		<string>--</string>
 		<key>priceYen</key>
-		<string>1,260</string>
+		<string>1260</string>
 	</dict>
 	<dict>
 		<key>camera</key>
@@ -108,7 +108,7 @@
 		<key>item</key>
 		<string>かしわ天</string>
 		<key>pricePeso</key>
-		<string>15peso</string>
+		<string>--</string>
 		<key>priceYen</key>
 		<string>140</string>
 	</dict>
@@ -198,7 +198,7 @@
 		<key>item</key>
 		<string>トッピング 大根おろし</string>
 		<key>pricePeso</key>
-		<string>15peso</string>
+		<string>--</string>
 		<key>priceYen</key>
 		<string>60</string>
 	</dict>
@@ -208,7 +208,7 @@
 		<key>item</key>
 		<string>トッピング とろろ</string>
 		<key>pricePeso</key>
-		<string>15peso</string>
+		<string>--</string>
 		<key>priceYen</key>
 		<string>70</string>
 	</dict>

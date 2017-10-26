@@ -6,7 +6,7 @@
 		<key>camera</key>
 		<string>SuperFoodCarot</string>
 		<key>item</key>
-		<string>にんじん 1本 以下は税抜き</string>
+		<string>にんじん 1本 </string>
 		<key>pricePeso</key>
 		<string>22</string>
 		<key>priceYen</key>
@@ -184,7 +184,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>SuperFoodMayo-1</string>
 		<key>item</key>
 		<string>キューピー マヨネーズ</string>
 		<key>pricePeso</key>
@@ -270,7 +270,7 @@
 		<key>pricePeso</key>
 		<string>46</string>
 		<key>priceYen</key>
-		<string>16200</string>
+		<string>--</string>
 	</dict>
 	<dict>
 		<key>camera</key>

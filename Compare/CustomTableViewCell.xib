@@ -122,7 +122,9 @@
                 <outlet property="PesoLabel" destination="gIn-XQ-Rj6" id="sA7-EQ-EvK"/>
                 <outlet property="ProductsImage" destination="ofM-ln-law" id="Pmk-5L-mlM"/>
                 <outlet property="YenLabel" destination="yPf-NA-Br7" id="Adk-k3-Y0n"/>
+                <outlet property="YenUnitLabel" destination="c4W-tG-XFs" id="hfl-Ek-u8W"/>
                 <outlet property="nameLabel" destination="kU9-B9-zwr" id="2A3-qN-pxd"/>
+                <outlet property="phpLabel" destination="RiQ-xH-Mfx" id="bjK-gM-4c7"/>
             </connections>
             <point key="canvasLocation" x="335" y="177"/>
         </tableViewCell>

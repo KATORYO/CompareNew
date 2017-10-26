@@ -4,7 +4,7 @@
 <array>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>Convenience-1</string>
 		<key>item</key>
 		<string>ドーナツ</string>
 		<key>pricePeso</key>
@@ -14,27 +14,27 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>MarukameRiceBall</string>
 		<key>item</key>
 		<string>おにぎり 鮭</string>
 		<key>pricePeso</key>
-		<string>00</string>
+		<string>--</string>
 		<key>priceYen</key>
 		<string>140</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>MarukameRiceBall</string>
 		<key>item</key>
 		<string>おにぎり 梅</string>
 		<key>pricePeso</key>
-		<string>00</string>
+		<string>--</string>
 		<key>priceYen</key>
 		<string>110</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>Convenience-2</string>
 		<key>item</key>
 		<string>肉まん</string>
 		<key>pricePeso</key>
@@ -44,37 +44,37 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>StationeryErase</string>
 		<key>item</key>
 		<string>消しゴム ミニ 1ヶ</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>--</string>
 		<key>priceYen</key>
 		<string>60</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Image-2</string>
+		<string>StationeryPen</string>
 		<key>item</key>
 		<string>ボールペン 黒</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>15</string>
 		<key>priceYen</key>
 		<string>100</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>NoImage</string>
 		<key>item</key>
 		<string>のり </string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>40</string>
 		<key>priceYen</key>
 		<string>120</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>NoImage-1</string>
 		<key>item</key>
 		<string>カッターミニ</string>
 		<key>pricePeso</key>
@@ -84,27 +84,27 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>Stationery-3</string>
 		<key>item</key>
 		<string>ノート</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>25</string>
 		<key>priceYen</key>
 		<string>100</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>McDonalds.top</string>
+		<string>Convenience-4</string>
 		<key>item</key>
 		<string>ふせん</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>40</string>
 		<key>priceYen</key>
 		<string>260</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>NoImage</string>
 		<key>item</key>
 		<string>フランクフルト</string>
 		<key>pricePeso</key>
@@ -114,147 +114,147 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>AnyHotCoffee</string>
 		<key>item</key>
 		<string>ホットコーヒー R</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>--</string>
 		<key>priceYen</key>
 		<string>100</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>AnyHotCoffee</string>
 		<key>item</key>
 		<string>ホットコーヒー L</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>--</string>
 		<key>priceYen</key>
 		<string>150</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>NoImage</string>
 		<key>item</key>
 		<string>ポッキー 47g</string>
 		<key>pricePeso</key>
 		<string>40</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>162</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>NoImage-1</string>
 		<key>item</key>
 		<string>オレオ 137g</string>
 		<key>pricePeso</key>
 		<string>47</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>--</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>Convenience-9</string>
 		<key>item</key>
 		<string>スニッカーズ 61g</string>
 		<key>pricePeso</key>
 		<string>44</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>130</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>Convenience-8</string>
 		<key>item</key>
 		<string>キットカット 17g</string>
 		<key>pricePeso</key>
 		<string>18</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>--</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>NoImage</string>
 		<key>item</key>
 		<string>折りたたみ傘</string>
 		<key>pricePeso</key>
 		<string>199</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>--</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>NoImage-1</string>
 		<key>item</key>
 		<string>トイレットペーパー 1個</string>
 		<key>pricePeso</key>
 		<string>18</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>--</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>Stationery-2</string>
 		<key>item</key>
 		<string>ハサミ 小</string>
 		<key>pricePeso</key>
 		<string>19</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>--</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>StationeryTape</string>
 		<key>item</key>
 		<string>両面テープ</string>
 		<key>pricePeso</key>
 		<string>52</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>238</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>StationeryTape</string>
 		<key>item</key>
 		<string>セロテープ 50yds</string>
 		<key>pricePeso</key>
 		<string>36</string>
 		<key>priceYen</key>
-		<string>peso</string>
+		<string>--</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>NoImage-1</string>
 		<key>item</key>
 		<string>紙コップ 25個</string>
 		<key>pricePeso</key>
 		<string>63</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>--</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>NoImage</string>
 		<key>item</key>
 		<string>チュッパチャップス</string>
 		<key>pricePeso</key>
 		<string>13</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>--</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>NoImage-1</string>
 		<key>item</key>
 		<string>ハイチュウ 57g</string>
 		<key>pricePeso</key>
 		<string>35</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>108</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>AnyDrinkLL</string>
 		<key>item</key>
 		<string>水 最安値</string>
 		<key>pricePeso</key>
@@ -264,107 +264,97 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>AnyDrinkLL</string>
 		<key>item</key>
 		<string>ポカリスウェット 500ml</string>
 		<key>pricePeso</key>
 		<string>37</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>151</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>SuperDrinkCoke</string>
 		<key>item</key>
 		<string>コカコーラ 500ml</string>
 		<key>pricePeso</key>
 		<string>31</string>
 		<key>priceYen</key>
-		<string>150</string>
+		<string>151</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>ハンバーガー</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>100php</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
+		<string>SuperDrinkCan</string>
 		<key>item</key>
 		<string>スプライト 缶 330ml</string>
 		<key>pricePeso</key>
 		<string>27</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>--</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>SuperDrinkCan</string>
 		<key>item</key>
-		<string>レッドブル 250ml</string>
+		<string>レッドブル 250ml :日本185ml</string>
 		<key>pricePeso</key>
 		<string>77</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>206</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>SuperDrinkTopBeer</string>
 		<key>item</key>
-		<string>キリンビール 330ml</string>
+		<string>キリンビール 330ml : 日本350ml</string>
 		<key>pricePeso</key>
 		<string>74</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>220</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>NoImage</string>
 		<key>item</key>
 		<string>日清 カップ麺 シーフード 60g</string>
 		<key>pricePeso</key>
 		<string>34</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>--</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>KfcChiken</string>
 		<key>item</key>
 		<string>フライドチキン 1pc</string>
 		<key>pricePeso</key>
 		<string>70</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>180</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>NoImage</string>
 		<key>item</key>
 		<string>メントス 37g</string>
 		<key>pricePeso</key>
 		<string>35</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>--</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>NoImage</string>
 		<key>item</key>
 		<string>MODESS ナプキン 4s</string>
 		<key>pricePeso</key>
 		<string>62</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>--</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>Convenience-7</string>
 		<key>item</key>
 		<string>髭剃り 1個 ノーマル</string>
 		<key>pricePeso</key>
@@ -374,57 +364,57 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>Convenience-3</string>
 		<key>item</key>
 		<string>せっけん </string>
 		<key>pricePeso</key>
 		<string>36</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>185</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>Convenience-6</string>
 		<key>item</key>
 		<string>歯ブラシ 最安値</string>
 		<key>pricePeso</key>
 		<string>30</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>160</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>NoImage</string>
 		<key>item</key>
 		<string>ギャツビー ワックス 75g</string>
 		<key>pricePeso</key>
 		<string>105</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>769</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>NoImage</string>
 		<key>item</key>
 		<string>ギャツビー ワックス 25g</string>
 		<key>pricePeso</key>
 		<string>46</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>270</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>NoImage</string>
 		<key>item</key>
 		<string>JOY 食器用洗剤 85ml</string>
 		<key>pricePeso</key>
 		<string>25</string>
 		<key>priceYen</key>
-		<string>100php</string>
+		<string>--</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>Convenience-5</string>
 		<key>item</key>
 		<string>サンドイッチ ツナ : ツナたまご</string>
 		<key>pricePeso</key>
@@ -434,23 +424,13 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>NoImage</string>
 		<key>item</key>
 		<string>ヤクルト 1本</string>
 		<key>pricePeso</key>
 		<string>10</string>
 		<key>priceYen</key>
-		<string>100php</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>ハンバーガー</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>100php</string>
+		<string>--</string>
 	</dict>
 </array>
 </plist>

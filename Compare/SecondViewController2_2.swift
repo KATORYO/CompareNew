@@ -186,31 +186,32 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate,UIImagePicker
     let done: UIBarButtonItem = UIBarButtonItem(title: "閉じる", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.doneButtonActionn))
     done.tintColor = UIColor.blue
     
-    
-    let choosePicture: UIBarButtonItem = UIBarButtonItem(title: "choosePicture", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.choosePicture))
-    choosePicture.tintColor = UIColor.blue
-    
-    
-    let cameraPhoto: UIBarButtonItem = UIBarButtonItem(title: "pen", style: .plain, target: self, action: #selector(self.cameraPhotoAction))
-    cameraPhoto.tintColor = UIColor.blue
+  
+    //完成してないため10/24
+//    let choosePicture: UIBarButtonItem = UIBarButtonItem(title: "choosePicture", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.choosePicture))
+//    choosePicture.tintColor = UIColor.blue
+//
+//
+//    let cameraPhoto: UIBarButtonItem = UIBarButtonItem(title: "pen", style: .plain, target: self, action: #selector(self.cameraPhotoAction))
+//    cameraPhoto.tintColor = UIColor.blue
     
     
     let twitter: UIBarButtonItem = UIBarButtonItem(title: "twiter", style: .plain, target: self, action: #selector(self.twitter))
-    cameraPhoto.tintColor = UIColor.blue
+    //cameraPhoto.tintColor = UIColor.blue
     
     let faceBook: UIBarButtonItem = UIBarButtonItem(title: "faceBook", style: .plain, target: self, action: #selector(self.facebook))
-    cameraPhoto.tintColor = UIColor.blue
+    //cameraPhoto.tintColor = UIColor.blue
     
     
     
     done.setTitleTextAttributes(attributes, for: .normal)
     done.title = String.fontAwesomeIcon(name: .close)
     
-    cameraPhoto.setTitleTextAttributes(attributes, for: .normal)
-    cameraPhoto.title = String.fontAwesomeIcon(name: .camera)
-    
-    choosePicture.setTitleTextAttributes(attributes, for: .normal)
-    choosePicture.title = String.fontAwesomeIcon(name: .pictureO)
+//    cameraPhoto.setTitleTextAttributes(attributes, for: .normal)
+//    cameraPhoto.title = String.fontAwesomeIcon(name: .camera)
+//
+//    choosePicture.setTitleTextAttributes(attributes, for: .normal)
+//    choosePicture.title = String.fontAwesomeIcon(name: .pictureO)
     
     twitter.setTitleTextAttributes(attributes, for: .normal)
     twitter.title = String.fontAwesomeIcon(name: .twitter)
@@ -221,9 +222,9 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate,UIImagePicker
     
     var items = [UIBarButtonItem]()
     
-    items.append(choosePicture)
+//    items.append(cameraPhoto)
+//    items.append(choosePicture)
     items.append(flexSpace)
-    items.append(cameraPhoto)
     items.append(twitter)
     items.append(faceBook)
     
@@ -255,7 +256,7 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate,UIImagePicker
     //myComposeView = UIImage(frame: CGRect(x: 0, y: 0, width: 100, height: 10))
     
     // 投稿する画像を指定.
-    myComposeView.add(UIImage(named: "EtcTop"))
+    myComposeView.add(UIImage(named: "Appliance-12"))
     
     
     

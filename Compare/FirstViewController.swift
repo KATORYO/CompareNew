@@ -33,10 +33,10 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
   
   //植物・ガーデニング
   
-  let list:[String] = ["マクドナルド","STARBUCKS","ケンタッキーKFC","丸亀正麺","吉野家","コンビニ","調理器具","ゲーム＆カセット","おもちゃ","スーパー（食品）","スーパー（飲料・お酒）","家具","車・バイク系","家電・カメラ・AV機器","DVD・ミュージック","インターネット関連","住宅関連","ファッション","スポーツ用品","本・コミック・雑誌","本屋で買える文房具","生活費","工事費","修理費","その他"]
+  let list:[String] = ["マクドナルド","STARBUCKS","ケンタッキーKFC","丸亀正麺","吉野家","コンビニ","調理器具","ゲーム＆カセット","おもちゃ","スーパー（食品）","スーパー（飲料・お酒）","家具","車・バイク系","家電・カメラ・AV機器","DVD・ミュージック","インターネット関連","住宅関連","ファッション","スポーツ用品","本・コミック・雑誌","本屋で買える文房具","生活費","給料","修理費","その他"]
   
   
-  let imageDesu:[String] = ["McDonalds.Top","StarbucksTop","KfcTop","MarukameTop","YoshinoyaGyudon","ConvenienceTop","CookwareTop","GameTop","ToyTop","SuperFoodTop","SuperDrinkTop","BedClothes","CarBikeTop","ApplianceTop","MusicTop","InternetTop","DwellingTop","FashionTop","SportsTop","BookTop","StationeryTop","LivingOfCostsTop","ConstructionTop","RepairTop","EtcTop"]
+  let imageDesu:[String] = ["McDonalds.Top","StarbucksTop","KfcTop","MarukameTop","YoshinoyaGyudon","ConvenienceTop","CookwareTop","GameTop","ToyTop","SuperFoodTop","SuperDrinkTop","BedClothes","CarBikeTop","ApplianceTop","MusicTop","InternetTop","DwellingTop","FashionTop","SportsTop","BookTop","StationeryTop","LivingOfCostsTop","Appliance-13","RepairTop","Appliance-12"]
   
 
   //ここに保存されて、次の画面に送る！
@@ -72,7 +72,7 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
    
     
     
-    rateBtn.setTitle("ペソを確認！", for: .normal)
+    rateBtn.setTitle("ペソを確認", for: .normal)
 //    rateBtn.setTitle("現在のペソを確認\(Int(amountJPY))", for: .normal)
 
     
@@ -152,7 +152,7 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
           // ペソに変換(小数第4位まで)
           var amountPHP = round(self.amountJPY * rate * 10000) / 10000
           // ラベルに表示
-          self.rateBtn.setTitle("\(amountPHP)ペソ", for: .normal) //= "\(amountUSD)ドル"
+          self.rateBtn.setTitle("1円 = \(amountPHP)ペソ", for: .normal) //= "\(amountUSD)ドル"
           print(amountPHP)
           
           

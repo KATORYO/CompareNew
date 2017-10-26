@@ -16,6 +16,10 @@ class CustomTableViewCell: UITableViewCell {
   @IBOutlet weak var YenLabel: UILabel!
   
   
+  @IBOutlet weak var phpLabel: UILabel!
+  
+  @IBOutlet weak var YenUnitLabel: UILabel!
+  
   override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -4,17 +4,17 @@
 <array>
 	<dict>
 		<key>camera</key>
-		<string>Burger 以下は税込みです</string>
+		<string>NoImage</string>
 		<key>item</key>
 		<string>ゼブラ ボールペン 替 0.5</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>59</string>
 		<key>priceYen</key>
 		<string>101</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>StationeryPen</string>
 		<key>item</key>
 		<string>ゼブラ ボールペン 0.5</string>
 		<key>pricePeso</key>
@@ -24,7 +24,7 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>Stationery-7</string>
 		<key>item</key>
 		<string>鉛筆 3本 6B</string>
 		<key>pricePeso</key>
@@ -34,27 +34,27 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>StationeryErase</string>
 		<key>item</key>
 		<string>消しゴム モノ </string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>54</string>
 		<key>priceYen</key>
 		<string>101</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>StationeryPopular</string>
 		<key>item</key>
 		<string>ルーズリーフ 60 B6mm</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>--</string>
 		<key>priceYen</key>
 		<string>280</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>Stationery-2</string>
 		<key>item</key>
 		<string>ハサミ </string>
 		<key>pricePeso</key>
@@ -64,103 +64,73 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>StationeryTape</string>
 		<key>item</key>
 		<string>テープ</string>
 		<key>pricePeso</key>
 		<string>14</string>
 		<key>priceYen</key>
-		<string>16200php</string>
+		<string>147</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>StationeryPen</string>
 		<key>item</key>
-		<string>CANON プリンター TS8030</string>
+		<string>シャーペン モノ</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>179</string>
 		<key>priceYen</key>
-		<string>16200php</string>
+		<string>300</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>StationeryPen</string>
 		<key>item</key>
-		<string>CANON プリンター TS8030</string>
+		<string>ボールペン 最安値</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>22</string>
 		<key>priceYen</key>
-		<string>16200php</string>
+		<string>86</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>StationeryMesu</string>
 		<key>item</key>
-		<string>CANON プリンター TS8030</string>
+		<string>30cm ジョーギ</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>19</string>
 		<key>priceYen</key>
-		<string>16200php</string>
+		<string>300</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>Stationery-3</string>
 		<key>item</key>
-		<string>CANON プリンター TS8030</string>
+		<string>oxfordノート</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>99</string>
 		<key>priceYen</key>
-		<string>16200php</string>
+		<string>--</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>StationeryPopular</string>
 		<key>item</key>
-		<string>CANON プリンター TS8030</string>
+		<string>フィリピン人気 ノート</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>42</string>
 		<key>priceYen</key>
-		<string>16200php</string>
+		<string>--</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>Stationery-5</string>
 		<key>item</key>
-		<string>CANON プリンター TS8030</string>
+		<string>クリヤーブック A4</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>69</string>
 		<key>priceYen</key>
-		<string>16200php</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>CANON プリンター TS8030</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>16200php</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>CANON プリンター TS8030</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>16200php</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>CANON プリンター TS8030</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>16200php</string>
+		<string>270</string>
 	</dict>
 </array>
 </plist>

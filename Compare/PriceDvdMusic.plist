@@ -4,63 +4,83 @@
 <array>
 	<dict>
 		<key>camera</key>
-		<string>ウォークマン</string>
+		<string>Music-2</string>
 		<key>item</key>
 		<string>SONY WALKMAN NWZ-B153 4G</string>
 		<key>pricePeso</key>
 		<string>2249</string>
 		<key>priceYen</key>
-		<string>**</string>
+		<string>--</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>Music-2</string>
 		<key>item</key>
 		<string>ウォークマン 128G NW-ZX100 series</string>
 		<key>pricePeso</key>
-		<string>P 19,999</string>
+		<string>19999</string>
 		<key>priceYen</key>
-		<string>**</string>
+		<string>59789</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>MusicTop</string>
 		<key>item</key>
-		<string>CANON カメラ</string>
+		<string>DVD ロム</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>55</string>
 		<key>priceYen</key>
-		<string>**</string>
+		<string>100</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>Music-1</string>
 		<key>item</key>
-		<string>CANON カメラ</string>
+		<string>イヤホン 手元リモコン付</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>325</string>
 		<key>priceYen</key>
-		<string>**</string>
+		<string>1500</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>Music-4</string>
 		<key>item</key>
-		<string>CANON カメラ</string>
+		<string>リコーダー</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>70</string>
 		<key>priceYen</key>
-		<string>**</string>
+		<string>--</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>MusicUkurere</string>
 		<key>item</key>
-		<string>CANON カメラ</string>
+		<string>ウクレレ</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>500</string>
 		<key>priceYen</key>
-		<string>**</string>
+		<string>--</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>Music-3</string>
+		<key>item</key>
+		<string>ギター</string>
+		<key>pricePeso</key>
+		<string>3000</string>
+		<key>priceYen</key>
+		<string>--</string>
+	</dict>
+	<dict>
+		<key>camera</key>
+		<string>Music-6</string>
+		<key>item</key>
+		<string>DVD旧作 1枚購入</string>
+		<key>pricePeso</key>
+		<string>50</string>
+		<key>priceYen</key>
+		<string>980</string>
 	</dict>
 </array>
 </plist>

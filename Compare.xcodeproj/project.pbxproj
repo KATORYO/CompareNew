@@ -48,17 +48,16 @@
 		E3AB05C91F6E004C00B20261 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AB05C81F6E004C00B20261 /* SecondViewController.swift */; };
 		E3AB05CC1F6E004C00B20261 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3AB05CA1F6E004C00B20261 /* Main.storyboard */; };
 		E3AB05CE1F6E004C00B20261 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3AB05CD1F6E004C00B20261 /* Assets.xcassets */; };
-		E3AB05D11F6E004D00B20261 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3AB05CF1F6E004C00B20261 /* LaunchScreen.storyboard */; };
 		E3AB05DC1F6E004D00B20261 /* CompareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AB05DB1F6E004D00B20261 /* CompareTests.swift */; };
 		E3AB05E71F6E004D00B20261 /* CompareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AB05E61F6E004D00B20261 /* CompareUITests.swift */; };
 		E3AB05F71F6E187900B20261 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AB05F61F6E187900B20261 /* CustomCell.swift */; };
+		E3AD7F8F1FA053B100DDDBEC /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3AD7F8E1FA053B100DDDBEC /* Launch Screen.storyboard */; };
 		E3BF59571F6E9E5300038E59 /* ViewController1-2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BF59561F6E9E5300038E59 /* ViewController1-2.swift */; };
 		E3BF59591F6EA02D00038E59 /* ViewController1_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BF59581F6EA02D00038E59 /* ViewController1_3.swift */; };
 		E3C9DCDC1F95D1AA00EB879B /* PriceStationery.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3C9DCDB1F95D1AA00EB879B /* PriceStationery.plist */; };
 		E3CD6D021F95E65B00F73692 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3CD6D011F95E65B00F73692 /* Photos.framework */; };
 		E3CD6D041F9611ED00F73692 /* PriceCarBike.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3CD6D031F9611EC00F73692 /* PriceCarBike.plist */; };
 		E3CD6D061F962B1000F73692 /* PriceOthers.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3CD6D051F962B1000F73692 /* PriceOthers.plist */; };
-		E3E442A71F7E1015008CE769 /* ShopAndGallery.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3E442A61F7E1015008CE769 /* ShopAndGallery.plist */; };
 		E3E442EE1F7F792A008CE769 /* McPrice.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3E442ED1F7F792A008CE769 /* McPrice.plist */; };
 		E3E77FCD1F8B48980051EDAB /* ThirdViewController3_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E77FCC1F8B48980051EDAB /* ThirdViewController3_1.swift */; };
 		E3F6DB311F99C06400A5E265 /* PriceGame.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3F6DB301F99C06400A5E265 /* PriceGame.plist */; };
@@ -133,7 +132,6 @@
 		E3AB05C81F6E004C00B20261 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		E3AB05CB1F6E004C00B20261 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E3AB05CD1F6E004C00B20261 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E3AB05D01F6E004C00B20261 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3AB05D21F6E004D00B20261 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3AB05D71F6E004D00B20261 /* CompareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CompareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3AB05DB1F6E004D00B20261 /* CompareTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareTests.swift; sourceTree = "<group>"; };
@@ -142,6 +140,7 @@
 		E3AB05E61F6E004D00B20261 /* CompareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareUITests.swift; sourceTree = "<group>"; };
 		E3AB05E81F6E004D00B20261 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3AB05F61F6E187900B20261 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		E3AD7F8E1FA053B100DDDBEC /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		E3B52C5C1F86018D007B6BC9 /* Compare.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Compare.entitlements; sourceTree = "<group>"; };
 		E3BF59561F6E9E5300038E59 /* ViewController1-2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController1-2.swift"; sourceTree = "<group>"; };
 		E3BF59581F6EA02D00038E59 /* ViewController1_3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController1_3.swift; sourceTree = "<group>"; };
@@ -149,7 +148,6 @@
 		E3CD6D011F95E65B00F73692 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 		E3CD6D031F9611EC00F73692 /* PriceCarBike.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PriceCarBike.plist; sourceTree = "<group>"; };
 		E3CD6D051F962B1000F73692 /* PriceOthers.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PriceOthers.plist; sourceTree = "<group>"; };
-		E3E442A61F7E1015008CE769 /* ShopAndGallery.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ShopAndGallery.plist; sourceTree = "<group>"; };
 		E3E442ED1F7F792A008CE769 /* McPrice.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = McPrice.plist; sourceTree = "<group>"; };
 		E3E77FCC1F8B48980051EDAB /* ThirdViewController3_1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController3_1.swift; sourceTree = "<group>"; };
 		E3F6DB301F99C06400A5E265 /* PriceGame.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PriceGame.plist; sourceTree = "<group>"; };
@@ -251,28 +249,27 @@
 				E31C611D1F97353E00246B63 /* CustomTableView2.xib */,
 				E3974AFF1F74F71B00CDD953 /* CustomTableViewCell.xib */,
 				E3AB05D21F6E004D00B20261 /* Info.plist */,
-				E3E442A61F7E1015008CE769 /* ShopAndGallery.plist */,
 				E375A4B31F90E6E60088EE82 /* CircleImageView.swift */,
-				E3AB05CF1F6E004C00B20261 /* LaunchScreen.storyboard */,
-				E3CD6D051F962B1000F73692 /* PriceOthers.plist */,
-				E37BA3AF1F99B2CF005EAF94 /* PriceRepair.plist */,
 				E37BA3AD1F99B282005EAF94 /* PriceConstruction.plist */,
-				E32B094D1F98522500F49613 /* PricePublicTranspotation.plist */,
-				E3C9DCDB1F95D1AA00EB879B /* PriceStationery.plist */,
-				E32B094F1F985BCC00F49613 /* PriceBook.plist */,
-				E35E09421F977EE600CF08D8 /* PriceSports.plist */,
-				E38AD5AF1F9339030051AF30 /* PriceFashion.plist */,
-				E37BA3AB1F99B1F9005EAF94 /* PriceDwelling.plist */,
-				E3F6DB301F99C06400A5E265 /* PriceGame.plist */,
-				E32B094B1F9851E000F49613 /* PriceInternet.plist */,
-				E38AD5AD1F93304D0051AF30 /* PriceDvdMusic.plist */,
-				E38AD5A91F932B820051AF30 /* PriceFurniture.plist */,
-				E38AD5A71F92FFEF0051AF30 /* PriceHomeElectricAppliance.plist */,
-				E37BA3B11F99B307005EAF94 /* PriceToy.plist */,
-				E38AD5AB1F932EC30051AF30 /* PriceCookWare.plist */,
-				E341697D1F9206D500DDA77C /* PriceKfc.plist */,
-				E341697F1F920FE000DDA77C /* PriceConvenience.plist */,
+				E3AD7F8E1FA053B100DDDBEC /* Launch Screen.storyboard */,
 				E35C15A91F83B9E900030C6E /* corenadata.xcdatamodeld */,
+				E38AD5AB1F932EC30051AF30 /* PriceCookWare.plist */,
+				E32B094D1F98522500F49613 /* PricePublicTranspotation.plist */,
+				E3CD6D051F962B1000F73692 /* PriceOthers.plist */,
+				E38AD5A91F932B820051AF30 /* PriceFurniture.plist */,
+				E37BA3AF1F99B2CF005EAF94 /* PriceRepair.plist */,
+				E38AD5A71F92FFEF0051AF30 /* PriceHomeElectricAppliance.plist */,
+				E38AD5AD1F93304D0051AF30 /* PriceDvdMusic.plist */,
+				E38AD5AF1F9339030051AF30 /* PriceFashion.plist */,
+				E341697F1F920FE000DDA77C /* PriceConvenience.plist */,
+				E3C9DCDB1F95D1AA00EB879B /* PriceStationery.plist */,
+				E37BA3AB1F99B1F9005EAF94 /* PriceDwelling.plist */,
+				E35E09421F977EE600CF08D8 /* PriceSports.plist */,
+				E341697D1F9206D500DDA77C /* PriceKfc.plist */,
+				E32B094B1F9851E000F49613 /* PriceInternet.plist */,
+				E32B094F1F985BCC00F49613 /* PriceBook.plist */,
+				E37BA3B11F99B307005EAF94 /* PriceToy.plist */,
+				E3F6DB301F99C06400A5E265 /* PriceGame.plist */,
 				E3CD6D031F9611EC00F73692 /* PriceCarBike.plist */,
 				E34169791F91F54700DDA77C /* PriceYoshinoya.plist */,
 				E39658EA1F94C220005E6215 /* PriceSuperMarketDrink.plist */,
@@ -453,10 +450,10 @@
 				E32B09501F985BCC00F49613 /* PriceBook.plist in Resources */,
 				E3E442EE1F7F792A008CE769 /* McPrice.plist in Resources */,
 				E39658EB1F94C220005E6215 /* PriceSuperMarketDrink.plist in Resources */,
+				E3AD7F8F1FA053B100DDDBEC /* Launch Screen.storyboard in Resources */,
 				E38AD5B01F9339030051AF30 /* PriceFashion.plist in Resources */,
 				E37BA3B21F99B307005EAF94 /* PriceToy.plist in Resources */,
 				E3CD6D041F9611ED00F73692 /* PriceCarBike.plist in Resources */,
-				E3AB05D11F6E004D00B20261 /* LaunchScreen.storyboard in Resources */,
 				E37BA3AC1F99B1F9005EAF94 /* PriceDwelling.plist in Resources */,
 				E38AD5AE1F93304D0051AF30 /* PriceDvdMusic.plist in Resources */,
 				E32B094C1F9851E000F49613 /* PriceInternet.plist in Resources */,
@@ -466,7 +463,6 @@
 				E34169781F91E42300DDA77C /* PriceStarbucks.plist in Resources */,
 				E38AD5AC1F932EC30051AF30 /* PriceCookWare.plist in Resources */,
 				E38AD5AA1F932B820051AF30 /* PriceFurniture.plist in Resources */,
-				E3E442A71F7E1015008CE769 /* ShopAndGallery.plist in Resources */,
 				E37BA3B01F99B2CF005EAF94 /* PriceRepair.plist in Resources */,
 				E3F6DB311F99C06400A5E265 /* PriceGame.plist in Resources */,
 				E3AB05CE1F6E004C00B20261 /* Assets.xcassets in Resources */,
@@ -709,14 +705,6 @@
 				E3AB05CB1F6E004C00B20261 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E3AB05CF1F6E004C00B20261 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E3AB05D01F6E004C00B20261 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

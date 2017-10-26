@@ -166,14 +166,14 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sss-Yq-7Bl">
                                 <rect key="frame" x="63" y="87" width="194" height="26"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mai-V6-DDg">
                                 <rect key="frame" x="265" y="85" width="51" height="31"/>
                                 <color key="onTintColor" red="0.32170477256705421" green="0.66688845940568497" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
-                                    <action selector="myChange:" destination="knd-Nl-F6D" eventType="valueChanged" id="5jj-6a-lfE"/>
+                                    <action selector="mySwitch:" destination="knd-Nl-F6D" eventType="valueChanged" id="ber-Za-bhr"/>
                                 </connections>
                             </switch>
                         </subviews>
@@ -453,7 +453,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HPy-Jj-hZq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2810.625" y="384.50704225352115"/>
+            <point key="canvasLocation" x="2814" y="306"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5AL-9F-Wkp">

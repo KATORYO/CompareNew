@@ -4,27 +4,27 @@
 <array>
 	<dict>
 		<key>camera</key>
-		<string>Burger 以下は税込みです</string>
+		<string>Appliance-2</string>
 		<key>item</key>
-		<string>シャープ 冷蔵庫 2ドア 137L SJ-D14C</string>
+		<string>パナソニック 冷蔵庫 2ドア 138L SJ-D14C</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>20000</string>
 		<key>priceYen</key>
-		<string>33700</string>
+		<string>38000</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>Appliance-2</string>
 		<key>item</key>
-		<string>シャープ 冷蔵庫 5ドア 412L SJ-PW42B</string>
+		<string>シャープ 冷蔵庫 5ドア 412L </string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>--</string>
 		<key>priceYen</key>
 		<string>109620</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>Appliance-3</string>
 		<key>item</key>
 		<string>SONY 薄型テレビ 55インチ 4K BRAVIA</string>
 		<key>pricePeso</key>
@@ -34,203 +34,135 @@
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>Appliance-4</string>
 		<key>item</key>
 		<string>SONY 薄型テレビ 24インチ</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>--</string>
 		<key>priceYen</key>
 		<string>29300</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>Appliance-1</string>
 		<key>item</key>
-		<string>パナソニック 洗濯機 （簡易乾燥機能付） 6kg </string>
+		<string>洗濯機 6kg</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>3295</string>
 		<key>priceYen</key>
-		<string>36850</string>
+		<string>24000</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>Appliance-1</string>
 		<key>item</key>
 		<string>パナソニック 洗濯機 （洗濯乾燥機） 10kg</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>--</string>
 		<key>priceYen</key>
 		<string>166000</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>Appliance-5</string>
 		<key>item</key>
-		<string>パナソニック 炊飯器 踊りだき 5.5</string>
+		<string>炊飯器</string>
 		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>150</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>ブルーレイDVDレコーダー</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>43200</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>パナソニック エオリア 6畳 木造和室</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>34990</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>SONY イヤホン WF-1000X</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>23190</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>マキタ 掃除機 コードレス 32w</string>
-		<key>pricePeso</key>
-		<string>40php</string>
+		<string>1595</string>
 		<key>priceYen</key>
 		<string>13000</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>Appliance-6</string>
 		<key>item</key>
-		<string>パナソニック 電子レンジ エレック 850w 22L</string>
+		<string>ブルーレイDVDレコーダー</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>--</string>
 		<key>priceYen</key>
-		<string>12800</string>
+		<string>43200</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>Appliance-6</string>
 		<key>item</key>
-		<string>パナソニック FAX</string>
+		<string>DVDレコーダー</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>990</string>
 		<key>priceYen</key>
-		<string>11929</string>
+		<string>--</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>Appliance-7</string>
 		<key>item</key>
-		<string>シャープ 空気洗浄機 KC-F50</string>
+		<string>パナソニック エオリア 6畳 木造和室</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>--</string>
 		<key>priceYen</key>
-		<string>15,780</string>
+		<string>34990</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>Music-1</string>
 		<key>item</key>
-		<string>パナソニック エアコン エオリア CS-227CF</string>
+		<string>イヤホン マイク付</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>325</string>
 		<key>priceYen</key>
-		<string>34180</string>
+		<string>1500</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>Appliance-8</string>
 		<key>item</key>
-		<string>ルンバ 980</string>
+		<string>マキタ 掃除機 コードレス 32w</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>--</string>
 		<key>priceYen</key>
-		<string>98999</string>
+		<string>13000</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>Appliance-11</string>
 		<key>item</key>
-		<string>ティファール 電気ポット 0.8L</string>
+		<string>SONY ラジオ + CD</string>
 		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>3191</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>SONY ラジオ ICF-P36</string>
-		<key>pricePeso</key>
-		<string>40php</string>
+		<string>3000</string>
 		<key>priceYen</key>
 		<string>2038</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>Appliance-10</string>
 		<key>item</key>
 		<string>CANON プリンター TS8030</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>--</string>
 		<key>priceYen</key>
 		<string>16200</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>ApplianceTop</string>
 		<key>item</key>
-		<string>CANON カメラ</string>
+		<string>デジタル一眼カメラ α6300 ボディのみ</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>51299</string>
 		<key>priceYen</key>
-		<string>**</string>
+		<string>107784</string>
 	</dict>
 	<dict>
 		<key>camera</key>
-		<string>Burger</string>
+		<string>Appliance-9</string>
 		<key>item</key>
-		<string>CANON カメラ</string>
+		<string>デジタル一眼カメラ“α”EマウントレンズSEL1018
+デジタル一眼カメラ“α”[Eマウント]用レンズ
+SEL1018</string>
 		<key>pricePeso</key>
-		<string>40php</string>
+		<string>41360</string>
 		<key>priceYen</key>
-		<string>**</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>CANON カメラ</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>**</string>
-	</dict>
-	<dict>
-		<key>camera</key>
-		<string>Burger</string>
-		<key>item</key>
-		<string>CANON カメラ</string>
-		<key>pricePeso</key>
-		<string>40php</string>
-		<key>priceYen</key>
-		<string>**</string>
+		<string>82080</string>
 	</dict>
 </array>
 </plist>
