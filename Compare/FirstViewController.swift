@@ -8,12 +8,9 @@
 
 import UIKit
 import SwiftyJSON
+import FontAwesome_swift
 
 class FirstViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
-  
-  @IBOutlet weak var rateBtn: UIButton!
-
-  
   
   var testText:Int = 0
   
@@ -26,8 +23,6 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
   
   
   var phpRate:Int = 0
-  
-  
   
   
   
@@ -46,14 +41,33 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
   
   
   var selectedIndex = -1 //選択された行番号！
+  
+  
+  @IBOutlet weak var rateBtn: UIButton!
 		
   
+  @IBOutlet weak var moveView: UIView!
+  
+  // ハイドボタンを用意
+  private var hideBtn: UIBarButtonItem!
+  let attributes = [NSFontAttributeName: UIFont.fontAwesome(ofSize: 28)] as [String: Any]
   
   
   @IBOutlet weak var myCollectionView: UICollectionView!
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+    
+    
+    //addBtnの作成　plainが文字だけのもの、titleは""
+    hideBtn = UIBarButtonItem(title: "", style: .plain, target: self, action: "doHide")
+    //fontawsome適用
+    self.hideBtn.setTitleTextAttributes(attributes, for: .normal)
+    self.hideBtn.title = String.fontAwesomeIcon(name: .windowRestore)
+    //viewに表示！
+    self.navigationItem.rightBarButtonItem = hideBtn
+    
     
     
     // デフォルト値 //userdefault
@@ -204,6 +218,16 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
     task.resume()
   }
   
+  
+  
+  //ハイドボタンをクリックした時に発動
+  func doHide(){
+//
+//    UIView.animate(withDuration: , animations: <#T##() -> Void#>, completion: <#T##((Bool) -> Void)?##((Bool) -> Void)?##(Bool) -> Void#>)
+//
+//    print("akakak")
+    
+  }
   
   
   

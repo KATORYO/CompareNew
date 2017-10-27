@@ -8,7 +8,7 @@ target 'Compare' do
   use_frameworks!
   pod 'FontAwesome.swift'
   pod 'SwiftyJSON'
-
+  pod 'SCLAlertView'
 
   # Pods for Compare
 

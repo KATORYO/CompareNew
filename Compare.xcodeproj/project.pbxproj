@@ -15,6 +15,7 @@
 		E32B094C1F9851E000F49613 /* PriceInternet.plist in Resources */ = {isa = PBXBuildFile; fileRef = E32B094B1F9851E000F49613 /* PriceInternet.plist */; };
 		E32B094E1F98522500F49613 /* PricePublicTranspotation.plist in Resources */ = {isa = PBXBuildFile; fileRef = E32B094D1F98522500F49613 /* PricePublicTranspotation.plist */; };
 		E32B09501F985BCC00F49613 /* PriceBook.plist in Resources */ = {isa = PBXBuildFile; fileRef = E32B094F1F985BCC00F49613 /* PriceBook.plist */; };
+		E33A30EB1FA3FDC0006B1F6A /* SCLAlertView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E33A30EC1FA3FDC0006B1F6A /* SCLAlertView.framework */; };
 		E34169781F91E42300DDA77C /* PriceStarbucks.plist in Resources */ = {isa = PBXBuildFile; fileRef = E34169771F91E42300DDA77C /* PriceStarbucks.plist */; };
 		E341697A1F91F54700DDA77C /* PriceYoshinoya.plist in Resources */ = {isa = PBXBuildFile; fileRef = E34169791F91F54700DDA77C /* PriceYoshinoya.plist */; };
 		E341697C1F92050200DDA77C /* PriceMarukame.plist in Resources */ = {isa = PBXBuildFile; fileRef = E341697B1F92050200DDA77C /* PriceMarukame.plist */; };
@@ -41,6 +42,7 @@
 		E38AD5B41F933BE60051AF30 /* PriceSupermarketFoods.plist in Resources */ = {isa = PBXBuildFile; fileRef = E38AD5B31F933BE60051AF30 /* PriceSupermarketFoods.plist */; };
 		E39658EB1F94C220005E6215 /* PriceSuperMarketDrink.plist in Resources */ = {isa = PBXBuildFile; fileRef = E39658EA1F94C220005E6215 /* PriceSuperMarketDrink.plist */; };
 		E39658EF1F94C8FC005E6215 /* FontAwsomeEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39658EE1F94C8FC005E6215 /* FontAwsomeEdit.swift */; };
+		E397132D1FA3FCAB005A7DBE /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E399D2661FA3F6A3006CCC20 /* UserNotificationsUI.framework */; };
 		E3974B001F74F71B00CDD953 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3974AFE1F74F71B00CDD953 /* CustomTableViewCell.swift */; };
 		E3974B011F74F71B00CDD953 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3974AFF1F74F71B00CDD953 /* CustomTableViewCell.xib */; };
 		E3AB05C51F6E004C00B20261 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AB05C41F6E004C00B20261 /* AppDelegate.swift */; };
@@ -62,7 +64,6 @@
 		E3E77FCD1F8B48980051EDAB /* ThirdViewController3_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E77FCC1F8B48980051EDAB /* ThirdViewController3_1.swift */; };
 		E3F6DB311F99C06400A5E265 /* PriceGame.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3F6DB301F99C06400A5E265 /* PriceGame.plist */; };
 		E3F6DB341F99ED1200A5E265 /* CustomHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F6DB321F99ED1200A5E265 /* CustomHeader.swift */; };
-		E3F6DB351F99ED1200A5E265 /* CustomHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3F6DB331F99ED1200A5E265 /* CustomHeader.xib */; };
 		E3F6DB371F9A0C7800A5E265 /* CircleImageForFav.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F6DB361F9A0C7800A5E265 /* CircleImageForFav.swift */; };
 /* End PBXBuildFile section */
 
@@ -98,6 +99,7 @@
 		E32B094B1F9851E000F49613 /* PriceInternet.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PriceInternet.plist; sourceTree = "<group>"; };
 		E32B094D1F98522500F49613 /* PricePublicTranspotation.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PricePublicTranspotation.plist; sourceTree = "<group>"; };
 		E32B094F1F985BCC00F49613 /* PriceBook.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PriceBook.plist; sourceTree = "<group>"; };
+		E33A30EC1FA3FDC0006B1F6A /* SCLAlertView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SCLAlertView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E34169771F91E42300DDA77C /* PriceStarbucks.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PriceStarbucks.plist; sourceTree = "<group>"; };
 		E34169791F91F54700DDA77C /* PriceYoshinoya.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PriceYoshinoya.plist; sourceTree = "<group>"; };
 		E341697B1F92050200DDA77C /* PriceMarukame.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PriceMarukame.plist; sourceTree = "<group>"; };
@@ -106,10 +108,12 @@
 		E341E2331F8653F700394131 /* Memo+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Memo+CoreDataClass.swift"; sourceTree = "<group>"; };
 		E341E2341F8653F700394131 /* Memo+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Memo+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		E349CD431F80D60100ABC485 /* SecondViewController2_2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController2_2.swift; sourceTree = "<group>"; };
+		E35005D41FA3F86200E2AE5A /* SCLAlertView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SCLAlertView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E35C15A71F83AADA00030C6E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		E35C15AA1F83B9E900030C6E /* corenadata.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = corenadata.xcdatamodel; sourceTree = "<group>"; };
 		E35E09421F977EE600CF08D8 /* PriceSports.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PriceSports.plist; sourceTree = "<group>"; };
 		E367FBF31F820592003C015F /* FontAwesome_swift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FontAwesome_swift.framework; path = "../../Library/Developer/Xcode/DerivedData/Compare-euiaddjhbqqrmzgrkqdmyglpgsiz/Build/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework"; sourceTree = "<group>"; };
+		E373079D1FA3F76F001C9D84 /* SCLAlertView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SCLAlertView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E373D7591F83527F008D96BA /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../Library/Developer/Xcode/DerivedData/Compare-euiaddjhbqqrmzgrkqdmyglpgsiz/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		E375A4B31F90E6E60088EE82 /* CircleImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
 		E37BA3AB1F99B1F9005EAF94 /* PriceDwelling.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PriceDwelling.plist; sourceTree = "<group>"; };
@@ -126,6 +130,8 @@
 		E39658EE1F94C8FC005E6215 /* FontAwsomeEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontAwsomeEdit.swift; sourceTree = "<group>"; };
 		E3974AFE1F74F71B00CDD953 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		E3974AFF1F74F71B00CDD953 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		E399D2641FA3F661006CCC20 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		E399D2661FA3F6A3006CCC20 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
 		E3AB05C11F6E004C00B20261 /* Compare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Compare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3AB05C41F6E004C00B20261 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3AB05C61F6E004C00B20261 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -152,7 +158,6 @@
 		E3E77FCC1F8B48980051EDAB /* ThirdViewController3_1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController3_1.swift; sourceTree = "<group>"; };
 		E3F6DB301F99C06400A5E265 /* PriceGame.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PriceGame.plist; sourceTree = "<group>"; };
 		E3F6DB321F99ED1200A5E265 /* CustomHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHeader.swift; sourceTree = "<group>"; };
-		E3F6DB331F99ED1200A5E265 /* CustomHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomHeader.xib; sourceTree = "<group>"; };
 		E3F6DB361F9A0C7800A5E265 /* CircleImageForFav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImageForFav.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -161,6 +166,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E33A30EB1FA3FDC0006B1F6A /* SCLAlertView.framework in Frameworks */,
+				E397132D1FA3FCAB005A7DBE /* UserNotificationsUI.framework in Frameworks */,
 				E3CD6D021F95E65B00F73692 /* Photos.framework in Frameworks */,
 				E35C15A81F83AADA00030C6E /* CoreData.framework in Frameworks */,
 				E373D75B1F8352DD008D96BA /* SwiftyJSON.framework in Frameworks */,
@@ -191,6 +198,11 @@
 		662C6BD4D38385121224D93B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E33A30EC1FA3FDC0006B1F6A /* SCLAlertView.framework */,
+				E35005D41FA3F86200E2AE5A /* SCLAlertView.framework */,
+				E373079D1FA3F76F001C9D84 /* SCLAlertView.framework */,
+				E399D2661FA3F6A3006CCC20 /* UserNotificationsUI.framework */,
+				E399D2641FA3F661006CCC20 /* UserNotifications.framework */,
 				E3CD6D011F95E65B00F73692 /* Photos.framework */,
 				E35C15A71F83AADA00030C6E /* CoreData.framework */,
 				E373D7591F83527F008D96BA /* SwiftyJSON.framework */,
@@ -240,7 +252,6 @@
 				E349CD431F80D60100ABC485 /* SecondViewController2_2.swift */,
 				E3F6DB321F99ED1200A5E265 /* CustomHeader.swift */,
 				E3974AFE1F74F71B00CDD953 /* CustomTableViewCell.swift */,
-				E3F6DB331F99ED1200A5E265 /* CustomHeader.xib */,
 				E3AB05F61F6E187900B20261 /* CustomCell.swift */,
 				E31C61191F972F4400246B63 /* CustomTableViewCell2.swift */,
 				E3BF59561F6E9E5300038E59 /* ViewController1-2.swift */,
@@ -445,7 +456,6 @@
 				E32B094E1F98522500F49613 /* PricePublicTranspotation.plist in Resources */,
 				E35E09431F977EE600CF08D8 /* PriceSports.plist in Resources */,
 				E341697A1F91F54700DDA77C /* PriceYoshinoya.plist in Resources */,
-				E3F6DB351F99ED1200A5E265 /* CustomHeader.xib in Resources */,
 				E3CD6D061F962B1000F73692 /* PriceOthers.plist in Resources */,
 				E32B09501F985BCC00F49613 /* PriceBook.plist in Resources */,
 				E3E442EE1F7F792A008CE769 /* McPrice.plist in Resources */,
@@ -562,11 +572,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Compare/Pods-Compare-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FontAwesome.swift/FontAwesome_swift.framework",
+				"${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontAwesome_swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCLAlertView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -826,7 +838,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -846,7 +858,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

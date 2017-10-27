@@ -256,7 +256,7 @@ class SecondViewController2_2: UIViewController,UITextViewDelegate,UIImagePicker
     //myComposeView = UIImage(frame: CGRect(x: 0, y: 0, width: 100, height: 10))
     
     // 投稿する画像を指定.
-    myComposeView.add(UIImage(named: "Appliance-12"))
+    myComposeView.add(UIImage(named: "Image-1"))
     
     
     

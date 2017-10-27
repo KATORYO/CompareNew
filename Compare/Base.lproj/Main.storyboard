@@ -54,7 +54,7 @@
                                                     <color key="backgroundColor" red="0.99617452880000001" green="1" blue="0.93788332740000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="27" id="LET-6q-ofW"/>
+                                                        <constraint firstAttribute="height" constant="27" id="SQT-HK-ZcT"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -64,13 +64,13 @@
                                         </view>
                                         <color key="backgroundColor" red="0.99617452880000001" green="1" blue="0.93788332740000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="SFj-td-I7T" secondAttribute="bottom" id="ZBN-Pe-bGl"/>
-                                            <constraint firstItem="CAP-UY-59r" firstAttribute="leading" secondItem="SFj-td-I7T" secondAttribute="leading" id="dTk-Ab-wAJ"/>
-                                            <constraint firstItem="CAP-UY-59r" firstAttribute="top" secondItem="y11-Zw-r4v" secondAttribute="top" id="hGB-b3-tIY"/>
-                                            <constraint firstItem="CAP-UY-59r" firstAttribute="leading" secondItem="y11-Zw-r4v" secondAttribute="leading" id="ohe-bX-FlM"/>
-                                            <constraint firstItem="SFj-td-I7T" firstAttribute="top" secondItem="CAP-UY-59r" secondAttribute="bottom" constant="1" id="r5W-eR-jBy"/>
-                                            <constraint firstAttribute="trailing" secondItem="CAP-UY-59r" secondAttribute="trailing" id="rpd-fb-JIx"/>
-                                            <constraint firstItem="CAP-UY-59r" firstAttribute="trailing" secondItem="SFj-td-I7T" secondAttribute="trailing" id="v8H-LT-8Ux"/>
+                                            <constraint firstItem="CAP-UY-59r" firstAttribute="leading" secondItem="SFj-td-I7T" secondAttribute="leading" id="4Ef-Te-TCP"/>
+                                            <constraint firstAttribute="trailing" secondItem="CAP-UY-59r" secondAttribute="trailing" id="K35-OO-7LR"/>
+                                            <constraint firstItem="SFj-td-I7T" firstAttribute="top" secondItem="CAP-UY-59r" secondAttribute="bottom" constant="1" id="Ocr-Os-yH6"/>
+                                            <constraint firstAttribute="bottom" secondItem="SFj-td-I7T" secondAttribute="bottom" id="jXP-4P-6lJ"/>
+                                            <constraint firstItem="CAP-UY-59r" firstAttribute="top" secondItem="y11-Zw-r4v" secondAttribute="top" id="xDh-CO-zcQ"/>
+                                            <constraint firstItem="CAP-UY-59r" firstAttribute="trailing" secondItem="SFj-td-I7T" secondAttribute="trailing" id="xEl-JA-RwG"/>
+                                            <constraint firstItem="CAP-UY-59r" firstAttribute="leading" secondItem="y11-Zw-r4v" secondAttribute="leading" id="xFl-q8-VXF"/>
                                         </constraints>
                                         <size key="customSize" width="150" height="175"/>
                                         <connections>
@@ -88,12 +88,16 @@
                                     <outlet property="delegate" destination="9pv-A4-QxB" id="Z0d-3P-PDG"/>
                                 </connections>
                             </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TxG-Pu-V89">
+                                <rect key="frame" x="0.0" y="64" width="320" height="39"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPx-xA-Txg">
                                 <rect key="frame" x="72" y="64" width="177" height="39"/>
-                                <color key="backgroundColor" red="1" green="0.99830271455900099" blue="0.90097094854166626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.99617452880000001" green="1" blue="0.93788332740000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="39" id="G4w-Ug-ZdA"/>
+                                    <constraint firstAttribute="height" constant="39" id="aOc-Qm-pOH"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="19"/>
                                 <state key="normal" title="最新のレートを取得"/>
@@ -104,17 +108,22 @@
                         </subviews>
                         <color key="backgroundColor" red="0.99617452880000001" green="1" blue="0.93788332740000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6b8-09-zNB" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="7B4-yA-48O"/>
-                            <constraint firstItem="dPx-xA-Txg" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" id="9Ll-1Q-iPV"/>
-                            <constraint firstItem="6b8-09-zNB" firstAttribute="top" secondItem="dPx-xA-Txg" secondAttribute="bottom" id="Dg8-h7-F9u"/>
-                            <constraint firstItem="dPx-xA-Txg" firstAttribute="centerX" secondItem="6b8-09-zNB" secondAttribute="centerX" id="FqG-WP-Ebg"/>
-                            <constraint firstAttribute="trailing" secondItem="6b8-09-zNB" secondAttribute="trailing" id="Oe5-DF-M8S"/>
-                            <constraint firstItem="6b8-09-zNB" firstAttribute="bottom" secondItem="4ug-Mw-9AY" secondAttribute="top" id="X5G-NY-wna"/>
-                            <constraint firstItem="dPx-xA-Txg" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="56" id="bwg-tu-tys"/>
+                            <constraint firstItem="6b8-09-zNB" firstAttribute="top" secondItem="dPx-xA-Txg" secondAttribute="bottom" id="1JC-vJ-Hqe"/>
+                            <constraint firstItem="dPx-xA-Txg" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="56" id="IpX-0u-Svo"/>
+                            <constraint firstAttribute="trailing" secondItem="TxG-Pu-V89" secondAttribute="trailing" id="NJt-Ql-5n7"/>
+                            <constraint firstItem="TxG-Pu-V89" firstAttribute="trailing" secondItem="6b8-09-zNB" secondAttribute="trailing" id="WsM-b1-KKi"/>
+                            <constraint firstItem="dPx-xA-Txg" firstAttribute="centerX" secondItem="TxG-Pu-V89" secondAttribute="centerX" id="XuR-wv-vsS"/>
+                            <constraint firstItem="TxG-Pu-V89" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" id="fvb-di-cpV"/>
+                            <constraint firstItem="TxG-Pu-V89" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="iX8-Bq-Cqo"/>
+                            <constraint firstItem="TxG-Pu-V89" firstAttribute="leading" secondItem="6b8-09-zNB" secondAttribute="leading" id="jmi-7l-vtb"/>
+                            <constraint firstItem="6b8-09-zNB" firstAttribute="bottom" secondItem="4ug-Mw-9AY" secondAttribute="top" id="u5v-mR-8fD"/>
+                            <constraint firstItem="TxG-Pu-V89" firstAttribute="top" secondItem="dPx-xA-Txg" secondAttribute="top" id="w4m-Rr-RFn"/>
+                            <constraint firstItem="TxG-Pu-V89" firstAttribute="bottom" secondItem="dPx-xA-Txg" secondAttribute="bottom" id="xcQ-Tt-7Nx"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="料金を比較する！" id="6N8-Ne-c12"/>
                     <connections>
+                        <outlet property="moveView" destination="TxG-Pu-V89" id="yek-Ng-EDo"/>
                         <outlet property="myCollectionView" destination="6b8-09-zNB" id="xHE-U0-2b1"/>
                         <outlet property="rateBtn" destination="dPx-xA-Txg" id="Vub-23-1Va"/>
                         <segue destination="knd-Nl-F6D" kind="show" identifier="next" id="eHJ-wm-1uF"/>
@@ -248,6 +257,7 @@
                                             <color key="backgroundColor" red="0.99617452880000001" green="1" blue="0.93788332740000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <gestureRecognizers/>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.99617452880000001" green="1" blue="0.93788332740000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <gestureRecognizers/>
                                     </tableViewCell>
                                 </prototypes>
@@ -319,7 +329,6 @@
                                             <color key="backgroundColor" red="0.99617452880000001" green="1" blue="0.93788332740000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="tintColor" red="0.99617452880000001" green="1" blue="0.93788332740000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.99617452880000001" green="1" blue="0.93788332740000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tableViewCell>
                                 </prototypes>
                                 <sections/>
